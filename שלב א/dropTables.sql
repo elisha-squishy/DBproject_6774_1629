@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS maintenance_req;
+DROP TABLE IF EXISTS is_chef;
+DROP TABLE IF EXISTS visiting_event;
+DROP TABLE IF EXISTS maintenance_req;
+DROP TABLE IF EXISTS inventory;
+DROP TABLE IF EXISTS meal;
+DROP TABLE IF EXISTS staff_member;
+DROP TABLE IF EXISTS event;
+DROP TABLE IF EXISTS resident;
+DROP TABLE IF EXISTS room;
