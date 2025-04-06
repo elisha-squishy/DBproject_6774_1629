@@ -93,3 +93,4 @@ is_chef:
 
 להלן דוג' של גיבוי ושחזור נתונים:
 ![image](https://github.com/user-attachments/assets/32a5105b-451f-46cd-8568-b104566ac823)
+![image](https://github.com/user-attachments/assets/30ef4761-e6c1-48c0-801c-63462844a3f6)
