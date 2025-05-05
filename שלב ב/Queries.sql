@@ -1,4 +1,4 @@
-//events that a residant visited
+-- events that a residant visited
 SELECT 
     r.resident_name,
     e.event_name,
@@ -10,7 +10,7 @@ JOIN visiting_event ve ON r.resident_id = ve.resident_id
 JOIN event e ON ve.event_id = e.event_id
 ORDER BY event_year, event_month;
 
-//maintenance_reqs for each room, with the rooms capcity
+-- maintenance_reqs for each room, with the rooms capcity
 SELECT 
     rm.room_id,
     rm.capacity,
@@ -20,8 +20,7 @@ LEFT JOIN maintenance_req mr ON rm.room_id = mr.room_id
 GROUP BY rm.room_id, rm.capacity
 ORDER BY total_requests DESC;
 
-
-//the devision of going to events: how many go to 1 event, 2 events etc..
+-- the devision of going to events: how many go to 1 event, 2 events etc..
 WITH event_counts AS (
     SELECT 
         resident_id,
@@ -34,8 +33,7 @@ FROM resident r
 LEFT JOIN event_counts ec ON r.resident_id = ec.resident_id
 GROUP BY events_visited
 
-
-//for each staff member, show how many requests he has completed
+-- for each staff member, show how many requests he has completed
 SELECT 
     s.staff_member_name,
     COUNT(mr.request_id) AS completed_requests
@@ -45,17 +43,16 @@ LEFT JOIN maintenance_req mr
 GROUP BY s.staff_member_name
 ORDER BY completed_requests DESC;
 
-***
-//how many chefs are in charge of meals over time
+-- how many chefs are in charge of meals over time
 SELECT
     m.date,
-    COUNT(DISTINCT ic.staff_member_id) AS breakfast_chefs_count
+    COUNT(DISTINCT ic.staff_member_id) AS chefs_count
 FROM meal m
 JOIN is_chef ic ON m.date = ic.date AND m.meal_type = ic.meal_type
 GROUP BY m.date
 ORDER BY m.date;
 
-//amount of rooms that have made less than 2 maintenance reqs, and amount of rooms that made more than 2 maintenance reqs
+-- amount of rooms that have made less than 2 maintenance reqs, and amount of rooms that made more than 2 maintenance reqs
 WITH req_counts AS (
     SELECT 
         room_id,
@@ -73,7 +70,36 @@ SELECT
 FROM req_counts right OUTER JOIN room ON req_counts.room_id = room.room_id
 GROUP BY category;
 
-//missing 2
+-- for each job title, shows the staff memebers that have completed the most requests
+SELECT 
+    sm.job_title,
+    sm.staff_member_name,
+    COUNT(mr.request_id) AS handled_requests
+FROM staff_member sm
+JOIN maintenance_req mr ON sm.staff_member_id = mr.staff_member_id
+GROUP BY sm.job_title, sm.staff_member_name
+HAVING COUNT(mr.request_id) = (
+    SELECT MAX(request_count)
+    FROM (
+        SELECT COUNT(mr2.request_id) AS request_count
+        FROM staff_member sm2
+        JOIN maintenance_req mr2 ON sm2.staff_member_id = mr2.staff_member_id
+        WHERE sm2.job_title = sm.job_title
+        GROUP BY sm2.staff_member_name
+    ) AS subquery
+)
+ORDER BY sm.job_title;
+
+-- shows for each room its capacity and how many actually lives there
+SELECT 
+    rm.room_id,
+    rm.capacity,
+    COUNT(r.resident_id) AS current_occupancy
+FROM room rm
+LEFT JOIN resident r ON rm.room_id = r.room_id
+GROUP BY rm.room_id, rm.capacity
+HAVING COUNT(r.resident_id) < rm.capacity
+ORDER BY rm.room_id;
 
 
 
