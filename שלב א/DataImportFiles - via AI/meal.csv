@@ -1,1001 +1,980 @@
 meal_type,day_of_the_week,menu,meal_date
-Dinner,Sunday,Pizza; Caesar Salad,12/12/2024 20:34
-Dinner,Monday,Oatmeal; Toast; Coffee,8/29/2025 05:43
-Dinner,Tuesday,Fish; Quinoa; Roasted Peppers,7/13/2025 19:00
-Dinner,Wednesday,Steak; Mashed Potatoes; Vegetables,12/15/2025 05:31
-Dinner,Thursday,Pizza; Caesar Salad,9/28/2026 05:56
-Breakfast,Friday,Steak; Mashed Potatoes; Vegetables,5/28/2026 04:34
-Dinner,Saturday,Grilled Chicken; Rice; Salad,9/20/2026 17:01
-Lunch,Sunday,Oatmeal; Toast; Coffee,3/12/2025 04:51
-Dinner,Monday,Steak; Mashed Potatoes; Vegetables,5/10/2024 06:32
-Breakfast,Tuesday,Oatmeal; Toast; Coffee,8/2/2025 12:27
-Lunch,Wednesday,Fish; Quinoa; Roasted Peppers,10/25/2024 23:53
-Dinner,Thursday,Grilled Chicken; Rice; Salad,9/14/2026 17:36
-Dinner,Friday,Fish; Quinoa; Roasted Peppers,6/11/2026 23:28
-Breakfast,Saturday,Pancakes; Bacon; Eggs,7/23/2025 06:28
-Lunch,Sunday,Pizza; Caesar Salad,9/25/2027 17:39
-Breakfast,Monday,Grilled Chicken; Rice; Salad,2/27/2025 06:53
-Dinner,Tuesday,Fish; Quinoa; Roasted Peppers,5/3/2027 04:56
-Dinner,Wednesday,Fish; Quinoa; Roasted Peppers,10/15/2024 03:18
-Breakfast,Thursday,Fish; Quinoa; Roasted Peppers,4/17/2025 05:16
-Dinner,Friday,Oatmeal; Toast; Coffee,11/21/2026 05:42
-Breakfast,Saturday,Pancakes; Bacon; Eggs,1/25/2025 05:29
-Breakfast,Sunday,Grilled Chicken; Rice; Salad,6/6/2026 02:34
-Lunch,Monday,Grilled Chicken; Rice; Salad,1/25/2025 05:07
-Breakfast,Tuesday,Oatmeal; Toast; Coffee,10/2/2024 17:48
-Lunch,Wednesday,Oatmeal; Toast; Coffee,12/6/2027 05:34
-Dinner,Thursday,Fish; Quinoa; Roasted Peppers,9/17/2025 06:21
-Dinner,Friday,Pizza; Caesar Salad,10/13/2024 20:16
-Lunch,Saturday,Pancakes; Bacon; Eggs,6/9/2027 10:40
-Breakfast,Sunday,Pizza; Caesar Salad,11/12/2024 16:56
-Breakfast,Monday,Steak; Mashed Potatoes; Vegetables,4/22/2024 16:52
-Dinner,Tuesday,Oatmeal; Toast; Coffee,4/25/2026 18:09
-Lunch,Wednesday,Steak; Mashed Potatoes; Vegetables,7/24/2026 18:57
-Breakfast,Thursday,Grilled Chicken; Rice; Salad,9/19/2027 08:37
-Lunch,Friday,Grilled Chicken; Rice; Salad,9/20/2027 18:40
-Lunch,Saturday,Grilled Chicken; Rice; Salad,9/24/2025 04:10
-Lunch,Sunday,Pancakes; Bacon; Eggs,4/14/2027 17:49
-Dinner,Monday,Oatmeal; Toast; Coffee,7/18/2026 15:50
-Dinner,Tuesday,Fish; Quinoa; Roasted Peppers,3/1/2026 03:20
-Breakfast,Wednesday,Fish; Quinoa; Roasted Peppers,11/14/2024 14:40
-Lunch,Thursday,Oatmeal; Toast; Coffee,11/2/2024 11:13
-Breakfast,Friday,Oatmeal; Toast; Coffee,12/24/2024 05:30
-Dinner,Saturday,Steak; Mashed Potatoes; Vegetables,10/2/2025 11:46
-Breakfast,Sunday,Grilled Chicken; Rice; Salad,4/25/2024 02:29
-Dinner,Monday,Steak; Mashed Potatoes; Vegetables,1/5/2027 11:57
-Dinner,Tuesday,Fish; Quinoa; Roasted Peppers,5/1/2026 18:22
-Breakfast,Wednesday,Grilled Chicken; Rice; Salad,1/15/2025 09:55
-Dinner,Thursday,Pasta; Garlic Bread; Soup,7/10/2024 18:35
-Breakfast,Friday,Pasta; Garlic Bread; Soup,5/10/2024 02:33
-Breakfast,Saturday,Steak; Mashed Potatoes; Vegetables,4/26/2027 09:28
-Breakfast,Sunday,Pizza; Caesar Salad,8/1/2025 19:48
-Dinner,Monday,Grilled Chicken; Rice; Salad,10/2/2027 21:32
-Dinner,Tuesday,Pancakes; Bacon; Eggs,9/10/2026 01:58
-Dinner,Wednesday,Oatmeal; Toast; Coffee,2/1/2027 00:53
-Lunch,Thursday,Grilled Chicken; Rice; Salad,10/27/2026 04:20
-Breakfast,Friday,Pizza; Caesar Salad,12/31/2025 11:38
-Lunch,Saturday,Pancakes; Bacon; Eggs,5/27/2027 14:05
-Lunch,Sunday,Oatmeal; Toast; Coffee,8/22/2027 10:54
-Dinner,Monday,Pizza; Caesar Salad,8/23/2026 22:35
-Dinner,Tuesday,Grilled Chicken; Rice; Salad,7/19/2027 17:16
-Dinner,Wednesday,Steak; Mashed Potatoes; Vegetables,6/26/2026 02:18
-Dinner,Thursday,Steak; Mashed Potatoes; Vegetables,9/23/2026 20:39
-Lunch,Friday,Grilled Chicken; Rice; Salad,4/26/2025 19:21
-Lunch,Saturday,Oatmeal; Toast; Coffee,5/16/2026 11:42
-Dinner,Sunday,Fish; Quinoa; Roasted Peppers,7/27/2027 00:06
-Breakfast,Monday,Pancakes; Bacon; Eggs,10/15/2024 16:20
-Lunch,Tuesday,Fish; Quinoa; Roasted Peppers,6/13/2026 08:46
-Breakfast,Wednesday,Grilled Chicken; Rice; Salad,12/30/2025 15:10
-Dinner,Thursday,Grilled Chicken; Rice; Salad,6/2/2026 16:13
-Lunch,Friday,Pizza; Caesar Salad,1/2/2027 15:50
-Breakfast,Saturday,Oatmeal; Toast; Coffee,8/14/2026 10:36
-Breakfast,Sunday,Pancakes; Bacon; Eggs,9/14/2024 11:22
-Dinner,Monday,Steak; Mashed Potatoes; Vegetables,1/11/2026 23:40
-Dinner,Tuesday,Pancakes; Bacon; Eggs,2/22/2025 12:28
-Dinner,Wednesday,Grilled Chicken; Rice; Salad,1/5/2025 23:53
-Dinner,Thursday,Pancakes; Bacon; Eggs,8/30/2027 14:40
-Lunch,Friday,Fish; Quinoa; Roasted Peppers,6/1/2026 00:14
-Breakfast,Saturday,Oatmeal; Toast; Coffee,10/27/2024 20:18
-Dinner,Sunday,Pancakes; Bacon; Eggs,4/26/2026 21:33
-Dinner,Monday,Grilled Chicken; Rice; Salad,4/7/2025 12:56
-Breakfast,Tuesday,Steak; Mashed Potatoes; Vegetables,12/2/2024 07:51
-Dinner,Wednesday,Pasta; Garlic Bread; Soup,9/29/2024 04:34
-Breakfast,Thursday,Pizza; Caesar Salad,9/28/2025 19:56
-Dinner,Friday,Steak; Mashed Potatoes; Vegetables,7/30/2024 20:47
-Lunch,Saturday,Oatmeal; Toast; Coffee,9/24/2024 02:40
-Breakfast,Sunday,Pizza; Caesar Salad,4/30/2027 08:34
-Lunch,Monday,Fish; Quinoa; Roasted Peppers,6/14/2025 13:22
-Dinner,Tuesday,Pancakes; Bacon; Eggs,9/6/2024 12:17
-Dinner,Wednesday,Grilled Chicken; Rice; Salad,12/23/2025 00:03
-Breakfast,Thursday,Fish; Quinoa; Roasted Peppers,11/18/2024 03:16
-Dinner,Friday,Fish; Quinoa; Roasted Peppers,1/25/2027 18:14
-Lunch,Saturday,Pizza; Caesar Salad,8/9/2025 02:50
-Breakfast,Sunday,Fish; Quinoa; Roasted Peppers,6/28/2024 17:08
-Lunch,Monday,Grilled Chicken; Rice; Salad,2/22/2025 17:01
-Dinner,Tuesday,Pizza; Caesar Salad,9/14/2026 21:00
-Breakfast,Wednesday,Steak; Mashed Potatoes; Vegetables,8/17/2026 10:57
-Lunch,Thursday,Pasta; Garlic Bread; Soup,6/18/2027 06:51
-Dinner,Friday,Pizza; Caesar Salad,8/9/2027 05:55
-Lunch,Saturday,Steak; Mashed Potatoes; Vegetables,8/11/2024 17:13
-Lunch,Sunday,Steak; Mashed Potatoes; Vegetables,9/11/2027 01:05
-Lunch,Monday,Pasta; Garlic Bread; Soup,7/27/2026 09:18
-Breakfast,Tuesday,Pizza; Caesar Salad,5/18/2027 15:57
-Breakfast,Wednesday,Fish; Quinoa; Roasted Peppers,10/19/2024 12:08
-Dinner,Thursday,Pasta; Garlic Bread; Soup,4/27/2027 01:48
-Lunch,Friday,Grilled Chicken; Rice; Salad,9/14/2026 02:51
-Lunch,Saturday,Pancakes; Bacon; Eggs,9/12/2024 18:50
-Dinner,Sunday,Grilled Chicken; Rice; Salad,4/9/2027 04:10
-Dinner,Monday,Grilled Chicken; Rice; Salad,1/7/2025 19:00
-Dinner,Tuesday,Grilled Chicken; Rice; Salad,5/1/2026 14:42
-Breakfast,Wednesday,Fish; Quinoa; Roasted Peppers,7/23/2024 00:33
-Lunch,Thursday,Grilled Chicken; Rice; Salad,12/19/2026 20:56
-Dinner,Friday,Steak; Mashed Potatoes; Vegetables,2/12/2026 11:53
-Lunch,Saturday,Fish; Quinoa; Roasted Peppers,8/7/2025 18:43
-Lunch,Sunday,Pasta; Garlic Bread; Soup,10/13/2027 00:26
-Dinner,Monday,Pasta; Garlic Bread; Soup,4/11/2025 18:49
-Dinner,Tuesday,Oatmeal; Toast; Coffee,9/27/2026 16:15
-Dinner,Wednesday,Pasta; Garlic Bread; Soup,7/18/2026 13:19
-Dinner,Thursday,Grilled Chicken; Rice; Salad,3/23/2025 20:30
-Lunch,Friday,Pasta; Garlic Bread; Soup,4/13/2025 23:59
-Lunch,Saturday,Pancakes; Bacon; Eggs,8/16/2025 09:40
-Dinner,Sunday,Oatmeal; Toast; Coffee,6/24/2024 10:13
-Dinner,Monday,Pancakes; Bacon; Eggs,2/20/2026 13:03
-Dinner,Tuesday,Steak; Mashed Potatoes; Vegetables,12/6/2027 00:21
-Breakfast,Wednesday,Pizza; Caesar Salad,7/22/2025 00:37
-Lunch,Thursday,Grilled Chicken; Rice; Salad,5/8/2027 13:04
-Dinner,Friday,Pasta; Garlic Bread; Soup,6/4/2026 07:01
-Breakfast,Saturday,Pancakes; Bacon; Eggs,6/4/2025 05:55
-Lunch,Sunday,Pasta; Garlic Bread; Soup,9/1/2026 13:12
-Lunch,Monday,Pancakes; Bacon; Eggs,11/5/2025 08:56
-Breakfast,Tuesday,Steak; Mashed Potatoes; Vegetables,12/8/2027 09:03
-Lunch,Wednesday,Pizza; Caesar Salad,6/22/2027 11:05
-Dinner,Thursday,Pasta; Garlic Bread; Soup,5/23/2026 02:15
-Lunch,Friday,Fish; Quinoa; Roasted Peppers,4/8/2025 08:02
-Dinner,Saturday,Steak; Mashed Potatoes; Vegetables,11/10/2026 08:55
-Lunch,Sunday,Pasta; Garlic Bread; Soup,9/5/2027 16:38
-Lunch,Monday,Pasta; Garlic Bread; Soup,9/2/2024 12:15
-Dinner,Tuesday,Pasta; Garlic Bread; Soup,11/27/2024 05:11
-Breakfast,Wednesday,Pizza; Caesar Salad,7/17/2024 22:50
-Dinner,Thursday,Grilled Chicken; Rice; Salad,5/12/2024 16:49
-Dinner,Friday,Grilled Chicken; Rice; Salad,3/12/2027 16:12
-Dinner,Saturday,Pancakes; Bacon; Eggs,4/25/2026 16:26
-Lunch,Sunday,Pancakes; Bacon; Eggs,9/12/2026 09:17
-Lunch,Monday,Pasta; Garlic Bread; Soup,9/22/2026 22:29
-Lunch,Tuesday,Grilled Chicken; Rice; Salad,8/21/2025 07:54
-Lunch,Wednesday,Pizza; Caesar Salad,12/2/2027 03:38
-Dinner,Thursday,Pancakes; Bacon; Eggs,2/8/2026 18:26
-Breakfast,Friday,Pasta; Garlic Bread; Soup,8/18/2027 23:10
-Dinner,Saturday,Grilled Chicken; Rice; Salad,3/27/2026 06:51
-Lunch,Sunday,Pizza; Caesar Salad,9/11/2027 05:02
-Breakfast,Monday,Fish; Quinoa; Roasted Peppers,10/14/2024 15:31
-Breakfast,Tuesday,Oatmeal; Toast; Coffee,4/21/2024 14:48
-Breakfast,Wednesday,Steak; Mashed Potatoes; Vegetables,6/7/2024 08:11
-Breakfast,Thursday,Pizza; Caesar Salad,3/7/2026 16:24
-Lunch,Friday,Steak; Mashed Potatoes; Vegetables,12/23/2025 09:59
-Dinner,Saturday,Pancakes; Bacon; Eggs,7/26/2025 10:10
-Breakfast,Sunday,Oatmeal; Toast; Coffee,9/10/2025 12:47
-Lunch,Monday,Steak; Mashed Potatoes; Vegetables,10/18/2025 06:25
-Dinner,Tuesday,Steak; Mashed Potatoes; Vegetables,11/15/2024 17:58
-Dinner,Wednesday,Pasta; Garlic Bread; Soup,1/10/2025 23:09
-Lunch,Thursday,Grilled Chicken; Rice; Salad,12/3/2026 17:53
-Lunch,Friday,Fish; Quinoa; Roasted Peppers,7/8/2025 12:48
-Lunch,Saturday,Pancakes; Bacon; Eggs,3/12/2026 20:53
-Breakfast,Sunday,Pancakes; Bacon; Eggs,1/29/2025 12:10
-Breakfast,Monday,Pizza; Caesar Salad,10/20/2025 04:06
-Dinner,Tuesday,Steak; Mashed Potatoes; Vegetables,11/6/2024 17:32
-Lunch,Wednesday,Fish; Quinoa; Roasted Peppers,10/21/2025 03:39
-Dinner,Thursday,Pizza; Caesar Salad,9/30/2026 19:12
-Lunch,Friday,Oatmeal; Toast; Coffee,3/19/2027 14:58
-Breakfast,Saturday,Oatmeal; Toast; Coffee,4/20/2027 10:50
-Dinner,Sunday,Pizza; Caesar Salad,12/1/2026 10:11
-Breakfast,Monday,Pizza; Caesar Salad,10/8/2026 20:23
-Breakfast,Tuesday,Fish; Quinoa; Roasted Peppers,5/6/2025 03:15
-Breakfast,Wednesday,Oatmeal; Toast; Coffee,5/20/2025 09:38
-Lunch,Thursday,Grilled Chicken; Rice; Salad,8/25/2027 10:31
-Breakfast,Friday,Grilled Chicken; Rice; Salad,5/28/2024 18:06
-Lunch,Saturday,Fish; Quinoa; Roasted Peppers,8/19/2024 17:11
-Dinner,Sunday,Fish; Quinoa; Roasted Peppers,8/1/2027 07:04
-Breakfast,Monday,Steak; Mashed Potatoes; Vegetables,11/30/2026 04:36
-Lunch,Tuesday,Pasta; Garlic Bread; Soup,9/26/2027 09:22
-Dinner,Wednesday,Pancakes; Bacon; Eggs,5/17/2025 14:00
-Breakfast,Thursday,Steak; Mashed Potatoes; Vegetables,9/9/2025 02:19
-Dinner,Friday,Oatmeal; Toast; Coffee,4/27/2026 22:21
-Dinner,Saturday,Oatmeal; Toast; Coffee,8/22/2024 17:20
-Lunch,Sunday,Oatmeal; Toast; Coffee,10/27/2027 16:29
-Dinner,Monday,Oatmeal; Toast; Coffee,3/30/2026 17:16
-Breakfast,Tuesday,Pizza; Caesar Salad,8/15/2026 04:34
-Breakfast,Wednesday,Grilled Chicken; Rice; Salad,12/13/2025 03:35
-Lunch,Thursday,Grilled Chicken; Rice; Salad,3/5/2027 21:12
-Lunch,Friday,Steak; Mashed Potatoes; Vegetables,6/25/2024 20:47
-Dinner,Saturday,Fish; Quinoa; Roasted Peppers,8/5/2025 20:01
-Breakfast,Sunday,Fish; Quinoa; Roasted Peppers,2/10/2027 11:02
-Lunch,Monday,Pasta; Garlic Bread; Soup,1/1/2025 02:54
-Lunch,Tuesday,Oatmeal; Toast; Coffee,11/15/2026 08:31
-Lunch,Wednesday,Pasta; Garlic Bread; Soup,9/4/2027 02:07
-Breakfast,Thursday,Pizza; Caesar Salad,10/19/2024 18:31
-Breakfast,Friday,Fish; Quinoa; Roasted Peppers,5/29/2025 13:51
-Breakfast,Saturday,Steak; Mashed Potatoes; Vegetables,9/1/2025 07:31
-Lunch,Sunday,Pasta; Garlic Bread; Soup,10/11/2026 01:58
-Lunch,Monday,Pizza; Caesar Salad,9/1/2026 02:46
-Lunch,Tuesday,Pasta; Garlic Bread; Soup,9/24/2024 01:30
-Lunch,Wednesday,Oatmeal; Toast; Coffee,11/30/2027 00:16
-Lunch,Thursday,Pizza; Caesar Salad,8/9/2024 02:04
-Dinner,Friday,Steak; Mashed Potatoes; Vegetables,7/4/2027 11:22
-Breakfast,Saturday,Pizza; Caesar Salad,3/18/2027 13:54
-Lunch,Sunday,Pizza; Caesar Salad,8/19/2024 09:55
-Lunch,Monday,Grilled Chicken; Rice; Salad,10/12/2027 17:00
-Breakfast,Tuesday,Pasta; Garlic Bread; Soup,6/30/2025 14:35
-Breakfast,Wednesday,Pasta; Garlic Bread; Soup,7/15/2025 04:21
-Breakfast,Thursday,Pizza; Caesar Salad,4/9/2027 08:21
-Dinner,Friday,Oatmeal; Toast; Coffee,6/2/2027 11:16
-Breakfast,Saturday,Fish; Quinoa; Roasted Peppers,7/10/2027 06:18
-Dinner,Sunday,Steak; Mashed Potatoes; Vegetables,4/23/2027 06:11
-Dinner,Monday,Grilled Chicken; Rice; Salad,10/7/2024 23:38
-Breakfast,Tuesday,Steak; Mashed Potatoes; Vegetables,9/30/2025 00:59
-Lunch,Wednesday,Pasta; Garlic Bread; Soup,4/22/2025 15:23
-Lunch,Thursday,Grilled Chicken; Rice; Salad,12/25/2027 09:32
-Breakfast,Friday,Steak; Mashed Potatoes; Vegetables,12/13/2025 03:43
-Breakfast,Saturday,Grilled Chicken; Rice; Salad,7/1/2025 14:59
-Lunch,Sunday,Fish; Quinoa; Roasted Peppers,10/31/2026 15:16
-Lunch,Monday,Fish; Quinoa; Roasted Peppers,12/11/2025 13:15
-Breakfast,Tuesday,Pizza; Caesar Salad,1/10/2027 11:51
-Breakfast,Wednesday,Pizza; Caesar Salad,12/4/2025 18:06
-Breakfast,Thursday,Pizza; Caesar Salad,3/6/2027 08:23
-Dinner,Friday,Oatmeal; Toast; Coffee,12/23/2025 05:50
-Dinner,Saturday,Grilled Chicken; Rice; Salad,7/4/2025 02:58
-Lunch,Sunday,Pancakes; Bacon; Eggs,8/7/2025 10:46
-Lunch,Monday,Grilled Chicken; Rice; Salad,8/23/2027 14:16
-Dinner,Tuesday,Fish; Quinoa; Roasted Peppers,7/9/2027 17:03
-Dinner,Wednesday,Steak; Mashed Potatoes; Vegetables,3/7/2025 11:40
-Dinner,Thursday,Oatmeal; Toast; Coffee,12/16/2025 03:52
-Dinner,Friday,Oatmeal; Toast; Coffee,3/15/2026 22:51
-Breakfast,Saturday,Pancakes; Bacon; Eggs,12/9/2024 01:34
-Dinner,Sunday,Pizza; Caesar Salad,1/8/2027 06:44
-Lunch,Monday,Pasta; Garlic Bread; Soup,10/26/2024 03:23
-Lunch,Tuesday,Oatmeal; Toast; Coffee,3/5/2027 00:14
-Dinner,Wednesday,Grilled Chicken; Rice; Salad,1/4/2027 23:37
-Lunch,Thursday,Pancakes; Bacon; Eggs,11/22/2026 07:24
-Lunch,Friday,Pasta; Garlic Bread; Soup,7/24/2027 05:50
-Breakfast,Saturday,Pancakes; Bacon; Eggs,6/13/2024 11:27
-Dinner,Sunday,Steak; Mashed Potatoes; Vegetables,4/10/2027 11:36
-Dinner,Monday,Grilled Chicken; Rice; Salad,3/2/2027 22:57
-Lunch,Tuesday,Pancakes; Bacon; Eggs,5/21/2024 11:36
-Dinner,Wednesday,Pizza; Caesar Salad,3/26/2026 16:56
-Lunch,Thursday,Pasta; Garlic Bread; Soup,10/11/2026 10:17
-Breakfast,Friday,Steak; Mashed Potatoes; Vegetables,2/20/2026 22:27
-Lunch,Saturday,Steak; Mashed Potatoes; Vegetables,5/1/2026 05:26
-Lunch,Sunday,Pasta; Garlic Bread; Soup,7/22/2025 20:21
-Breakfast,Monday,Pancakes; Bacon; Eggs,9/14/2024 15:09
-Dinner,Tuesday,Oatmeal; Toast; Coffee,11/21/2026 19:15
-Breakfast,Wednesday,Pancakes; Bacon; Eggs,9/7/2027 02:40
-Lunch,Thursday,Grilled Chicken; Rice; Salad,6/23/2025 08:24
-Dinner,Friday,Fish; Quinoa; Roasted Peppers,9/11/2027 21:28
-Lunch,Saturday,Oatmeal; Toast; Coffee,8/11/2027 22:53
-Lunch,Sunday,Pasta; Garlic Bread; Soup,8/23/2024 08:36
-Dinner,Monday,Pasta; Garlic Bread; Soup,12/22/2024 17:55
-Lunch,Tuesday,Pasta; Garlic Bread; Soup,9/9/2024 03:50
-Dinner,Wednesday,Pasta; Garlic Bread; Soup,7/29/2027 12:50
-Breakfast,Thursday,Grilled Chicken; Rice; Salad,8/28/2027 04:28
-Breakfast,Friday,Grilled Chicken; Rice; Salad,7/5/2025 21:38
-Breakfast,Saturday,Steak; Mashed Potatoes; Vegetables,1/7/2025 11:29
-Lunch,Sunday,Steak; Mashed Potatoes; Vegetables,8/18/2027 22:53
-Lunch,Monday,Oatmeal; Toast; Coffee,9/11/2026 23:39
-Lunch,Tuesday,Grilled Chicken; Rice; Salad,6/16/2027 10:32
-Lunch,Wednesday,Fish; Quinoa; Roasted Peppers,3/6/2025 20:37
-Breakfast,Thursday,Pancakes; Bacon; Eggs,4/4/2025 23:25
-Breakfast,Friday,Pancakes; Bacon; Eggs,1/6/2025 21:28
-Dinner,Saturday,Pasta; Garlic Bread; Soup,8/19/2024 05:35
-Breakfast,Sunday,Grilled Chicken; Rice; Salad,11/5/2026 14:28
-Dinner,Monday,Grilled Chicken; Rice; Salad,10/22/2027 12:19
-Dinner,Tuesday,Pizza; Caesar Salad,11/18/2024 08:51
-Lunch,Wednesday,Fish; Quinoa; Roasted Peppers,9/2/2025 19:58
-Lunch,Thursday,Pasta; Garlic Bread; Soup,4/13/2026 15:43
-Breakfast,Friday,Pasta; Garlic Bread; Soup,11/19/2025 12:09
-Dinner,Saturday,Fish; Quinoa; Roasted Peppers,10/7/2027 21:53
-Lunch,Sunday,Pasta; Garlic Bread; Soup,10/1/2026 09:54
-Breakfast,Monday,Steak; Mashed Potatoes; Vegetables,10/21/2026 13:47
-Breakfast,Tuesday,Steak; Mashed Potatoes; Vegetables,9/30/2024 15:01
-Lunch,Wednesday,Steak; Mashed Potatoes; Vegetables,3/29/2025 17:50
-Dinner,Thursday,Pasta; Garlic Bread; Soup,9/18/2027 00:51
-Breakfast,Friday,Fish; Quinoa; Roasted Peppers,5/3/2024 08:54
-Lunch,Saturday,Oatmeal; Toast; Coffee,12/18/2025 01:13
-Dinner,Sunday,Oatmeal; Toast; Coffee,4/20/2025 10:40
-Breakfast,Monday,Pasta; Garlic Bread; Soup,6/26/2024 12:32
-Breakfast,Tuesday,Pasta; Garlic Bread; Soup,10/22/2025 11:02
-Breakfast,Wednesday,Oatmeal; Toast; Coffee,5/11/2024 02:58
-Breakfast,Thursday,Grilled Chicken; Rice; Salad,4/30/2026 10:43
-Lunch,Friday,Steak; Mashed Potatoes; Vegetables,9/4/2025 07:03
-Breakfast,Saturday,Steak; Mashed Potatoes; Vegetables,5/7/2024 11:39
-Dinner,Sunday,Pasta; Garlic Bread; Soup,6/6/2025 23:49
-Dinner,Monday,Grilled Chicken; Rice; Salad,9/24/2026 23:55
-Breakfast,Tuesday,Pasta; Garlic Bread; Soup,11/11/2026 01:14
-Breakfast,Wednesday,Pancakes; Bacon; Eggs,7/21/2024 23:10
-Lunch,Thursday,Pizza; Caesar Salad,11/20/2025 06:08
-Breakfast,Friday,Grilled Chicken; Rice; Salad,6/29/2027 20:01
-Breakfast,Saturday,Pasta; Garlic Bread; Soup,3/8/2026 12:40
-Breakfast,Sunday,Oatmeal; Toast; Coffee,7/10/2026 17:44
-Breakfast,Monday,Oatmeal; Toast; Coffee,10/9/2025 19:18
-Breakfast,Tuesday,Steak; Mashed Potatoes; Vegetables,4/4/2026 23:39
-Dinner,Wednesday,Pasta; Garlic Bread; Soup,9/11/2025 08:21
-Lunch,Thursday,Oatmeal; Toast; Coffee,1/13/2025 04:04
-Breakfast,Friday,Steak; Mashed Potatoes; Vegetables,10/26/2025 21:00
-Lunch,Saturday,Oatmeal; Toast; Coffee,2/23/2025 23:43
-Lunch,Sunday,Pasta; Garlic Bread; Soup,8/10/2025 11:47
-Breakfast,Monday,Grilled Chicken; Rice; Salad,3/10/2026 10:44
-Breakfast,Tuesday,Pancakes; Bacon; Eggs,10/28/2027 15:59
-Breakfast,Wednesday,Pizza; Caesar Salad,5/30/2025 17:44
-Lunch,Thursday,Fish; Quinoa; Roasted Peppers,9/19/2025 08:36
-Dinner,Friday,Grilled Chicken; Rice; Salad,12/20/2026 19:20
-Breakfast,Saturday,Pasta; Garlic Bread; Soup,8/2/2026 09:03
-Dinner,Sunday,Pancakes; Bacon; Eggs,6/16/2027 10:33
-Lunch,Monday,Grilled Chicken; Rice; Salad,1/29/2025 18:31
-Dinner,Tuesday,Pasta; Garlic Bread; Soup,10/15/2025 03:15
-Breakfast,Wednesday,Pizza; Caesar Salad,8/1/2025 20:49
-Breakfast,Thursday,Steak; Mashed Potatoes; Vegetables,3/11/2026 11:58
-Dinner,Friday,Pizza; Caesar Salad,4/3/2027 21:34
-Dinner,Saturday,Pancakes; Bacon; Eggs,10/25/2025 17:52
-Lunch,Sunday,Pancakes; Bacon; Eggs,8/23/2026 06:22
-Lunch,Monday,Steak; Mashed Potatoes; Vegetables,12/20/2026 06:30
-Dinner,Tuesday,Steak; Mashed Potatoes; Vegetables,3/29/2027 11:16
-Breakfast,Wednesday,Oatmeal; Toast; Coffee,12/28/2027 00:06
-Lunch,Thursday,Steak; Mashed Potatoes; Vegetables,9/21/2024 18:06
-Dinner,Friday,Steak; Mashed Potatoes; Vegetables,11/19/2026 00:50
-Breakfast,Saturday,Oatmeal; Toast; Coffee,12/26/2026 14:08
-Breakfast,Sunday,Pancakes; Bacon; Eggs,8/13/2026 06:55
-Breakfast,Monday,Pasta; Garlic Bread; Soup,8/28/2027 05:31
-Breakfast,Tuesday,Pasta; Garlic Bread; Soup,10/19/2025 02:35
-Dinner,Wednesday,Grilled Chicken; Rice; Salad,6/24/2027 05:53
-Lunch,Thursday,Steak; Mashed Potatoes; Vegetables,7/6/2024 16:43
-Breakfast,Friday,Steak; Mashed Potatoes; Vegetables,9/26/2027 22:24
-Lunch,Saturday,Pizza; Caesar Salad,4/13/2027 15:10
-Lunch,Sunday,Fish; Quinoa; Roasted Peppers,11/4/2024 16:50
-Lunch,Monday,Grilled Chicken; Rice; Salad,8/26/2024 00:19
-Lunch,Tuesday,Pasta; Garlic Bread; Soup,6/16/2024 14:27
-Dinner,Wednesday,Pizza; Caesar Salad,12/24/2027 23:03
-Dinner,Thursday,Pizza; Caesar Salad,12/15/2025 01:06
-Lunch,Friday,Grilled Chicken; Rice; Salad,4/13/2027 10:09
-Dinner,Saturday,Oatmeal; Toast; Coffee,11/6/2025 23:04
-Lunch,Sunday,Pasta; Garlic Bread; Soup,1/20/2027 09:00
-Dinner,Monday,Oatmeal; Toast; Coffee,8/13/2026 03:27
-Breakfast,Tuesday,Pizza; Caesar Salad,4/24/2024 04:59
-Lunch,Wednesday,Oatmeal; Toast; Coffee,9/14/2025 16:01
-Dinner,Thursday,Pasta; Garlic Bread; Soup,3/11/2026 23:49
-Dinner,Friday,Grilled Chicken; Rice; Salad,9/23/2025 02:41
-Dinner,Saturday,Grilled Chicken; Rice; Salad,1/17/2026 07:56
-Breakfast,Sunday,Oatmeal; Toast; Coffee,3/9/2026 07:42
-Lunch,Monday,Oatmeal; Toast; Coffee,6/26/2026 13:58
-Breakfast,Tuesday,Pasta; Garlic Bread; Soup,5/2/2026 10:46
-Lunch,Wednesday,Pizza; Caesar Salad,7/3/2026 03:46
-Lunch,Thursday,Pasta; Garlic Bread; Soup,6/15/2024 09:36
-Dinner,Friday,Grilled Chicken; Rice; Salad,6/15/2026 12:13
-Breakfast,Saturday,Steak; Mashed Potatoes; Vegetables,2/5/2026 13:26
-Lunch,Sunday,Pancakes; Bacon; Eggs,1/14/2025 18:28
-Dinner,Monday,Pasta; Garlic Bread; Soup,7/23/2024 20:10
-Lunch,Tuesday,Oatmeal; Toast; Coffee,11/1/2025 19:09
-Lunch,Wednesday,Oatmeal; Toast; Coffee,1/21/2026 01:33
-Breakfast,Thursday,Pizza; Caesar Salad,2/6/2027 16:23
-Lunch,Friday,Pancakes; Bacon; Eggs,10/18/2024 04:56
-Lunch,Saturday,Pancakes; Bacon; Eggs,11/30/2024 08:10
-Breakfast,Sunday,Pancakes; Bacon; Eggs,5/11/2025 09:01
-Breakfast,Monday,Fish; Quinoa; Roasted Peppers,7/4/2027 15:10
-Breakfast,Tuesday,Pizza; Caesar Salad,8/6/2024 12:22
-Lunch,Wednesday,Grilled Chicken; Rice; Salad,9/21/2024 16:53
-Dinner,Thursday,Oatmeal; Toast; Coffee,11/7/2026 01:43
-Dinner,Friday,Grilled Chicken; Rice; Salad,1/20/2025 18:12
-Lunch,Saturday,Steak; Mashed Potatoes; Vegetables,11/18/2025 12:49
-Dinner,Sunday,Pizza; Caesar Salad,3/17/2026 03:56
-Dinner,Monday,Pizza; Caesar Salad,7/20/2026 05:30
-Lunch,Tuesday,Pasta; Garlic Bread; Soup,9/2/2027 15:18
-Breakfast,Wednesday,Steak; Mashed Potatoes; Vegetables,10/18/2024 13:28
-Lunch,Thursday,Steak; Mashed Potatoes; Vegetables,9/3/2026 02:32
-Dinner,Friday,Pancakes; Bacon; Eggs,5/5/2025 19:59
-Dinner,Saturday,Pasta; Garlic Bread; Soup,8/20/2025 18:12
-Dinner,Sunday,Steak; Mashed Potatoes; Vegetables,11/4/2024 05:23
-Lunch,Monday,Fish; Quinoa; Roasted Peppers,5/4/2025 10:15
-Lunch,Tuesday,Fish; Quinoa; Roasted Peppers,6/13/2027 15:13
-Breakfast,Wednesday,Pizza; Caesar Salad,11/4/2026 21:33
-Breakfast,Thursday,Pizza; Caesar Salad,12/10/2024 17:12
-Lunch,Friday,Pasta; Garlic Bread; Soup,4/9/2026 19:00
-Dinner,Saturday,Pasta; Garlic Bread; Soup,9/21/2027 06:58
-Dinner,Sunday,Fish; Quinoa; Roasted Peppers,10/19/2024 20:49
-Dinner,Monday,Steak; Mashed Potatoes; Vegetables,6/10/2024 05:18
-Breakfast,Tuesday,Pizza; Caesar Salad,10/14/2024 11:35
-Lunch,Wednesday,Pancakes; Bacon; Eggs,4/24/2024 21:42
-Lunch,Thursday,Oatmeal; Toast; Coffee,11/3/2024 16:01
-Dinner,Friday,Oatmeal; Toast; Coffee,1/20/2026 04:30
-Lunch,Saturday,Steak; Mashed Potatoes; Vegetables,10/14/2026 19:50
-Dinner,Sunday,Oatmeal; Toast; Coffee,12/14/2025 21:31
-Breakfast,Monday,Pancakes; Bacon; Eggs,2/16/2025 13:41
-Breakfast,Tuesday,Pasta; Garlic Bread; Soup,4/8/2024 07:31
-Lunch,Wednesday,Steak; Mashed Potatoes; Vegetables,8/29/2024 07:27
-Dinner,Thursday,Fish; Quinoa; Roasted Peppers,4/20/2025 17:57
-Lunch,Friday,Pancakes; Bacon; Eggs,9/13/2024 13:34
-Dinner,Saturday,Grilled Chicken; Rice; Salad,4/15/2027 05:51
-Lunch,Sunday,Grilled Chicken; Rice; Salad,7/15/2025 22:50
-Breakfast,Monday,Pancakes; Bacon; Eggs,4/22/2024 04:09
-Dinner,Tuesday,Grilled Chicken; Rice; Salad,12/1/2025 21:24
-Lunch,Wednesday,Pizza; Caesar Salad,9/16/2027 05:19
-Dinner,Thursday,Pizza; Caesar Salad,11/7/2027 21:36
-Breakfast,Friday,Pasta; Garlic Bread; Soup,4/13/2027 18:00
-Dinner,Saturday,Oatmeal; Toast; Coffee,11/30/2026 08:45
-Breakfast,Sunday,Pasta; Garlic Bread; Soup,4/29/2027 05:35
-Lunch,Monday,Fish; Quinoa; Roasted Peppers,12/22/2025 10:05
-Dinner,Tuesday,Fish; Quinoa; Roasted Peppers,5/29/2026 12:19
-Lunch,Wednesday,Steak; Mashed Potatoes; Vegetables,11/16/2026 14:10
-Breakfast,Thursday,Grilled Chicken; Rice; Salad,7/11/2024 19:29
-Dinner,Friday,Pizza; Caesar Salad,1/20/2027 06:10
-Dinner,Saturday,Steak; Mashed Potatoes; Vegetables,12/4/2024 08:13
-Dinner,Sunday,Fish; Quinoa; Roasted Peppers,8/17/2024 08:29
-Breakfast,Monday,Grilled Chicken; Rice; Salad,12/27/2025 11:53
-Lunch,Tuesday,Pasta; Garlic Bread; Soup,8/7/2025 22:37
-Dinner,Wednesday,Pizza; Caesar Salad,11/22/2026 03:46
-Dinner,Thursday,Fish; Quinoa; Roasted Peppers,5/5/2025 12:50
-Lunch,Friday,Pasta; Garlic Bread; Soup,9/4/2027 19:16
-Dinner,Saturday,Steak; Mashed Potatoes; Vegetables,12/24/2026 12:48
-Breakfast,Sunday,Pancakes; Bacon; Eggs,8/31/2026 12:50
-Dinner,Monday,Pizza; Caesar Salad,11/14/2025 09:26
-Lunch,Tuesday,Pancakes; Bacon; Eggs,10/31/2027 11:00
-Lunch,Wednesday,Pancakes; Bacon; Eggs,1/16/2027 12:51
-Lunch,Thursday,Pancakes; Bacon; Eggs,2/10/2025 00:55
-Breakfast,Friday,Pizza; Caesar Salad,6/4/2024 13:38
-Lunch,Saturday,Fish; Quinoa; Roasted Peppers,12/20/2027 00:41
-Lunch,Sunday,Steak; Mashed Potatoes; Vegetables,8/8/2026 12:19
-Dinner,Monday,Pizza; Caesar Salad,7/11/2024 10:12
-Dinner,Tuesday,Oatmeal; Toast; Coffee,4/25/2027 22:35
-Breakfast,Wednesday,Fish; Quinoa; Roasted Peppers,12/10/2024 05:06
-Dinner,Thursday,Steak; Mashed Potatoes; Vegetables,4/6/2027 18:12
-Lunch,Friday,Pizza; Caesar Salad,3/14/2025 12:55
-Breakfast,Saturday,Oatmeal; Toast; Coffee,5/28/2024 01:23
-Lunch,Sunday,Steak; Mashed Potatoes; Vegetables,10/12/2025 21:25
-Dinner,Monday,Fish; Quinoa; Roasted Peppers,10/4/2024 16:16
-Breakfast,Tuesday,Oatmeal; Toast; Coffee,3/10/2026 12:25
-Breakfast,Wednesday,Fish; Quinoa; Roasted Peppers,9/27/2027 11:26
-Breakfast,Thursday,Grilled Chicken; Rice; Salad,8/12/2025 00:39
-Dinner,Friday,Steak; Mashed Potatoes; Vegetables,4/26/2027 10:00
-Lunch,Saturday,Pizza; Caesar Salad,8/18/2027 08:04
-Dinner,Sunday,Pancakes; Bacon; Eggs,9/26/2027 21:49
-Breakfast,Monday,Fish; Quinoa; Roasted Peppers,6/6/2027 01:14
-Breakfast,Tuesday,Steak; Mashed Potatoes; Vegetables,7/1/2027 02:36
-Lunch,Wednesday,Oatmeal; Toast; Coffee,5/6/2026 20:55
-Breakfast,Thursday,Fish; Quinoa; Roasted Peppers,10/10/2027 10:57
-Lunch,Friday,Grilled Chicken; Rice; Salad,3/6/2025 03:46
-Dinner,Saturday,Pasta; Garlic Bread; Soup,7/14/2025 12:41
-Lunch,Sunday,Oatmeal; Toast; Coffee,7/12/2024 05:04
-Dinner,Monday,Oatmeal; Toast; Coffee,5/3/2025 03:30
-Breakfast,Tuesday,Fish; Quinoa; Roasted Peppers,4/22/2025 16:18
-Lunch,Wednesday,Fish; Quinoa; Roasted Peppers,4/27/2026 20:09
-Dinner,Thursday,Steak; Mashed Potatoes; Vegetables,11/7/2024 21:05
-Dinner,Friday,Steak; Mashed Potatoes; Vegetables,4/12/2026 21:28
-Breakfast,Saturday,Fish; Quinoa; Roasted Peppers,11/13/2027 23:02
-Dinner,Sunday,Oatmeal; Toast; Coffee,8/4/2025 15:02
-Dinner,Monday,Oatmeal; Toast; Coffee,9/7/2027 17:41
-Dinner,Tuesday,Pancakes; Bacon; Eggs,8/16/2026 00:21
-Dinner,Wednesday,Steak; Mashed Potatoes; Vegetables,11/8/2027 01:49
-Lunch,Thursday,Pancakes; Bacon; Eggs,4/2/2026 14:13
-Breakfast,Friday,Pancakes; Bacon; Eggs,12/9/2024 00:12
-Breakfast,Saturday,Fish; Quinoa; Roasted Peppers,12/15/2024 20:03
-Breakfast,Sunday,Grilled Chicken; Rice; Salad,5/26/2027 10:52
-Breakfast,Monday,Fish; Quinoa; Roasted Peppers,11/15/2026 13:16
-Breakfast,Tuesday,Pizza; Caesar Salad,8/16/2026 16:41
-Breakfast,Wednesday,Steak; Mashed Potatoes; Vegetables,5/7/2027 05:06
-Lunch,Thursday,Pizza; Caesar Salad,3/30/2027 08:15
-Dinner,Friday,Oatmeal; Toast; Coffee,3/31/2027 11:04
-Dinner,Saturday,Grilled Chicken; Rice; Salad,12/22/2025 05:41
-Dinner,Sunday,Grilled Chicken; Rice; Salad,10/16/2025 14:18
-Breakfast,Monday,Grilled Chicken; Rice; Salad,11/15/2026 08:16
-Breakfast,Tuesday,Pancakes; Bacon; Eggs,11/8/2026 17:06
-Lunch,Wednesday,Pasta; Garlic Bread; Soup,3/1/2025 20:12
-Breakfast,Thursday,Oatmeal; Toast; Coffee,8/16/2025 06:30
-Breakfast,Friday,Grilled Chicken; Rice; Salad,9/27/2027 16:34
-Dinner,Saturday,Pancakes; Bacon; Eggs,12/14/2027 22:34
-Lunch,Sunday,Oatmeal; Toast; Coffee,11/19/2026 04:17
-Breakfast,Monday,Pancakes; Bacon; Eggs,11/13/2024 17:25
-Dinner,Tuesday,Pasta; Garlic Bread; Soup,2/9/2025 14:04
-Lunch,Wednesday,Grilled Chicken; Rice; Salad,10/2/2025 10:23
-Dinner,Thursday,Steak; Mashed Potatoes; Vegetables,11/18/2025 06:48
-Lunch,Friday,Pasta; Garlic Bread; Soup,11/29/2025 10:09
-Breakfast,Saturday,Pasta; Garlic Bread; Soup,11/24/2025 08:31
-Lunch,Sunday,Grilled Chicken; Rice; Salad,12/25/2024 23:01
-Breakfast,Monday,Grilled Chicken; Rice; Salad,6/26/2027 15:09
-Dinner,Tuesday,Grilled Chicken; Rice; Salad,12/23/2025 07:16
-Breakfast,Wednesday,Pizza; Caesar Salad,8/28/2026 21:27
-Breakfast,Thursday,Fish; Quinoa; Roasted Peppers,8/20/2024 08:41
-Dinner,Friday,Pasta; Garlic Bread; Soup,10/16/2024 15:25
-Lunch,Saturday,Steak; Mashed Potatoes; Vegetables,10/23/2025 04:43
-Breakfast,Sunday,Pasta; Garlic Bread; Soup,8/28/2026 13:53
-Breakfast,Monday,Pizza; Caesar Salad,12/7/2026 06:12
-Breakfast,Tuesday,Pancakes; Bacon; Eggs,3/16/2027 00:17
-Breakfast,Wednesday,Pizza; Caesar Salad,10/26/2024 10:37
-Lunch,Thursday,Pizza; Caesar Salad,7/19/2025 01:10
-Lunch,Friday,Pancakes; Bacon; Eggs,8/12/2024 11:09
-Breakfast,Saturday,Oatmeal; Toast; Coffee,9/9/2027 02:15
-Breakfast,Sunday,Pizza; Caesar Salad,11/30/2026 08:55
-Lunch,Monday,Oatmeal; Toast; Coffee,10/9/2027 03:02
-Breakfast,Tuesday,Oatmeal; Toast; Coffee,11/12/2025 19:21
-Lunch,Wednesday,Oatmeal; Toast; Coffee,9/20/2025 04:42
-Lunch,Thursday,Pasta; Garlic Bread; Soup,11/6/2025 14:52
-Dinner,Friday,Pizza; Caesar Salad,3/16/2026 12:25
-Lunch,Saturday,Oatmeal; Toast; Coffee,5/19/2024 23:38
-Lunch,Sunday,Pancakes; Bacon; Eggs,3/4/2025 15:45
-Breakfast,Monday,Pizza; Caesar Salad,8/25/2025 23:07
-Breakfast,Tuesday,Oatmeal; Toast; Coffee,4/21/2027 15:05
-Lunch,Wednesday,Pizza; Caesar Salad,6/6/2025 14:23
-Lunch,Thursday,Pancakes; Bacon; Eggs,6/10/2024 06:16
-Dinner,Friday,Pizza; Caesar Salad,1/19/2025 12:22
-Breakfast,Saturday,Grilled Chicken; Rice; Salad,12/27/2024 00:55
-Breakfast,Sunday,Pizza; Caesar Salad,5/22/2026 11:05
-Dinner,Monday,Steak; Mashed Potatoes; Vegetables,8/19/2027 18:28
-Breakfast,Tuesday,Pizza; Caesar Salad,12/2/2026 03:01
-Breakfast,Wednesday,Pasta; Garlic Bread; Soup,2/17/2026 09:54
-Dinner,Thursday,Steak; Mashed Potatoes; Vegetables,8/21/2027 15:23
-Lunch,Friday,Pizza; Caesar Salad,3/27/2025 20:47
-Breakfast,Saturday,Pizza; Caesar Salad,8/18/2026 05:54
-Breakfast,Sunday,Grilled Chicken; Rice; Salad,5/10/2025 13:23
-Lunch,Monday,Fish; Quinoa; Roasted Peppers,1/6/2026 10:24
-Breakfast,Tuesday,Pasta; Garlic Bread; Soup,2/13/2027 05:00
-Dinner,Wednesday,Fish; Quinoa; Roasted Peppers,8/13/2024 18:50
-Breakfast,Thursday,Pancakes; Bacon; Eggs,4/22/2024 01:56
-Breakfast,Friday,Grilled Chicken; Rice; Salad,12/7/2025 01:27
-Lunch,Saturday,Pancakes; Bacon; Eggs,1/25/2025 00:54
-Breakfast,Sunday,Pasta; Garlic Bread; Soup,6/23/2027 04:56
-Dinner,Monday,Oatmeal; Toast; Coffee,5/11/2025 11:38
-Breakfast,Tuesday,Pancakes; Bacon; Eggs,7/14/2026 14:49
-Breakfast,Wednesday,Pancakes; Bacon; Eggs,7/20/2027 08:15
-Lunch,Thursday,Steak; Mashed Potatoes; Vegetables,3/22/2027 20:46
-Breakfast,Friday,Steak; Mashed Potatoes; Vegetables,3/31/2026 10:58
-Lunch,Saturday,Pizza; Caesar Salad,1/6/2026 00:27
-Lunch,Sunday,Fish; Quinoa; Roasted Peppers,7/8/2026 15:19
-Lunch,Monday,Fish; Quinoa; Roasted Peppers,10/6/2026 14:37
-Breakfast,Tuesday,Steak; Mashed Potatoes; Vegetables,7/12/2026 10:01
-Breakfast,Wednesday,Pasta; Garlic Bread; Soup,8/13/2026 20:17
-Breakfast,Thursday,Fish; Quinoa; Roasted Peppers,12/9/2024 16:02
-Dinner,Friday,Steak; Mashed Potatoes; Vegetables,9/30/2026 13:16
-Breakfast,Saturday,Pizza; Caesar Salad,6/4/2027 07:35
-Dinner,Sunday,Pizza; Caesar Salad,9/17/2024 10:46
-Dinner,Monday,Pancakes; Bacon; Eggs,12/27/2026 09:51
-Lunch,Tuesday,Oatmeal; Toast; Coffee,1/7/2025 21:26
-Breakfast,Wednesday,Fish; Quinoa; Roasted Peppers,8/19/2026 19:09
-Breakfast,Thursday,Steak; Mashed Potatoes; Vegetables,11/29/2024 02:49
-Breakfast,Friday,Pasta; Garlic Bread; Soup,11/4/2027 09:42
-Dinner,Saturday,Pizza; Caesar Salad,9/24/2026 12:29
-Lunch,Sunday,Fish; Quinoa; Roasted Peppers,11/30/2024 05:19
-Breakfast,Monday,Pizza; Caesar Salad,10/28/2027 14:12
-Breakfast,Tuesday,Oatmeal; Toast; Coffee,5/19/2027 04:13
-Dinner,Wednesday,Pasta; Garlic Bread; Soup,7/17/2026 17:56
-Lunch,Thursday,Oatmeal; Toast; Coffee,9/8/2025 19:18
-Dinner,Friday,Pasta; Garlic Bread; Soup,3/24/2025 23:33
-Lunch,Saturday,Oatmeal; Toast; Coffee,8/15/2024 08:02
-Breakfast,Sunday,Oatmeal; Toast; Coffee,12/28/2024 18:54
-Lunch,Monday,Steak; Mashed Potatoes; Vegetables,9/29/2025 23:08
-Dinner,Tuesday,Pasta; Garlic Bread; Soup,12/13/2025 13:12
-Breakfast,Wednesday,Grilled Chicken; Rice; Salad,6/1/2027 12:41
-Breakfast,Thursday,Pancakes; Bacon; Eggs,10/29/2024 14:33
-Lunch,Friday,Pasta; Garlic Bread; Soup,4/23/2024 21:42
-Breakfast,Saturday,Pasta; Garlic Bread; Soup,3/31/2027 05:09
-Dinner,Sunday,Pasta; Garlic Bread; Soup,8/3/2026 12:06
-Breakfast,Monday,Steak; Mashed Potatoes; Vegetables,7/24/2024 16:14
-Lunch,Tuesday,Steak; Mashed Potatoes; Vegetables,7/15/2027 12:27
-Lunch,Wednesday,Pancakes; Bacon; Eggs,7/9/2026 14:51
-Dinner,Thursday,Pancakes; Bacon; Eggs,12/7/2025 16:33
-Breakfast,Friday,Pancakes; Bacon; Eggs,6/28/2027 20:19
-Breakfast,Saturday,Grilled Chicken; Rice; Salad,6/15/2024 11:02
-Breakfast,Sunday,Pancakes; Bacon; Eggs,7/26/2024 22:19
-Breakfast,Monday,Pancakes; Bacon; Eggs,11/9/2026 09:34
-Breakfast,Tuesday,Grilled Chicken; Rice; Salad,8/12/2025 03:12
-Dinner,Wednesday,Oatmeal; Toast; Coffee,12/4/2025 08:00
-Lunch,Thursday,Pizza; Caesar Salad,5/13/2026 02:28
-Lunch,Friday,Steak; Mashed Potatoes; Vegetables,12/28/2025 00:35
-Dinner,Saturday,Steak; Mashed Potatoes; Vegetables,11/11/2025 04:43
-Lunch,Sunday,Pasta; Garlic Bread; Soup,2/6/2027 10:17
-Breakfast,Monday,Steak; Mashed Potatoes; Vegetables,9/22/2024 07:41
-Breakfast,Tuesday,Fish; Quinoa; Roasted Peppers,10/13/2025 07:37
-Dinner,Wednesday,Pasta; Garlic Bread; Soup,11/24/2027 01:55
-Lunch,Thursday,Fish; Quinoa; Roasted Peppers,7/19/2027 21:51
-Breakfast,Friday,Steak; Mashed Potatoes; Vegetables,12/13/2025 10:30
-Dinner,Saturday,Oatmeal; Toast; Coffee,2/5/2025 01:45
-Lunch,Sunday,Fish; Quinoa; Roasted Peppers,8/23/2027 22:16
-Breakfast,Monday,Pizza; Caesar Salad,5/1/2024 05:10
-Breakfast,Tuesday,Fish; Quinoa; Roasted Peppers,11/25/2024 03:16
-Dinner,Wednesday,Grilled Chicken; Rice; Salad,6/23/2026 08:43
-Dinner,Thursday,Steak; Mashed Potatoes; Vegetables,6/19/2027 12:45
-Lunch,Friday,Pasta; Garlic Bread; Soup,10/4/2025 04:36
-Dinner,Saturday,Steak; Mashed Potatoes; Vegetables,9/28/2025 20:54
-Breakfast,Sunday,Oatmeal; Toast; Coffee,3/6/2026 06:27
-Breakfast,Monday,Pizza; Caesar Salad,8/12/2025 11:34
-Dinner,Tuesday,Steak; Mashed Potatoes; Vegetables,11/24/2024 16:40
-Dinner,Wednesday,Pasta; Garlic Bread; Soup,4/10/2025 23:07
-Breakfast,Thursday,Pancakes; Bacon; Eggs,2/24/2025 07:13
-Dinner,Friday,Steak; Mashed Potatoes; Vegetables,9/29/2026 15:52
-Lunch,Saturday,Oatmeal; Toast; Coffee,6/9/2027 03:20
-Breakfast,Sunday,Pizza; Caesar Salad,4/22/2026 06:30
-Breakfast,Monday,Oatmeal; Toast; Coffee,2/15/2025 04:50
-Breakfast,Tuesday,Pasta; Garlic Bread; Soup,10/1/2025 02:08
-Lunch,Wednesday,Oatmeal; Toast; Coffee,9/11/2024 10:52
-Lunch,Thursday,Pancakes; Bacon; Eggs,9/26/2024 15:53
-Lunch,Friday,Pizza; Caesar Salad,10/28/2027 19:27
-Breakfast,Saturday,Grilled Chicken; Rice; Salad,4/23/2025 07:30
-Lunch,Sunday,Pasta; Garlic Bread; Soup,1/27/2027 04:46
-Breakfast,Monday,Pizza; Caesar Salad,4/1/2027 09:27
-Lunch,Tuesday,Pancakes; Bacon; Eggs,4/12/2025 23:48
-Dinner,Wednesday,Pizza; Caesar Salad,12/1/2025 11:26
-Breakfast,Thursday,Grilled Chicken; Rice; Salad,9/24/2025 04:45
-Breakfast,Friday,Grilled Chicken; Rice; Salad,10/17/2025 17:35
-Dinner,Saturday,Oatmeal; Toast; Coffee,11/4/2025 23:44
-Breakfast,Sunday,Pasta; Garlic Bread; Soup,11/21/2026 18:39
-Lunch,Monday,Fish; Quinoa; Roasted Peppers,12/16/2027 09:29
-Lunch,Tuesday,Grilled Chicken; Rice; Salad,8/5/2027 19:56
-Breakfast,Wednesday,Fish; Quinoa; Roasted Peppers,12/28/2024 10:41
-Dinner,Thursday,Grilled Chicken; Rice; Salad,11/22/2027 21:50
-Dinner,Friday,Pancakes; Bacon; Eggs,7/27/2025 21:09
-Lunch,Saturday,Pasta; Garlic Bread; Soup,12/14/2027 14:47
-Dinner,Sunday,Oatmeal; Toast; Coffee,10/4/2024 23:57
-Dinner,Monday,Steak; Mashed Potatoes; Vegetables,4/18/2024 13:34
-Lunch,Tuesday,Pasta; Garlic Bread; Soup,3/28/2027 02:54
-Breakfast,Wednesday,Pasta; Garlic Bread; Soup,4/30/2026 11:53
-Lunch,Thursday,Grilled Chicken; Rice; Salad,6/26/2025 22:08
-Lunch,Friday,Pasta; Garlic Bread; Soup,8/15/2025 16:18
-Lunch,Saturday,Grilled Chicken; Rice; Salad,5/22/2024 14:26
-Dinner,Sunday,Pasta; Garlic Bread; Soup,3/14/2025 17:47
-Breakfast,Monday,Steak; Mashed Potatoes; Vegetables,5/18/2025 03:37
-Breakfast,Tuesday,Steak; Mashed Potatoes; Vegetables,9/24/2027 16:03
-Dinner,Wednesday,Steak; Mashed Potatoes; Vegetables,12/2/2024 12:59
-Dinner,Thursday,Oatmeal; Toast; Coffee,7/11/2026 19:03
-Lunch,Friday,Pancakes; Bacon; Eggs,6/29/2026 00:00
-Breakfast,Saturday,Pizza; Caesar Salad,5/30/2024 10:44
-Breakfast,Sunday,Steak; Mashed Potatoes; Vegetables,3/24/2026 23:17
-Dinner,Monday,Pizza; Caesar Salad,10/4/2026 08:26
-Breakfast,Tuesday,Pizza; Caesar Salad,5/18/2026 21:40
-Breakfast,Wednesday,Pancakes; Bacon; Eggs,2/3/2027 07:57
-Dinner,Thursday,Grilled Chicken; Rice; Salad,2/1/2025 05:52
-Lunch,Friday,Steak; Mashed Potatoes; Vegetables,4/16/2025 15:46
-Dinner,Saturday,Grilled Chicken; Rice; Salad,7/26/2025 13:28
-Breakfast,Sunday,Oatmeal; Toast; Coffee,8/4/2027 14:21
-Breakfast,Monday,Grilled Chicken; Rice; Salad,7/24/2024 10:19
-Dinner,Tuesday,Pasta; Garlic Bread; Soup,6/26/2025 02:00
-Breakfast,Wednesday,Grilled Chicken; Rice; Salad,10/19/2027 21:17
-Breakfast,Thursday,Fish; Quinoa; Roasted Peppers,11/28/2027 11:55
-Dinner,Friday,Oatmeal; Toast; Coffee,1/23/2025 10:13
-Dinner,Saturday,Grilled Chicken; Rice; Salad,4/3/2025 18:13
-Lunch,Sunday,Pancakes; Bacon; Eggs,12/30/2025 16:01
-Lunch,Monday,Grilled Chicken; Rice; Salad,11/23/2026 05:32
-Lunch,Tuesday,Fish; Quinoa; Roasted Peppers,3/5/2026 12:05
-Breakfast,Wednesday,Pasta; Garlic Bread; Soup,8/8/2025 20:54
-Lunch,Thursday,Fish; Quinoa; Roasted Peppers,8/12/2026 09:37
-Lunch,Friday,Steak; Mashed Potatoes; Vegetables,4/5/2027 02:58
-Breakfast,Saturday,Pizza; Caesar Salad,9/27/2024 06:52
-Lunch,Sunday,Pizza; Caesar Salad,9/12/2027 02:54
-Lunch,Monday,Pancakes; Bacon; Eggs,8/12/2025 22:42
-Dinner,Tuesday,Grilled Chicken; Rice; Salad,8/26/2024 02:27
-Lunch,Wednesday,Pancakes; Bacon; Eggs,10/17/2024 19:18
-Breakfast,Thursday,Oatmeal; Toast; Coffee,4/16/2026 23:09
-Lunch,Friday,Fish; Quinoa; Roasted Peppers,9/3/2024 04:41
-Breakfast,Saturday,Fish; Quinoa; Roasted Peppers,12/24/2024 23:02
-Dinner,Sunday,Pancakes; Bacon; Eggs,11/17/2027 06:28
-Lunch,Monday,Pasta; Garlic Bread; Soup,7/29/2026 06:15
-Dinner,Tuesday,Pasta; Garlic Bread; Soup,2/7/2025 05:11
-Lunch,Wednesday,Grilled Chicken; Rice; Salad,10/18/2024 22:48
-Lunch,Thursday,Pizza; Caesar Salad,8/3/2026 20:52
-Dinner,Friday,Pizza; Caesar Salad,3/26/2026 19:48
-Lunch,Saturday,Oatmeal; Toast; Coffee,4/11/2027 07:56
-Lunch,Sunday,Oatmeal; Toast; Coffee,5/20/2026 23:23
-Lunch,Monday,Pancakes; Bacon; Eggs,11/1/2026 19:32
-Lunch,Tuesday,Pancakes; Bacon; Eggs,5/15/2027 21:58
-Lunch,Wednesday,Pizza; Caesar Salad,10/7/2027 20:53
-Dinner,Thursday,Pancakes; Bacon; Eggs,6/25/2025 12:26
-Dinner,Friday,Steak; Mashed Potatoes; Vegetables,9/6/2026 21:45
-Lunch,Saturday,Pancakes; Bacon; Eggs,9/15/2026 00:03
-Breakfast,Sunday,Steak; Mashed Potatoes; Vegetables,9/24/2024 18:57
-Lunch,Monday,Grilled Chicken; Rice; Salad,6/21/2026 06:22
-Lunch,Tuesday,Pizza; Caesar Salad,5/28/2025 18:02
-Breakfast,Wednesday,Fish; Quinoa; Roasted Peppers,11/18/2025 10:18
-Breakfast,Thursday,Grilled Chicken; Rice; Salad,5/6/2024 04:11
-Breakfast,Friday,Pizza; Caesar Salad,10/8/2024 02:01
-Lunch,Saturday,Steak; Mashed Potatoes; Vegetables,6/24/2024 23:49
-Lunch,Sunday,Fish; Quinoa; Roasted Peppers,11/19/2025 07:55
-Lunch,Monday,Oatmeal; Toast; Coffee,12/7/2025 00:25
-Dinner,Tuesday,Fish; Quinoa; Roasted Peppers,8/1/2024 22:46
-Breakfast,Wednesday,Pizza; Caesar Salad,11/18/2024 08:37
-Breakfast,Thursday,Pancakes; Bacon; Eggs,12/3/2027 17:13
-Lunch,Friday,Grilled Chicken; Rice; Salad,10/10/2026 11:20
-Lunch,Saturday,Pancakes; Bacon; Eggs,8/28/2026 14:39
-Breakfast,Sunday,Fish; Quinoa; Roasted Peppers,12/19/2026 21:56
-Dinner,Monday,Pizza; Caesar Salad,12/15/2024 02:18
-Lunch,Tuesday,Oatmeal; Toast; Coffee,8/18/2026 15:24
-Lunch,Wednesday,Pasta; Garlic Bread; Soup,4/29/2024 04:18
-Breakfast,Thursday,Pizza; Caesar Salad,12/24/2025 06:41
-Breakfast,Friday,Steak; Mashed Potatoes; Vegetables,9/13/2027 10:56
-Breakfast,Saturday,Pasta; Garlic Bread; Soup,12/23/2025 02:25
-Breakfast,Sunday,Pizza; Caesar Salad,3/12/2027 05:52
-Lunch,Monday,Oatmeal; Toast; Coffee,4/19/2026 15:51
-Lunch,Tuesday,Fish; Quinoa; Roasted Peppers,10/24/2024 12:05
-Breakfast,Wednesday,Pasta; Garlic Bread; Soup,12/24/2026 16:15
-Lunch,Thursday,Grilled Chicken; Rice; Salad,10/10/2026 15:20
-Lunch,Friday,Pancakes; Bacon; Eggs,5/3/2025 13:35
-Dinner,Saturday,Pizza; Caesar Salad,11/22/2026 19:06
-Dinner,Sunday,Steak; Mashed Potatoes; Vegetables,5/26/2027 00:26
-Lunch,Monday,Steak; Mashed Potatoes; Vegetables,11/20/2027 03:51
-Dinner,Tuesday,Fish; Quinoa; Roasted Peppers,6/8/2026 01:10
-Lunch,Wednesday,Grilled Chicken; Rice; Salad,8/17/2027 00:10
-Lunch,Thursday,Oatmeal; Toast; Coffee,3/15/2025 06:19
-Lunch,Friday,Steak; Mashed Potatoes; Vegetables,4/14/2024 08:00
-Breakfast,Saturday,Pizza; Caesar Salad,4/5/2025 13:36
-Dinner,Sunday,Pasta; Garlic Bread; Soup,11/11/2027 23:13
-Breakfast,Monday,Grilled Chicken; Rice; Salad,9/19/2027 16:08
-Lunch,Tuesday,Fish; Quinoa; Roasted Peppers,5/27/2024 14:16
-Breakfast,Wednesday,Pasta; Garlic Bread; Soup,2/16/2027 21:17
-Lunch,Thursday,Pizza; Caesar Salad,6/24/2024 21:08
-Breakfast,Friday,Pancakes; Bacon; Eggs,11/8/2027 14:11
-Breakfast,Saturday,Fish; Quinoa; Roasted Peppers,8/29/2025 11:20
-Dinner,Sunday,Grilled Chicken; Rice; Salad,2/25/2025 15:23
-Breakfast,Monday,Fish; Quinoa; Roasted Peppers,1/4/2027 09:22
-Dinner,Tuesday,Oatmeal; Toast; Coffee,9/10/2026 14:38
-Lunch,Wednesday,Oatmeal; Toast; Coffee,12/19/2027 04:09
-Lunch,Thursday,Grilled Chicken; Rice; Salad,2/6/2027 00:24
-Lunch,Friday,Pizza; Caesar Salad,4/14/2026 21:41
-Dinner,Saturday,Pancakes; Bacon; Eggs,3/12/2027 10:03
-Breakfast,Sunday,Grilled Chicken; Rice; Salad,2/4/2027 09:05
-Lunch,Monday,Oatmeal; Toast; Coffee,10/14/2024 08:05
-Dinner,Tuesday,Oatmeal; Toast; Coffee,6/22/2025 06:38
-Dinner,Wednesday,Fish; Quinoa; Roasted Peppers,6/22/2027 09:51
-Breakfast,Thursday,Pizza; Caesar Salad,1/19/2027 19:22
-Breakfast,Friday,Fish; Quinoa; Roasted Peppers,6/29/2027 18:08
-Lunch,Saturday,Oatmeal; Toast; Coffee,11/14/2024 23:47
-Breakfast,Sunday,Steak; Mashed Potatoes; Vegetables,5/23/2026 09:23
-Dinner,Monday,Grilled Chicken; Rice; Salad,11/8/2027 11:41
-Lunch,Tuesday,Pasta; Garlic Bread; Soup,8/22/2026 22:39
-Lunch,Wednesday,Steak; Mashed Potatoes; Vegetables,12/11/2026 10:01
-Dinner,Thursday,Pancakes; Bacon; Eggs,7/15/2024 09:28
-Breakfast,Friday,Steak; Mashed Potatoes; Vegetables,9/2/2027 23:42
-Breakfast,Saturday,Pasta; Garlic Bread; Soup,4/7/2025 15:22
-Breakfast,Sunday,Oatmeal; Toast; Coffee,5/22/2025 14:39
-Breakfast,Monday,Pancakes; Bacon; Eggs,5/25/2025 23:38
-Breakfast,Tuesday,Pasta; Garlic Bread; Soup,10/30/2025 04:47
-Dinner,Wednesday,Pasta; Garlic Bread; Soup,4/10/2025 19:51
-Dinner,Thursday,Pizza; Caesar Salad,8/9/2025 19:58
-Breakfast,Friday,Fish; Quinoa; Roasted Peppers,9/30/2024 14:11
-Lunch,Saturday,Pasta; Garlic Bread; Soup,5/2/2026 15:32
-Dinner,Sunday,Oatmeal; Toast; Coffee,8/15/2026 00:16
-Lunch,Monday,Steak; Mashed Potatoes; Vegetables,4/18/2026 20:31
-Dinner,Tuesday,Grilled Chicken; Rice; Salad,10/6/2024 15:02
-Lunch,Wednesday,Oatmeal; Toast; Coffee,10/29/2026 18:40
-Lunch,Thursday,Pizza; Caesar Salad,8/12/2024 02:13
-Breakfast,Friday,Pasta; Garlic Bread; Soup,4/15/2026 01:56
-Lunch,Saturday,Oatmeal; Toast; Coffee,10/23/2025 14:19
-Dinner,Sunday,Pizza; Caesar Salad,11/28/2027 00:10
-Lunch,Monday,Grilled Chicken; Rice; Salad,2/18/2027 00:12
-Breakfast,Tuesday,Steak; Mashed Potatoes; Vegetables,10/25/2027 18:58
-Breakfast,Wednesday,Pancakes; Bacon; Eggs,1/10/2027 11:32
-Dinner,Thursday,Steak; Mashed Potatoes; Vegetables,4/18/2026 18:44
-Lunch,Friday,Pancakes; Bacon; Eggs,5/7/2024 14:37
-Breakfast,Saturday,Fish; Quinoa; Roasted Peppers,11/7/2026 08:32
-Breakfast,Sunday,Pasta; Garlic Bread; Soup,10/21/2026 17:01
-Breakfast,Monday,Fish; Quinoa; Roasted Peppers,9/8/2027 15:18
-Breakfast,Tuesday,Grilled Chicken; Rice; Salad,4/28/2027 20:04
-Lunch,Wednesday,Grilled Chicken; Rice; Salad,5/25/2024 21:36
-Dinner,Thursday,Pancakes; Bacon; Eggs,8/27/2026 09:02
-Dinner,Friday,Pancakes; Bacon; Eggs,7/3/2024 19:07
-Lunch,Saturday,Fish; Quinoa; Roasted Peppers,7/23/2026 22:21
-Dinner,Sunday,Oatmeal; Toast; Coffee,8/21/2025 21:49
-Dinner,Monday,Steak; Mashed Potatoes; Vegetables,11/7/2026 03:04
-Lunch,Tuesday,Pizza; Caesar Salad,1/25/2025 09:49
-Lunch,Wednesday,Pasta; Garlic Bread; Soup,5/5/2026 21:26
-Breakfast,Thursday,Oatmeal; Toast; Coffee,3/18/2025 11:33
-Dinner,Friday,Grilled Chicken; Rice; Salad,4/28/2027 12:33
-Dinner,Saturday,Pancakes; Bacon; Eggs,2/21/2027 04:07
-Dinner,Sunday,Grilled Chicken; Rice; Salad,3/5/2025 00:35
-Lunch,Monday,Pasta; Garlic Bread; Soup,5/21/2025 05:50
-Dinner,Tuesday,Pasta; Garlic Bread; Soup,12/2/2024 15:57
-Breakfast,Wednesday,Fish; Quinoa; Roasted Peppers,4/11/2026 16:24
-Lunch,Thursday,Pancakes; Bacon; Eggs,5/30/2027 10:08
-Dinner,Friday,Fish; Quinoa; Roasted Peppers,5/22/2027 06:36
-Lunch,Saturday,Pizza; Caesar Salad,9/1/2025 07:14
-Dinner,Sunday,Pasta; Garlic Bread; Soup,8/10/2026 17:01
-Lunch,Monday,Fish; Quinoa; Roasted Peppers,12/18/2026 03:57
-Breakfast,Tuesday,Fish; Quinoa; Roasted Peppers,12/14/2025 00:02
-Breakfast,Wednesday,Oatmeal; Toast; Coffee,6/16/2024 21:56
-Lunch,Thursday,Pasta; Garlic Bread; Soup,8/3/2025 18:14
-Dinner,Friday,Pizza; Caesar Salad,10/25/2024 16:11
-Lunch,Saturday,Pancakes; Bacon; Eggs,4/15/2027 18:44
-Breakfast,Sunday,Pasta; Garlic Bread; Soup,3/12/2025 16:07
-Lunch,Monday,Pizza; Caesar Salad,9/25/2025 19:19
-Breakfast,Tuesday,Oatmeal; Toast; Coffee,11/16/2026 02:58
-Lunch,Wednesday,Grilled Chicken; Rice; Salad,2/2/2027 23:33
-Lunch,Thursday,Pasta; Garlic Bread; Soup,7/4/2027 03:00
-Breakfast,Friday,Pancakes; Bacon; Eggs,12/11/2025 08:52
-Dinner,Saturday,Oatmeal; Toast; Coffee,12/18/2025 11:51
-Breakfast,Sunday,Fish; Quinoa; Roasted Peppers,9/20/2024 07:55
-Breakfast,Monday,Fish; Quinoa; Roasted Peppers,3/29/2027 08:31
-Lunch,Tuesday,Oatmeal; Toast; Coffee,8/22/2024 06:46
-Breakfast,Wednesday,Pizza; Caesar Salad,6/29/2027 23:54
-Lunch,Thursday,Fish; Quinoa; Roasted Peppers,1/15/2027 18:01
-Breakfast,Friday,Pasta; Garlic Bread; Soup,5/13/2026 02:00
-Dinner,Saturday,Steak; Mashed Potatoes; Vegetables,5/15/2024 01:48
-Lunch,Sunday,Pancakes; Bacon; Eggs,2/6/2025 19:20
-Dinner,Monday,Pizza; Caesar Salad,12/5/2025 01:31
-Lunch,Tuesday,Pancakes; Bacon; Eggs,5/30/2027 17:02
-Dinner,Wednesday,Pizza; Caesar Salad,8/14/2024 01:40
-Breakfast,Thursday,Steak; Mashed Potatoes; Vegetables,5/17/2027 00:41
-Breakfast,Friday,Oatmeal; Toast; Coffee,5/19/2026 22:58
-Breakfast,Saturday,Pasta; Garlic Bread; Soup,7/12/2026 09:43
-Breakfast,Sunday,Pizza; Caesar Salad,4/19/2027 12:27
-Lunch,Monday,Grilled Chicken; Rice; Salad,10/27/2024 02:56
-Lunch,Tuesday,Oatmeal; Toast; Coffee,3/23/2025 12:59
-Breakfast,Wednesday,Oatmeal; Toast; Coffee,10/27/2024 20:20
-Lunch,Thursday,Pancakes; Bacon; Eggs,6/21/2027 01:15
-Breakfast,Friday,Fish; Quinoa; Roasted Peppers,6/5/2025 10:41
-Dinner,Saturday,Pasta; Garlic Bread; Soup,11/30/2027 03:09
-Dinner,Sunday,Pasta; Garlic Bread; Soup,4/8/2025 09:54
-Lunch,Monday,Pizza; Caesar Salad,4/22/2025 01:44
-Lunch,Tuesday,Pasta; Garlic Bread; Soup,9/13/2025 18:33
-Breakfast,Wednesday,Pancakes; Bacon; Eggs,7/19/2024 14:54
-Dinner,Thursday,Steak; Mashed Potatoes; Vegetables,9/3/2027 21:55
-Dinner,Friday,Fish; Quinoa; Roasted Peppers,10/24/2024 10:06
-Dinner,Saturday,Grilled Chicken; Rice; Salad,6/24/2026 12:12
-Breakfast,Sunday,Fish; Quinoa; Roasted Peppers,3/13/2026 07:10
-Dinner,Monday,Pizza; Caesar Salad,1/24/2025 01:25
-Breakfast,Tuesday,Oatmeal; Toast; Coffee,10/23/2027 11:53
-Dinner,Wednesday,Oatmeal; Toast; Coffee,9/1/2024 09:33
-Breakfast,Thursday,Steak; Mashed Potatoes; Vegetables,7/17/2024 09:50
-Dinner,Friday,Pancakes; Bacon; Eggs,9/19/2024 10:56
-Breakfast,Saturday,Oatmeal; Toast; Coffee,4/6/2025 23:26
-Dinner,Sunday,Steak; Mashed Potatoes; Vegetables,8/4/2024 05:52
-Dinner,Monday,Pancakes; Bacon; Eggs,12/12/2024 08:47
-Dinner,Tuesday,Steak; Mashed Potatoes; Vegetables,6/16/2025 15:05
-Lunch,Wednesday,Oatmeal; Toast; Coffee,8/26/2027 01:52
-Breakfast,Thursday,Steak; Mashed Potatoes; Vegetables,5/11/2026 18:52
-Dinner,Friday,Grilled Chicken; Rice; Salad,10/17/2027 13:21
-Dinner,Saturday,Fish; Quinoa; Roasted Peppers,12/5/2026 20:25
-Breakfast,Sunday,Pizza; Caesar Salad,5/21/2025 02:04
-Breakfast,Monday,Pasta; Garlic Bread; Soup,5/16/2027 05:35
-Dinner,Tuesday,Grilled Chicken; Rice; Salad,12/26/2027 06:44
-Breakfast,Wednesday,Pizza; Caesar Salad,9/6/2026 03:30
-Breakfast,Thursday,Fish; Quinoa; Roasted Peppers,4/20/2024 14:42
-Lunch,Friday,Pasta; Garlic Bread; Soup,2/27/2027 05:35
-Dinner,Saturday,Grilled Chicken; Rice; Salad,4/6/2026 21:55
-Lunch,Sunday,Pasta; Garlic Bread; Soup,10/2/2026 05:03
-Lunch,Monday,Pancakes; Bacon; Eggs,7/12/2024 11:10
-Breakfast,Tuesday,Pancakes; Bacon; Eggs,2/4/2027 03:58
-Dinner,Wednesday,Pizza; Caesar Salad,10/11/2024 18:26
-Lunch,Thursday,Pasta; Garlic Bread; Soup,5/4/2025 02:37
-Dinner,Friday,Grilled Chicken; Rice; Salad,2/28/2027 07:57
-Breakfast,Saturday,Grilled Chicken; Rice; Salad,7/19/2027 04:07
-Breakfast,Sunday,Pancakes; Bacon; Eggs,1/17/2025 21:08
-Lunch,Monday,Grilled Chicken; Rice; Salad,11/28/2025 03:14
-Breakfast,Tuesday,Pasta; Garlic Bread; Soup,11/27/2024 20:59
-Lunch,Wednesday,Pizza; Caesar Salad,1/7/2027 20:35
-Lunch,Thursday,Fish; Quinoa; Roasted Peppers,8/31/2024 02:43
-Breakfast,Friday,Grilled Chicken; Rice; Salad,3/1/2026 00:45
-Breakfast,Saturday,Fish; Quinoa; Roasted Peppers,7/1/2027 19:05
-Breakfast,Sunday,Grilled Chicken; Rice; Salad,6/11/2027 07:30
-Lunch,Monday,Pizza; Caesar Salad,10/7/2024 06:53
-Breakfast,Tuesday,Grilled Chicken; Rice; Salad,12/15/2026 19:08
-Dinner,Wednesday,Steak; Mashed Potatoes; Vegetables,10/6/2026 04:16
-Dinner,Thursday,Pancakes; Bacon; Eggs,10/26/2024 00:48
-Lunch,Friday,Steak; Mashed Potatoes; Vegetables,9/8/2024 04:52
-Breakfast,Saturday,Pancakes; Bacon; Eggs,7/5/2027 16:53
-Lunch,Sunday,Oatmeal; Toast; Coffee,7/23/2027 17:23
-Dinner,Monday,Pizza; Caesar Salad,5/13/2027 12:44
-Lunch,Tuesday,Pasta; Garlic Bread; Soup,1/16/2025 09:50
-Lunch,Wednesday,Pasta; Garlic Bread; Soup,1/28/2025 10:18
-Dinner,Thursday,Grilled Chicken; Rice; Salad,9/10/2026 23:26
-Breakfast,Friday,Pasta; Garlic Bread; Soup,6/9/2027 00:15
-Lunch,Saturday,Grilled Chicken; Rice; Salad,2/5/2025 18:33
-Dinner,Sunday,Oatmeal; Toast; Coffee,7/4/2025 21:30
-Breakfast,Monday,Pasta; Garlic Bread; Soup,5/5/2027 08:53
-Lunch,Tuesday,Pasta; Garlic Bread; Soup,11/15/2027 02:00
-Dinner,Wednesday,Pizza; Caesar Salad,7/13/2024 15:27
-Breakfast,Thursday,Oatmeal; Toast; Coffee,3/24/2027 10:30
-Dinner,Friday,Steak; Mashed Potatoes; Vegetables,11/2/2027 12:02
-Lunch,Saturday,Steak; Mashed Potatoes; Vegetables,7/5/2027 07:00
-Lunch,Sunday,Pizza; Caesar Salad,9/5/2027 09:31
-Dinner,Monday,Fish; Quinoa; Roasted Peppers,10/1/2027 17:38
-Breakfast,Tuesday,Pizza; Caesar Salad,12/11/2026 00:41
-Dinner,Wednesday,Steak; Mashed Potatoes; Vegetables,6/24/2026 09:33
-Dinner,Thursday,Pizza; Caesar Salad,7/15/2025 10:23
-Lunch,Friday,Pasta; Garlic Bread; Soup,8/7/2027 23:10
-Breakfast,Saturday,Pasta; Garlic Bread; Soup,9/27/2027 07:09
-Dinner,Sunday,Fish; Quinoa; Roasted Peppers,8/20/2027 07:09
-Breakfast,Monday,Steak; Mashed Potatoes; Vegetables,8/28/2024 04:25
-Breakfast,Tuesday,Pasta; Garlic Bread; Soup,10/25/2024 07:31
-Lunch,Wednesday,Fish; Quinoa; Roasted Peppers,5/4/2024 22:37
-Lunch,Thursday,Grilled Chicken; Rice; Salad,12/20/2027 19:57
-Breakfast,Friday,Grilled Chicken; Rice; Salad,5/25/2027 04:47
-Breakfast,Saturday,Fish; Quinoa; Roasted Peppers,10/28/2024 03:44
-Dinner,Sunday,Steak; Mashed Potatoes; Vegetables,3/5/2026 04:20
-Dinner,Monday,Pizza; Caesar Salad,11/23/2026 12:05
-Dinner,Tuesday,Oatmeal; Toast; Coffee,12/22/2027 22:24
-Breakfast,Wednesday,Grilled Chicken; Rice; Salad,12/9/2027 13:51
-Breakfast,Thursday,Pizza; Caesar Salad,12/9/2026 04:21
-Dinner,Friday,Pancakes; Bacon; Eggs,10/4/2024 04:39
-Dinner,Saturday,Pizza; Caesar Salad,5/25/2025 05:06
-Lunch,Sunday,Oatmeal; Toast; Coffee,3/21/2027 04:15
-Breakfast,Monday,Pasta; Garlic Bread; Soup,6/29/2024 05:21
-Lunch,Tuesday,Grilled Chicken; Rice; Salad,6/15/2024 13:53
-Lunch,Wednesday,Oatmeal; Toast; Coffee,5/28/2026 11:29
-Lunch,Thursday,Fish; Quinoa; Roasted Peppers,3/23/2026 19:00
-Dinner,Friday,Oatmeal; Toast; Coffee,9/29/2026 09:35
-Lunch,Saturday,Fish; Quinoa; Roasted Peppers,12/5/2027 01:38
-Dinner,Sunday,Grilled Chicken; Rice; Salad,8/25/2025 16:50
-Breakfast,Monday,Pizza; Caesar Salad,11/26/2027 15:16
-Dinner,Tuesday,Pancakes; Bacon; Eggs,11/20/2026 11:01
-Dinner,Wednesday,Steak; Mashed Potatoes; Vegetables,1/17/2027 03:26
-Lunch,Thursday,Pasta; Garlic Bread; Soup,12/31/2026 03:58
-Breakfast,Friday,Oatmeal; Toast; Coffee,6/17/2026 00:40
-Lunch,Saturday,Fish; Quinoa; Roasted Peppers,10/13/2025 08:54
-Lunch,Sunday,Oatmeal; Toast; Coffee,12/25/2027 03:05
-Lunch,Monday,Steak; Mashed Potatoes; Vegetables,12/15/2025 15:07
-Dinner,Tuesday,Pasta; Garlic Bread; Soup,4/26/2024 08:56
-Breakfast,Wednesday,Oatmeal; Toast; Coffee,8/2/2025 17:51
-Lunch,Thursday,Pasta; Garlic Bread; Soup,8/5/2026 09:36
-Breakfast,Friday,Fish; Quinoa; Roasted Peppers,12/10/2025 09:47
-Dinner,Saturday,Pasta; Garlic Bread; Soup,10/4/2027 03:16
-Breakfast,Sunday,Oatmeal; Toast; Coffee,2/8/2025 12:08
-Breakfast,Monday,Oatmeal; Toast; Coffee,6/15/2025 14:06
-Breakfast,Tuesday,Fish; Quinoa; Roasted Peppers,6/17/2025 13:50
-Lunch,Wednesday,Pizza; Caesar Salad,11/24/2026 06:22
-Breakfast,Thursday,Grilled Chicken; Rice; Salad,4/28/2024 22:53
-Breakfast,Friday,Pancakes; Bacon; Eggs,10/25/2027 00:41
-Lunch,Saturday,Steak; Mashed Potatoes; Vegetables,7/23/2024 16:00
-Breakfast,Sunday,Steak; Mashed Potatoes; Vegetables,10/27/2026 05:51
-Lunch,Monday,Oatmeal; Toast; Coffee,8/26/2024 08:14
-Breakfast,Tuesday,Pizza; Caesar Salad,6/30/2025 20:59
-Breakfast,Wednesday,Fish; Quinoa; Roasted Peppers,5/7/2025 07:47
-Lunch,Thursday,Oatmeal; Toast; Coffee,12/1/2026 23:02
-Breakfast,Friday,Pasta; Garlic Bread; Soup,9/29/2027 04:52
-Dinner,Saturday,Steak; Mashed Potatoes; Vegetables,10/23/2024 13:21
-Breakfast,Sunday,Pasta; Garlic Bread; Soup,3/22/2027 18:44
-Dinner,Monday,Pasta; Garlic Bread; Soup,10/28/2027 16:14
-Dinner,Tuesday,Pasta; Garlic Bread; Soup,4/4/2026 20:45
-Dinner,Wednesday,Pasta; Garlic Bread; Soup,9/30/2024 02:04
-Lunch,Thursday,Oatmeal; Toast; Coffee,3/25/2025 13:16
-Lunch,Friday,Fish; Quinoa; Roasted Peppers,8/4/2024 08:00
-Breakfast,Saturday,Oatmeal; Toast; Coffee,8/29/2025 04:15
-Dinner,Sunday,Pasta; Garlic Bread; Soup,5/7/2026 22:52
-Lunch,Monday,Grilled Chicken; Rice; Salad,7/15/2026 15:04
-Breakfast,Tuesday,Grilled Chicken; Rice; Salad,8/21/2025 04:11
-Breakfast,Wednesday,Pizza; Caesar Salad,1/1/2025 20:51
-Lunch,Thursday,Grilled Chicken; Rice; Salad,3/9/2025 21:54
-Breakfast,Friday,Grilled Chicken; Rice; Salad,7/21/2027 01:49
-Breakfast,Saturday,Pancakes; Bacon; Eggs,8/5/2026 07:13
-Dinner,Sunday,Pancakes; Bacon; Eggs,5/6/2024 23:42
-Dinner,Monday,Fish; Quinoa; Roasted Peppers,1/12/2027 09:53
-Lunch,Tuesday,Oatmeal; Toast; Coffee,11/19/2025 18:37
-Breakfast,Wednesday,Oatmeal; Toast; Coffee,12/17/2027 17:35
-Breakfast,Thursday,Fish; Quinoa; Roasted Peppers,8/9/2025 00:52
-Dinner,Friday,Pancakes; Bacon; Eggs,10/17/2025 13:34
-Lunch,Saturday,Pizza; Caesar Salad,5/9/2026 10:02
-Lunch,Sunday,Pasta; Garlic Bread; Soup,12/21/2026 23:01
-Breakfast,Monday,Steak; Mashed Potatoes; Vegetables,8/30/2027 04:32
-Lunch,Tuesday,Pancakes; Bacon; Eggs,12/30/2027 03:00
-Breakfast,Wednesday,Pasta; Garlic Bread; Soup,6/21/2024 03:43
-Dinner,Thursday,Oatmeal; Toast; Coffee,8/21/2025 10:36
-Breakfast,Friday,Pasta; Garlic Bread; Soup,9/17/2026 23:08
-Lunch,Saturday,Pizza; Caesar Salad,9/8/2025 16:52
-Breakfast,Sunday,Pancakes; Bacon; Eggs,3/15/2026 09:14
-Lunch,Monday,Fish; Quinoa; Roasted Peppers,5/15/2024 16:43
-Dinner,Tuesday,Grilled Chicken; Rice; Salad,9/24/2026 05:28
-Breakfast,Wednesday,Fish; Quinoa; Roasted Peppers,4/26/2024 03:00
-Dinner,Thursday,Pizza; Caesar Salad,12/15/2027 00:47
-Lunch,Friday,Grilled Chicken; Rice; Salad,5/30/2026 02:04
-Breakfast,Saturday,Pizza; Caesar Salad,11/10/2024 05:39
-Breakfast,Sunday,Oatmeal; Toast; Coffee,7/21/2024 14:32
-Lunch,Monday,Oatmeal; Toast; Coffee,5/20/2026 07:59
-Breakfast,Tuesday,Fish; Quinoa; Roasted Peppers,10/8/2024 14:57
-Breakfast,Wednesday,Pizza; Caesar Salad,4/13/2027 14:23
-Dinner,Thursday,Pasta; Garlic Bread; Soup,9/9/2025 12:24
-Breakfast,Friday,Grilled Chicken; Rice; Salad,10/6/2024 23:09
-Breakfast,Saturday,Fish; Quinoa; Roasted Peppers,1/24/2027 01:28
-Lunch,Sunday,Oatmeal; Toast; Coffee,11/25/2026 01:20
-Lunch,Monday,Pasta; Garlic Bread; Soup,10/24/2025 14:51
-Dinner,Tuesday,Pasta; Garlic Bread; Soup,9/11/2025 20:47
-Lunch,Wednesday,Steak; Mashed Potatoes; Vegetables,1/18/2026 23:30
-Dinner,Thursday,Grilled Chicken; Rice; Salad,5/19/2027 09:01
-Lunch,Friday,Pizza; Caesar Salad,12/9/2026 08:18
-Lunch,Saturday,Grilled Chicken; Rice; Salad,4/10/2027 11:59
-Dinner,Sunday,Fish; Quinoa; Roasted Peppers,11/18/2024 07:16
-Dinner,Monday,Pasta; Garlic Bread; Soup,1/24/2026 00:35
-Breakfast,Tuesday,Fish; Quinoa; Roasted Peppers,5/21/2027 13:26
-Dinner,Wednesday,Fish; Quinoa; Roasted Peppers,5/22/2025 08:23
-Breakfast,Thursday,Pizza; Caesar Salad,2/1/2027 07:24
-Lunch,Friday,Steak; Mashed Potatoes; Vegetables,3/11/2027 23:01
-Breakfast,Saturday,Fish; Quinoa; Roasted Peppers,11/28/2024 08:59
-Dinner,Sunday,Fish; Quinoa; Roasted Peppers,8/1/2026 08:09
-Lunch,Monday,Pizza; Caesar Salad,5/13/2024 12:38
-Lunch,Tuesday,Oatmeal; Toast; Coffee,9/21/2024 18:13
-Dinner,Wednesday,Pancakes; Bacon; Eggs,8/11/2026 15:21
-Breakfast,Thursday,Steak; Mashed Potatoes; Vegetables,7/22/2027 13:49
-Dinner,Friday,Oatmeal; Toast; Coffee,9/23/2026 02:31
-Breakfast,Saturday,Pasta; Garlic Bread; Soup,3/28/2027 13:03
-Breakfast,Sunday,Pasta; Garlic Bread; Soup,9/27/2025 05:40
-Breakfast,Monday,Pancakes; Bacon; Eggs,9/1/2026 19:26
-Breakfast,Tuesday,Steak; Mashed Potatoes; Vegetables,6/21/2025 15:21
-Lunch,Wednesday,Fish; Quinoa; Roasted Peppers,7/9/2025 15:20
-Breakfast,Thursday,Oatmeal; Toast; Coffee,1/6/2025 05:14
-Breakfast,Friday,Pizza; Caesar Salad,1/16/2027 22:36
-Breakfast,Saturday,Pizza; Caesar Salad,8/16/2024 02:16
-Breakfast,Sunday,Fish; Quinoa; Roasted Peppers,6/7/2025 17:30
-Dinner,Monday,Steak; Mashed Potatoes; Vegetables,4/21/2025 10:46
-Breakfast,Tuesday,Pasta; Garlic Bread; Soup,10/8/2024 01:21
-Dinner,Wednesday,Fish; Quinoa; Roasted Peppers,5/22/2027 13:35
-Breakfast,Thursday,Oatmeal; Toast; Coffee,7/6/2027 16:55
-Breakfast,Friday,Oatmeal; Toast; Coffee,4/20/2026 10:56
+Dinner,Wednesday,Steak  Mashed Potatoes  Vegetables,12/15/25 5:31
+Dinner,Thursday,Pizza  Caesar Salad,09/28/26 5:56
+Breakfast,Friday,Steak  Mashed Potatoes  Vegetables,05/28/26 4:34
+Dinner,Saturday,Grilled Chicken  Rice  Salad,09/20/26 17:01
+Lunch,Sunday,Oatmeal  Toast  Coffee,03/12/25 4:51
+Dinner,Monday,Steak  Mashed Potatoes  Vegetables,05/10/24 6:32
+Breakfast,Tuesday,Oatmeal  Toast  Coffee,08/02/25 12:27
+Lunch,Wednesday,Fish  Quinoa  Roasted Peppers,10/25/24 23:53
+Dinner,Thursday,Grilled Chicken  Rice  Salad,09/14/26 17:36
+Dinner,Friday,Fish  Quinoa  Roasted Peppers,06/11/26 23:28
+Breakfast,Saturday,Pancakes  Bacon  Eggs,07/23/25 6:28
+Lunch,Sunday,Pizza  Caesar Salad,09/25/27 17:39
+Breakfast,Monday,Grilled Chicken  Rice  Salad,02/27/25 6:53
+Dinner,Tuesday,Fish  Quinoa  Roasted Peppers,05/03/27 4:56
+Dinner,Wednesday,Fish  Quinoa  Roasted Peppers,10/15/24 3:18
+Breakfast,Thursday,Fish  Quinoa  Roasted Peppers,04/17/25 5:16
+Dinner,Friday,Oatmeal  Toast  Coffee,11/21/26 5:42
+Breakfast,Saturday,Pancakes  Bacon  Eggs,01/25/25 5:29
+Breakfast,Sunday,Grilled Chicken  Rice  Salad,06/06/26 2:34
+Lunch,Monday,Grilled Chicken  Rice  Salad,01/25/25 5:07
+Breakfast,Tuesday,Oatmeal  Toast  Coffee,10/02/24 17:48
+Lunch,Wednesday,Oatmeal  Toast  Coffee,12/06/27 5:34
+Dinner,Thursday,Fish  Quinoa  Roasted Peppers,09/17/25 6:21
+Dinner,Friday,Pizza  Caesar Salad,10/13/24 20:16
+Lunch,Saturday,Pancakes  Bacon  Eggs,06/09/27 10:40
+Breakfast,Sunday,Pizza  Caesar Salad,11/12/24 16:56
+Breakfast,Monday,Steak  Mashed Potatoes  Vegetables,04/22/24 16:52
+Dinner,Tuesday,Oatmeal  Toast  Coffee,04/25/26 18:09
+Lunch,Wednesday,Steak  Mashed Potatoes  Vegetables,07/24/26 18:57
+Breakfast,Thursday,Grilled Chicken  Rice  Salad,09/19/27 8:37
+Lunch,Friday,Grilled Chicken  Rice  Salad,09/20/27 18:40
+Lunch,Saturday,Grilled Chicken  Rice  Salad,09/24/25 4:10
+Lunch,Sunday,Pancakes  Bacon  Eggs,04/14/27 17:49
+Dinner,Monday,Oatmeal  Toast  Coffee,07/18/26 15:50
+Dinner,Tuesday,Fish  Quinoa  Roasted Peppers,03/01/26 3:20
+Breakfast,Wednesday,Fish  Quinoa  Roasted Peppers,11/14/24 14:40
+Lunch,Thursday,Oatmeal  Toast  Coffee,11/02/24 11:13
+Breakfast,Friday,Oatmeal  Toast  Coffee,12/24/24 5:30
+Dinner,Saturday,Steak  Mashed Potatoes  Vegetables,10/02/25 11:46
+Breakfast,Sunday,Grilled Chicken  Rice  Salad,04/25/24 2:29
+Dinner,Monday,Steak  Mashed Potatoes  Vegetables,01/05/27 11:57
+Dinner,Tuesday,Fish  Quinoa  Roasted Peppers,05/01/26 18:22
+Breakfast,Wednesday,Grilled Chicken  Rice  Salad,01/15/25 9:55
+Dinner,Thursday,Pasta  Garlic Bread  Soup,07/10/24 18:35
+Breakfast,Friday,Pasta  Garlic Bread  Soup,05/10/24 2:33
+Breakfast,Saturday,Steak  Mashed Potatoes  Vegetables,04/26/27 9:28
+Breakfast,Sunday,Pizza  Caesar Salad,08/01/25 19:48
+Dinner,Monday,Grilled Chicken  Rice  Salad,10/02/27 21:32
+Dinner,Tuesday,Pancakes  Bacon  Eggs,09/10/26 1:58
+Dinner,Wednesday,Oatmeal  Toast  Coffee,02/01/27 0:53
+Lunch,Thursday,Grilled Chicken  Rice  Salad,10/27/26 4:20
+Breakfast,Friday,Pizza  Caesar Salad,12/31/25 11:38
+Lunch,Saturday,Pancakes  Bacon  Eggs,05/27/27 14:05
+Lunch,Sunday,Oatmeal  Toast  Coffee,08/22/27 10:54
+Dinner,Monday,Pizza  Caesar Salad,08/23/26 22:35
+Dinner,Tuesday,Grilled Chicken  Rice  Salad,07/19/27 17:16
+Dinner,Wednesday,Steak  Mashed Potatoes  Vegetables,06/26/26 2:18
+Dinner,Thursday,Steak  Mashed Potatoes  Vegetables,09/23/26 20:39
+Lunch,Friday,Grilled Chicken  Rice  Salad,04/26/25 19:21
+Lunch,Saturday,Oatmeal  Toast  Coffee,05/16/26 11:42
+Dinner,Sunday,Fish  Quinoa  Roasted Peppers,07/27/27 0:06
+Breakfast,Monday,Pancakes  Bacon  Eggs,10/15/24 16:20
+Lunch,Tuesday,Fish  Quinoa  Roasted Peppers,06/13/26 8:46
+Breakfast,Wednesday,Grilled Chicken  Rice  Salad,12/30/25 15:10
+Dinner,Thursday,Grilled Chicken  Rice  Salad,06/02/26 16:13
+Lunch,Friday,Pizza  Caesar Salad,01/02/27 15:50
+Breakfast,Saturday,Oatmeal  Toast  Coffee,08/14/26 10:36
+Breakfast,Sunday,Pancakes  Bacon  Eggs,09/14/24 11:22
+Dinner,Monday,Steak  Mashed Potatoes  Vegetables,01/11/26 23:40
+Dinner,Tuesday,Pancakes  Bacon  Eggs,02/22/25 12:28
+Dinner,Wednesday,Grilled Chicken  Rice  Salad,01/05/25 23:53
+Dinner,Thursday,Pancakes  Bacon  Eggs,08/30/27 14:40
+Lunch,Friday,Fish  Quinoa  Roasted Peppers,06/01/26 0:14
+Breakfast,Saturday,Oatmeal  Toast  Coffee,10/27/24 20:18
+Dinner,Sunday,Pancakes  Bacon  Eggs,04/26/26 21:33
+Dinner,Monday,Grilled Chicken  Rice  Salad,04/07/25 12:56
+Breakfast,Tuesday,Steak  Mashed Potatoes  Vegetables,12/02/24 7:51
+Dinner,Wednesday,Pasta  Garlic Bread  Soup,09/29/24 4:34
+Breakfast,Thursday,Pizza  Caesar Salad,09/28/25 19:56
+Dinner,Friday,Steak  Mashed Potatoes  Vegetables,07/30/24 20:47
+Lunch,Saturday,Oatmeal  Toast  Coffee,09/24/24 2:40
+Breakfast,Sunday,Pizza  Caesar Salad,04/30/27 8:34
+Lunch,Monday,Fish  Quinoa  Roasted Peppers,06/14/25 13:22
+Dinner,Tuesday,Pancakes  Bacon  Eggs,09/06/24 12:17
+Dinner,Wednesday,Grilled Chicken  Rice  Salad,12/23/25 0:03
+Breakfast,Thursday,Fish  Quinoa  Roasted Peppers,11/18/24 3:16
+Dinner,Friday,Fish  Quinoa  Roasted Peppers,01/25/27 18:14
+Lunch,Saturday,Pizza  Caesar Salad,08/09/25 2:50
+Breakfast,Sunday,Fish  Quinoa  Roasted Peppers,06/28/24 17:08
+Lunch,Monday,Grilled Chicken  Rice  Salad,02/22/25 17:01
+Dinner,Tuesday,Pizza  Caesar Salad,09/14/26 21:00
+Breakfast,Wednesday,Steak  Mashed Potatoes  Vegetables,08/17/26 10:57
+Lunch,Thursday,Pasta  Garlic Bread  Soup,06/18/27 6:51
+Dinner,Friday,Pizza  Caesar Salad,08/09/27 5:55
+Lunch,Saturday,Steak  Mashed Potatoes  Vegetables,08/11/24 17:13
+Lunch,Sunday,Steak  Mashed Potatoes  Vegetables,09/11/27 1:05
+Lunch,Monday,Pasta  Garlic Bread  Soup,07/27/26 9:18
+Breakfast,Tuesday,Pizza  Caesar Salad,05/18/27 15:57
+Breakfast,Wednesday,Fish  Quinoa  Roasted Peppers,10/19/24 12:08
+Dinner,Thursday,Pasta  Garlic Bread  Soup,04/27/27 1:48
+Lunch,Friday,Grilled Chicken  Rice  Salad,09/14/26 2:51
+Lunch,Saturday,Pancakes  Bacon  Eggs,09/12/24 18:50
+Dinner,Sunday,Grilled Chicken  Rice  Salad,04/09/27 4:10
+Dinner,Monday,Grilled Chicken  Rice  Salad,01/07/25 19:00
+Breakfast,Wednesday,Fish  Quinoa  Roasted Peppers,07/23/24 0:33
+Lunch,Thursday,Grilled Chicken  Rice  Salad,12/19/26 20:56
+Dinner,Friday,Steak  Mashed Potatoes  Vegetables,02/12/26 11:53
+Lunch,Saturday,Fish  Quinoa  Roasted Peppers,08/07/25 18:43
+Lunch,Sunday,Pasta  Garlic Bread  Soup,10/13/27 0:26
+Dinner,Monday,Pasta  Garlic Bread  Soup,04/11/25 18:49
+Dinner,Tuesday,Oatmeal  Toast  Coffee,09/27/26 16:15
+Dinner,Wednesday,Pasta  Garlic Bread  Soup,07/18/26 13:19
+Dinner,Thursday,Grilled Chicken  Rice  Salad,03/23/25 20:30
+Lunch,Friday,Pasta  Garlic Bread  Soup,04/13/25 23:59
+Lunch,Saturday,Pancakes  Bacon  Eggs,08/16/25 9:40
+Dinner,Sunday,Oatmeal  Toast  Coffee,06/24/24 10:13
+Dinner,Monday,Pancakes  Bacon  Eggs,02/20/26 13:03
+Dinner,Tuesday,Steak  Mashed Potatoes  Vegetables,12/06/27 0:21
+Breakfast,Wednesday,Pizza  Caesar Salad,07/22/25 0:37
+Lunch,Thursday,Grilled Chicken  Rice  Salad,05/08/27 13:04
+Dinner,Friday,Pasta  Garlic Bread  Soup,06/04/26 7:01
+Breakfast,Saturday,Pancakes  Bacon  Eggs,06/04/25 5:55
+Lunch,Sunday,Pasta  Garlic Bread  Soup,09/01/26 13:12
+Lunch,Monday,Pancakes  Bacon  Eggs,11/05/25 8:56
+Breakfast,Tuesday,Steak  Mashed Potatoes  Vegetables,12/08/27 9:03
+Lunch,Wednesday,Pizza  Caesar Salad,06/22/27 11:05
+Dinner,Thursday,Pasta  Garlic Bread  Soup,05/23/26 2:15
+Lunch,Friday,Fish  Quinoa  Roasted Peppers,04/08/25 8:02
+Dinner,Saturday,Steak  Mashed Potatoes  Vegetables,11/10/26 8:55
+Lunch,Sunday,Pasta  Garlic Bread  Soup,09/05/27 16:38
+Lunch,Monday,Pasta  Garlic Bread  Soup,09/02/24 12:15
+Dinner,Tuesday,Pasta  Garlic Bread  Soup,11/27/24 5:11
+Breakfast,Wednesday,Pizza  Caesar Salad,07/17/24 22:50
+Dinner,Thursday,Grilled Chicken  Rice  Salad,05/12/24 16:49
+Dinner,Friday,Grilled Chicken  Rice  Salad,03/12/27 16:12
+Dinner,Saturday,Pancakes  Bacon  Eggs,04/25/26 16:26
+Lunch,Sunday,Pancakes  Bacon  Eggs,09/12/26 9:17
+Lunch,Monday,Pasta  Garlic Bread  Soup,09/22/26 22:29
+Lunch,Tuesday,Grilled Chicken  Rice  Salad,08/21/25 7:54
+Lunch,Wednesday,Pizza  Caesar Salad,12/02/27 3:38
+Dinner,Thursday,Pancakes  Bacon  Eggs,02/08/26 18:26
+Breakfast,Friday,Pasta  Garlic Bread  Soup,08/18/27 23:10
+Dinner,Saturday,Grilled Chicken  Rice  Salad,03/27/26 6:51
+Breakfast,Monday,Fish  Quinoa  Roasted Peppers,10/14/24 15:31
+Breakfast,Tuesday,Oatmeal  Toast  Coffee,04/21/24 14:48
+Breakfast,Wednesday,Steak  Mashed Potatoes  Vegetables,06/07/24 8:11
+Breakfast,Thursday,Pizza  Caesar Salad,03/07/26 16:24
+Lunch,Friday,Steak  Mashed Potatoes  Vegetables,12/23/25 9:59
+Dinner,Saturday,Pancakes  Bacon  Eggs,07/26/25 10:10
+Breakfast,Sunday,Oatmeal  Toast  Coffee,09/10/25 12:47
+Lunch,Monday,Steak  Mashed Potatoes  Vegetables,10/18/25 6:25
+Dinner,Tuesday,Steak  Mashed Potatoes  Vegetables,11/15/24 17:58
+Dinner,Wednesday,Pasta  Garlic Bread  Soup,01/10/25 23:09
+Lunch,Thursday,Grilled Chicken  Rice  Salad,12/03/26 17:53
+Lunch,Friday,Fish  Quinoa  Roasted Peppers,07/08/25 12:48
+Lunch,Saturday,Pancakes  Bacon  Eggs,03/12/26 20:53
+Breakfast,Sunday,Pancakes  Bacon  Eggs,01/29/25 12:10
+Breakfast,Monday,Pizza  Caesar Salad,10/20/25 4:06
+Dinner,Tuesday,Steak  Mashed Potatoes  Vegetables,11/06/24 17:32
+Lunch,Wednesday,Fish  Quinoa  Roasted Peppers,10/21/25 3:39
+Dinner,Thursday,Pizza  Caesar Salad,09/30/26 19:12
+Lunch,Friday,Oatmeal  Toast  Coffee,03/19/27 14:58
+Breakfast,Saturday,Oatmeal  Toast  Coffee,04/20/27 10:50
+Dinner,Sunday,Pizza  Caesar Salad,12/01/26 10:11
+Breakfast,Monday,Pizza  Caesar Salad,10/08/26 20:23
+Breakfast,Tuesday,Fish  Quinoa  Roasted Peppers,05/06/25 3:15
+Breakfast,Wednesday,Oatmeal  Toast  Coffee,05/20/25 9:38
+Lunch,Thursday,Grilled Chicken  Rice  Salad,08/25/27 10:31
+Breakfast,Friday,Grilled Chicken  Rice  Salad,05/28/24 18:06
+Lunch,Saturday,Fish  Quinoa  Roasted Peppers,08/19/24 17:11
+Dinner,Sunday,Fish  Quinoa  Roasted Peppers,08/01/27 7:04
+Breakfast,Monday,Steak  Mashed Potatoes  Vegetables,11/30/26 4:36
+Lunch,Tuesday,Pasta  Garlic Bread  Soup,09/26/27 9:22
+Dinner,Wednesday,Pancakes  Bacon  Eggs,05/17/25 14:00
+Breakfast,Thursday,Steak  Mashed Potatoes  Vegetables,09/09/25 2:19
+Dinner,Friday,Oatmeal  Toast  Coffee,04/27/26 22:21
+Dinner,Saturday,Oatmeal  Toast  Coffee,08/22/24 17:20
+Lunch,Sunday,Oatmeal  Toast  Coffee,10/27/27 16:29
+Dinner,Monday,Oatmeal  Toast  Coffee,03/30/26 17:16
+Breakfast,Tuesday,Pizza  Caesar Salad,08/15/26 4:34
+Breakfast,Wednesday,Grilled Chicken  Rice  Salad,12/13/25 3:35
+Lunch,Thursday,Grilled Chicken  Rice  Salad,03/05/27 21:12
+Lunch,Friday,Steak  Mashed Potatoes  Vegetables,06/25/24 20:47
+Dinner,Saturday,Fish  Quinoa  Roasted Peppers,08/05/25 20:01
+Breakfast,Sunday,Fish  Quinoa  Roasted Peppers,02/10/27 11:02
+Lunch,Monday,Pasta  Garlic Bread  Soup,01/01/25 2:54
+Lunch,Tuesday,Oatmeal  Toast  Coffee,11/15/26 8:31
+Lunch,Wednesday,Pasta  Garlic Bread  Soup,09/04/27 2:07
+Breakfast,Thursday,Pizza  Caesar Salad,10/19/24 18:31
+Breakfast,Friday,Fish  Quinoa  Roasted Peppers,05/29/25 13:51
+Breakfast,Saturday,Steak  Mashed Potatoes  Vegetables,09/01/25 7:31
+Lunch,Sunday,Pasta  Garlic Bread  Soup,10/11/26 1:58
+Lunch,Monday,Pizza  Caesar Salad,09/01/26 2:46
+Lunch,Tuesday,Pasta  Garlic Bread  Soup,09/24/24 1:30
+Lunch,Wednesday,Oatmeal  Toast  Coffee,11/30/27 0:16
+Lunch,Thursday,Pizza  Caesar Salad,08/09/24 2:04
+Dinner,Friday,Steak  Mashed Potatoes  Vegetables,07/04/27 11:22
+Breakfast,Saturday,Pizza  Caesar Salad,03/18/27 13:54
+Lunch,Sunday,Pizza  Caesar Salad,08/19/24 9:55
+Lunch,Monday,Grilled Chicken  Rice  Salad,10/12/27 17:00
+Breakfast,Tuesday,Pasta  Garlic Bread  Soup,06/30/25 14:35
+Breakfast,Wednesday,Pasta  Garlic Bread  Soup,07/15/25 4:21
+Breakfast,Thursday,Pizza  Caesar Salad,04/09/27 8:21
+Dinner,Friday,Oatmeal  Toast  Coffee,06/02/27 11:16
+Breakfast,Saturday,Fish  Quinoa  Roasted Peppers,07/10/27 6:18
+Dinner,Sunday,Steak  Mashed Potatoes  Vegetables,04/23/27 6:11
+Dinner,Monday,Grilled Chicken  Rice  Salad,10/07/24 23:38
+Breakfast,Tuesday,Steak  Mashed Potatoes  Vegetables,09/30/25 0:59
+Lunch,Wednesday,Pasta  Garlic Bread  Soup,04/22/25 15:23
+Lunch,Thursday,Grilled Chicken  Rice  Salad,12/25/27 9:32
+Breakfast,Friday,Steak  Mashed Potatoes  Vegetables,12/13/25 3:43
+Breakfast,Saturday,Grilled Chicken  Rice  Salad,07/01/25 14:59
+Lunch,Sunday,Fish  Quinoa  Roasted Peppers,10/31/26 15:16
+Lunch,Monday,Fish  Quinoa  Roasted Peppers,12/11/25 13:15
+Breakfast,Tuesday,Pizza  Caesar Salad,01/10/27 11:51
+Breakfast,Wednesday,Pizza  Caesar Salad,12/04/25 18:06
+Breakfast,Thursday,Pizza  Caesar Salad,03/06/27 8:23
+Dinner,Friday,Oatmeal  Toast  Coffee,12/23/25 5:50
+Dinner,Saturday,Grilled Chicken  Rice  Salad,07/04/25 2:58
+Lunch,Sunday,Pancakes  Bacon  Eggs,08/07/25 10:46
+Lunch,Monday,Grilled Chicken  Rice  Salad,08/23/27 14:16
+Dinner,Tuesday,Fish  Quinoa  Roasted Peppers,07/09/27 17:03
+Dinner,Wednesday,Steak  Mashed Potatoes  Vegetables,03/07/25 11:40
+Dinner,Thursday,Oatmeal  Toast  Coffee,12/16/25 3:52
+Dinner,Friday,Oatmeal  Toast  Coffee,03/15/26 22:51
+Breakfast,Saturday,Pancakes  Bacon  Eggs,12/09/24 1:34
+Dinner,Sunday,Pizza  Caesar Salad,01/08/27 6:44
+Lunch,Monday,Pasta  Garlic Bread  Soup,10/26/24 3:23
+Lunch,Tuesday,Oatmeal  Toast  Coffee,03/05/27 0:14
+Dinner,Wednesday,Grilled Chicken  Rice  Salad,01/04/27 23:37
+Lunch,Thursday,Pancakes  Bacon  Eggs,11/22/26 7:24
+Lunch,Friday,Pasta  Garlic Bread  Soup,07/24/27 5:50
+Breakfast,Saturday,Pancakes  Bacon  Eggs,06/13/24 11:27
+Dinner,Sunday,Steak  Mashed Potatoes  Vegetables,04/10/27 11:36
+Dinner,Monday,Grilled Chicken  Rice  Salad,03/02/27 22:57
+Lunch,Tuesday,Pancakes  Bacon  Eggs,05/21/24 11:36
+Dinner,Wednesday,Pizza  Caesar Salad,03/26/26 16:56
+Lunch,Thursday,Pasta  Garlic Bread  Soup,10/11/26 10:17
+Breakfast,Friday,Steak  Mashed Potatoes  Vegetables,02/20/26 22:27
+Lunch,Saturday,Steak  Mashed Potatoes  Vegetables,05/01/26 5:26
+Lunch,Sunday,Pasta  Garlic Bread  Soup,07/22/25 20:21
+Breakfast,Monday,Pancakes  Bacon  Eggs,09/14/24 15:09
+Dinner,Tuesday,Oatmeal  Toast  Coffee,11/21/26 19:15
+Breakfast,Wednesday,Pancakes  Bacon  Eggs,09/07/27 2:40
+Lunch,Thursday,Grilled Chicken  Rice  Salad,06/23/25 8:24
+Dinner,Friday,Fish  Quinoa  Roasted Peppers,09/11/27 21:28
+Lunch,Saturday,Oatmeal  Toast  Coffee,08/11/27 22:53
+Lunch,Sunday,Pasta  Garlic Bread  Soup,08/23/24 8:36
+Dinner,Monday,Pasta  Garlic Bread  Soup,12/22/24 17:55
+Lunch,Tuesday,Pasta  Garlic Bread  Soup,09/09/24 3:50
+Dinner,Wednesday,Pasta  Garlic Bread  Soup,07/29/27 12:50
+Breakfast,Thursday,Grilled Chicken  Rice  Salad,08/28/27 4:28
+Breakfast,Friday,Grilled Chicken  Rice  Salad,07/05/25 21:38
+Breakfast,Saturday,Steak  Mashed Potatoes  Vegetables,01/07/25 11:29
+Lunch,Sunday,Steak  Mashed Potatoes  Vegetables,08/18/27 22:53
+Lunch,Monday,Oatmeal  Toast  Coffee,09/11/26 23:39
+Lunch,Tuesday,Grilled Chicken  Rice  Salad,06/16/27 10:32
+Lunch,Wednesday,Fish  Quinoa  Roasted Peppers,03/06/25 20:37
+Breakfast,Thursday,Pancakes  Bacon  Eggs,04/04/25 23:25
+Breakfast,Friday,Pancakes  Bacon  Eggs,01/06/25 21:28
+Dinner,Saturday,Pasta  Garlic Bread  Soup,08/19/24 5:35
+Breakfast,Sunday,Grilled Chicken  Rice  Salad,11/05/26 14:28
+Dinner,Monday,Grilled Chicken  Rice  Salad,10/22/27 12:19
+Dinner,Tuesday,Pizza  Caesar Salad,11/18/24 8:51
+Lunch,Wednesday,Fish  Quinoa  Roasted Peppers,09/02/25 19:58
+Lunch,Thursday,Pasta  Garlic Bread  Soup,04/13/26 15:43
+Breakfast,Friday,Pasta  Garlic Bread  Soup,11/19/25 12:09
+Dinner,Saturday,Fish  Quinoa  Roasted Peppers,10/07/27 21:53
+Lunch,Sunday,Pasta  Garlic Bread  Soup,10/01/26 9:54
+Breakfast,Monday,Steak  Mashed Potatoes  Vegetables,10/21/26 13:47
+Breakfast,Tuesday,Steak  Mashed Potatoes  Vegetables,09/30/24 15:01
+Lunch,Wednesday,Steak  Mashed Potatoes  Vegetables,03/29/25 17:50
+Dinner,Thursday,Pasta  Garlic Bread  Soup,09/18/27 0:51
+Breakfast,Friday,Fish  Quinoa  Roasted Peppers,05/03/24 8:54
+Lunch,Saturday,Oatmeal  Toast  Coffee,12/18/25 1:13
+Dinner,Sunday,Oatmeal  Toast  Coffee,04/20/25 10:40
+Breakfast,Monday,Pasta  Garlic Bread  Soup,06/26/24 12:32
+Breakfast,Tuesday,Pasta  Garlic Bread  Soup,10/22/25 11:02
+Breakfast,Wednesday,Oatmeal  Toast  Coffee,05/11/24 2:58
+Breakfast,Thursday,Grilled Chicken  Rice  Salad,04/30/26 10:43
+Lunch,Friday,Steak  Mashed Potatoes  Vegetables,09/04/25 7:03
+Breakfast,Saturday,Steak  Mashed Potatoes  Vegetables,05/07/24 11:39
+Dinner,Sunday,Pasta  Garlic Bread  Soup,06/06/25 23:49
+Dinner,Monday,Grilled Chicken  Rice  Salad,09/24/26 23:55
+Breakfast,Tuesday,Pasta  Garlic Bread  Soup,11/11/26 1:14
+Breakfast,Wednesday,Pancakes  Bacon  Eggs,07/21/24 23:10
+Lunch,Thursday,Pizza  Caesar Salad,11/20/25 6:08
+Breakfast,Friday,Grilled Chicken  Rice  Salad,06/29/27 20:01
+Breakfast,Saturday,Pasta  Garlic Bread  Soup,03/08/26 12:40
+Breakfast,Sunday,Oatmeal  Toast  Coffee,07/10/26 17:44
+Breakfast,Monday,Oatmeal  Toast  Coffee,10/09/25 19:18
+Breakfast,Tuesday,Steak  Mashed Potatoes  Vegetables,04/04/26 23:39
+Dinner,Wednesday,Pasta  Garlic Bread  Soup,09/11/25 8:21
+Lunch,Thursday,Oatmeal  Toast  Coffee,01/13/25 4:04
+Breakfast,Friday,Steak  Mashed Potatoes  Vegetables,10/26/25 21:00
+Lunch,Saturday,Oatmeal  Toast  Coffee,02/23/25 23:43
+Lunch,Sunday,Pasta  Garlic Bread  Soup,08/10/25 11:47
+Breakfast,Monday,Grilled Chicken  Rice  Salad,03/10/26 10:44
+Breakfast,Tuesday,Pancakes  Bacon  Eggs,10/28/27 15:59
+Breakfast,Wednesday,Pizza  Caesar Salad,05/30/25 17:44
+Lunch,Thursday,Fish  Quinoa  Roasted Peppers,09/19/25 8:36
+Dinner,Friday,Grilled Chicken  Rice  Salad,12/20/26 19:20
+Breakfast,Saturday,Pasta  Garlic Bread  Soup,08/02/26 9:03
+Dinner,Sunday,Pancakes  Bacon  Eggs,06/16/27 10:33
+Lunch,Monday,Grilled Chicken  Rice  Salad,01/29/25 18:31
+Dinner,Tuesday,Pasta  Garlic Bread  Soup,10/15/25 3:15
+Breakfast,Wednesday,Pizza  Caesar Salad,08/01/25 20:49
+Breakfast,Thursday,Steak  Mashed Potatoes  Vegetables,03/11/26 11:58
+Dinner,Friday,Pizza  Caesar Salad,04/03/27 21:34
+Dinner,Saturday,Pancakes  Bacon  Eggs,10/25/25 17:52
+Lunch,Sunday,Pancakes  Bacon  Eggs,08/23/26 6:22
+Lunch,Monday,Steak  Mashed Potatoes  Vegetables,12/20/26 6:30
+Dinner,Tuesday,Steak  Mashed Potatoes  Vegetables,03/29/27 11:16
+Breakfast,Wednesday,Oatmeal  Toast  Coffee,12/28/27 0:06
+Lunch,Thursday,Steak  Mashed Potatoes  Vegetables,09/21/24 18:06
+Dinner,Friday,Steak  Mashed Potatoes  Vegetables,11/19/26 0:50
+Breakfast,Saturday,Oatmeal  Toast  Coffee,12/26/26 14:08
+Breakfast,Sunday,Pancakes  Bacon  Eggs,08/13/26 6:55
+Breakfast,Monday,Pasta  Garlic Bread  Soup,08/28/27 5:31
+Breakfast,Tuesday,Pasta  Garlic Bread  Soup,10/19/25 2:35
+Dinner,Wednesday,Grilled Chicken  Rice  Salad,06/24/27 5:53
+Lunch,Thursday,Steak  Mashed Potatoes  Vegetables,07/06/24 16:43
+Breakfast,Friday,Steak  Mashed Potatoes  Vegetables,09/26/27 22:24
+Lunch,Saturday,Pizza  Caesar Salad,04/13/27 15:10
+Lunch,Sunday,Fish  Quinoa  Roasted Peppers,11/04/24 16:50
+Lunch,Monday,Grilled Chicken  Rice  Salad,08/26/24 0:19
+Lunch,Tuesday,Pasta  Garlic Bread  Soup,06/16/24 14:27
+Dinner,Wednesday,Pizza  Caesar Salad,12/24/27 23:03
+Dinner,Thursday,Pizza  Caesar Salad,12/15/25 1:06
+Lunch,Friday,Grilled Chicken  Rice  Salad,04/13/27 10:09
+Dinner,Saturday,Oatmeal  Toast  Coffee,11/06/25 23:04
+Lunch,Sunday,Pasta  Garlic Bread  Soup,01/20/27 9:00
+Dinner,Monday,Oatmeal  Toast  Coffee,08/13/26 3:27
+Breakfast,Tuesday,Pizza  Caesar Salad,04/24/24 4:59
+Lunch,Wednesday,Oatmeal  Toast  Coffee,09/14/25 16:01
+Dinner,Thursday,Pasta  Garlic Bread  Soup,03/11/26 23:49
+Dinner,Friday,Grilled Chicken  Rice  Salad,09/23/25 2:41
+Dinner,Saturday,Grilled Chicken  Rice  Salad,01/17/26 7:56
+Breakfast,Sunday,Oatmeal  Toast  Coffee,03/09/26 7:42
+Lunch,Monday,Oatmeal  Toast  Coffee,06/26/26 13:58
+Breakfast,Tuesday,Pasta  Garlic Bread  Soup,05/02/26 10:46
+Lunch,Wednesday,Pizza  Caesar Salad,07/03/26 3:46
+Lunch,Thursday,Pasta  Garlic Bread  Soup,06/15/24 9:36
+Dinner,Friday,Grilled Chicken  Rice  Salad,06/15/26 12:13
+Breakfast,Saturday,Steak  Mashed Potatoes  Vegetables,02/05/26 13:26
+Lunch,Sunday,Pancakes  Bacon  Eggs,01/14/25 18:28
+Dinner,Monday,Pasta  Garlic Bread  Soup,07/23/24 20:10
+Lunch,Tuesday,Oatmeal  Toast  Coffee,11/01/25 19:09
+Lunch,Wednesday,Oatmeal  Toast  Coffee,01/21/26 1:33
+Breakfast,Thursday,Pizza  Caesar Salad,02/06/27 16:23
+Lunch,Friday,Pancakes  Bacon  Eggs,10/18/24 4:56
+Lunch,Saturday,Pancakes  Bacon  Eggs,11/30/24 8:10
+Breakfast,Sunday,Pancakes  Bacon  Eggs,05/11/25 9:01
+Breakfast,Monday,Fish  Quinoa  Roasted Peppers,07/04/27 15:10
+Breakfast,Tuesday,Pizza  Caesar Salad,08/06/24 12:22
+Lunch,Wednesday,Grilled Chicken  Rice  Salad,09/21/24 16:53
+Dinner,Thursday,Oatmeal  Toast  Coffee,11/07/26 1:43
+Dinner,Friday,Grilled Chicken  Rice  Salad,01/20/25 18:12
+Lunch,Saturday,Steak  Mashed Potatoes  Vegetables,11/18/25 12:49
+Dinner,Sunday,Pizza  Caesar Salad,03/17/26 3:56
+Dinner,Monday,Pizza  Caesar Salad,07/20/26 5:30
+Lunch,Tuesday,Pasta  Garlic Bread  Soup,09/02/27 15:18
+Breakfast,Wednesday,Steak  Mashed Potatoes  Vegetables,10/18/24 13:28
+Lunch,Thursday,Steak  Mashed Potatoes  Vegetables,09/03/26 2:32
+Dinner,Friday,Pancakes  Bacon  Eggs,05/05/25 19:59
+Dinner,Saturday,Pasta  Garlic Bread  Soup,08/20/25 18:12
+Dinner,Sunday,Steak  Mashed Potatoes  Vegetables,11/04/24 5:23
+Lunch,Monday,Fish  Quinoa  Roasted Peppers,05/04/25 10:15
+Lunch,Tuesday,Fish  Quinoa  Roasted Peppers,06/13/27 15:13
+Breakfast,Wednesday,Pizza  Caesar Salad,11/04/26 21:33
+Breakfast,Thursday,Pizza  Caesar Salad,12/10/24 17:12
+Lunch,Friday,Pasta  Garlic Bread  Soup,04/09/26 19:00
+Dinner,Saturday,Pasta  Garlic Bread  Soup,09/21/27 6:58
+Dinner,Sunday,Fish  Quinoa  Roasted Peppers,10/19/24 20:49
+Dinner,Monday,Steak  Mashed Potatoes  Vegetables,06/10/24 5:18
+Breakfast,Tuesday,Pizza  Caesar Salad,10/14/24 11:35
+Lunch,Wednesday,Pancakes  Bacon  Eggs,04/24/24 21:42
+Lunch,Thursday,Oatmeal  Toast  Coffee,11/03/24 16:01
+Dinner,Friday,Oatmeal  Toast  Coffee,01/20/26 4:30
+Lunch,Saturday,Steak  Mashed Potatoes  Vegetables,10/14/26 19:50
+Dinner,Sunday,Oatmeal  Toast  Coffee,12/14/25 21:31
+Breakfast,Monday,Pancakes  Bacon  Eggs,02/16/25 13:41
+Breakfast,Tuesday,Pasta  Garlic Bread  Soup,04/08/24 7:31
+Lunch,Wednesday,Steak  Mashed Potatoes  Vegetables,08/29/24 7:27
+Dinner,Thursday,Fish  Quinoa  Roasted Peppers,04/20/25 17:57
+Lunch,Friday,Pancakes  Bacon  Eggs,09/13/24 13:34
+Dinner,Saturday,Grilled Chicken  Rice  Salad,04/15/27 5:51
+Lunch,Sunday,Grilled Chicken  Rice  Salad,07/15/25 22:50
+Dinner,Tuesday,Grilled Chicken  Rice  Salad,12/01/25 21:24
+Lunch,Wednesday,Pizza  Caesar Salad,09/16/27 5:19
+Dinner,Thursday,Pizza  Caesar Salad,11/07/27 21:36
+Breakfast,Friday,Pasta  Garlic Bread  Soup,04/13/27 18:00
+Dinner,Saturday,Oatmeal  Toast  Coffee,11/30/26 8:45
+Breakfast,Sunday,Pasta  Garlic Bread  Soup,04/29/27 5:35
+Lunch,Monday,Fish  Quinoa  Roasted Peppers,12/22/25 10:05
+Dinner,Tuesday,Fish  Quinoa  Roasted Peppers,05/29/26 12:19
+Lunch,Wednesday,Steak  Mashed Potatoes  Vegetables,11/16/26 14:10
+Breakfast,Thursday,Grilled Chicken  Rice  Salad,07/11/24 19:29
+Dinner,Friday,Pizza  Caesar Salad,01/20/27 6:10
+Dinner,Saturday,Steak  Mashed Potatoes  Vegetables,12/04/24 8:13
+Dinner,Sunday,Fish  Quinoa  Roasted Peppers,08/17/24 8:29
+Breakfast,Monday,Grilled Chicken  Rice  Salad,12/27/25 11:53
+Lunch,Tuesday,Pasta  Garlic Bread  Soup,08/07/25 22:37
+Dinner,Wednesday,Pizza  Caesar Salad,11/22/26 3:46
+Dinner,Thursday,Fish  Quinoa  Roasted Peppers,05/05/25 12:50
+Lunch,Friday,Pasta  Garlic Bread  Soup,09/04/27 19:16
+Dinner,Saturday,Steak  Mashed Potatoes  Vegetables,12/24/26 12:48
+Breakfast,Sunday,Pancakes  Bacon  Eggs,08/31/26 12:50
+Dinner,Monday,Pizza  Caesar Salad,11/14/25 9:26
+Lunch,Tuesday,Pancakes  Bacon  Eggs,10/31/27 11:00
+Lunch,Wednesday,Pancakes  Bacon  Eggs,01/16/27 12:51
+Lunch,Thursday,Pancakes  Bacon  Eggs,02/10/25 0:55
+Breakfast,Friday,Pizza  Caesar Salad,06/04/24 13:38
+Lunch,Saturday,Fish  Quinoa  Roasted Peppers,12/20/27 0:41
+Lunch,Sunday,Steak  Mashed Potatoes  Vegetables,08/08/26 12:19
+Dinner,Monday,Pizza  Caesar Salad,07/11/24 10:12
+Dinner,Tuesday,Oatmeal  Toast  Coffee,04/25/27 22:35
+Breakfast,Wednesday,Fish  Quinoa  Roasted Peppers,12/10/24 5:06
+Dinner,Thursday,Steak  Mashed Potatoes  Vegetables,04/06/27 18:12
+Lunch,Friday,Pizza  Caesar Salad,03/14/25 12:55
+Breakfast,Saturday,Oatmeal  Toast  Coffee,05/28/24 1:23
+Lunch,Sunday,Steak  Mashed Potatoes  Vegetables,10/12/25 21:25
+Dinner,Monday,Fish  Quinoa  Roasted Peppers,10/04/24 16:16
+Breakfast,Tuesday,Oatmeal  Toast  Coffee,03/10/26 12:25
+Breakfast,Wednesday,Fish  Quinoa  Roasted Peppers,09/27/27 11:26
+Breakfast,Thursday,Grilled Chicken  Rice  Salad,08/12/25 0:39
+Dinner,Friday,Steak  Mashed Potatoes  Vegetables,04/26/27 10:00
+Lunch,Saturday,Pizza  Caesar Salad,08/18/27 8:04
+Dinner,Sunday,Pancakes  Bacon  Eggs,09/26/27 21:49
+Breakfast,Monday,Fish  Quinoa  Roasted Peppers,06/06/27 1:14
+Breakfast,Tuesday,Steak  Mashed Potatoes  Vegetables,07/01/27 2:36
+Lunch,Wednesday,Oatmeal  Toast  Coffee,05/06/26 20:55
+Breakfast,Thursday,Fish  Quinoa  Roasted Peppers,10/10/27 10:57
+Lunch,Friday,Grilled Chicken  Rice  Salad,03/06/25 3:46
+Dinner,Saturday,Pasta  Garlic Bread  Soup,07/14/25 12:41
+Lunch,Sunday,Oatmeal  Toast  Coffee,07/12/24 5:04
+Dinner,Monday,Oatmeal  Toast  Coffee,05/03/25 3:30
+Breakfast,Tuesday,Fish  Quinoa  Roasted Peppers,04/22/25 16:18
+Lunch,Wednesday,Fish  Quinoa  Roasted Peppers,04/27/26 20:09
+Dinner,Thursday,Steak  Mashed Potatoes  Vegetables,11/07/24 21:05
+Dinner,Friday,Steak  Mashed Potatoes  Vegetables,04/12/26 21:28
+Breakfast,Saturday,Fish  Quinoa  Roasted Peppers,11/13/27 23:02
+Dinner,Sunday,Oatmeal  Toast  Coffee,08/04/25 15:02
+Dinner,Monday,Oatmeal  Toast  Coffee,09/07/27 17:41
+Dinner,Tuesday,Pancakes  Bacon  Eggs,08/16/26 0:21
+Dinner,Wednesday,Steak  Mashed Potatoes  Vegetables,11/08/27 1:49
+Lunch,Thursday,Pancakes  Bacon  Eggs,04/02/26 14:13
+Breakfast,Friday,Pancakes  Bacon  Eggs,12/09/24 0:12
+Breakfast,Saturday,Fish  Quinoa  Roasted Peppers,12/15/24 20:03
+Breakfast,Sunday,Grilled Chicken  Rice  Salad,05/26/27 10:52
+Breakfast,Monday,Fish  Quinoa  Roasted Peppers,11/15/26 13:16
+Breakfast,Tuesday,Pizza  Caesar Salad,08/16/26 16:41
+Breakfast,Wednesday,Steak  Mashed Potatoes  Vegetables,05/07/27 5:06
+Lunch,Thursday,Pizza  Caesar Salad,03/30/27 8:15
+Dinner,Friday,Oatmeal  Toast  Coffee,03/31/27 11:04
+Dinner,Saturday,Grilled Chicken  Rice  Salad,12/22/25 5:41
+Dinner,Sunday,Grilled Chicken  Rice  Salad,10/16/25 14:18
+Breakfast,Tuesday,Pancakes  Bacon  Eggs,11/08/26 17:06
+Lunch,Wednesday,Pasta  Garlic Bread  Soup,03/01/25 20:12
+Breakfast,Thursday,Oatmeal  Toast  Coffee,08/16/25 6:30
+Breakfast,Friday,Grilled Chicken  Rice  Salad,09/27/27 16:34
+Dinner,Saturday,Pancakes  Bacon  Eggs,12/14/27 22:34
+Lunch,Sunday,Oatmeal  Toast  Coffee,11/19/26 4:17
+Breakfast,Monday,Pancakes  Bacon  Eggs,11/13/24 17:25
+Dinner,Tuesday,Pasta  Garlic Bread  Soup,02/09/25 14:04
+Lunch,Wednesday,Grilled Chicken  Rice  Salad,10/02/25 10:23
+Dinner,Thursday,Steak  Mashed Potatoes  Vegetables,11/18/25 6:48
+Lunch,Friday,Pasta  Garlic Bread  Soup,11/29/25 10:09
+Breakfast,Saturday,Pasta  Garlic Bread  Soup,11/24/25 8:31
+Lunch,Sunday,Grilled Chicken  Rice  Salad,12/25/24 23:01
+Breakfast,Monday,Grilled Chicken  Rice  Salad,06/26/27 15:09
+Dinner,Tuesday,Grilled Chicken  Rice  Salad,12/23/25 7:16
+Breakfast,Wednesday,Pizza  Caesar Salad,08/28/26 21:27
+Breakfast,Thursday,Fish  Quinoa  Roasted Peppers,08/20/24 8:41
+Dinner,Friday,Pasta  Garlic Bread  Soup,10/16/24 15:25
+Lunch,Saturday,Steak  Mashed Potatoes  Vegetables,10/23/25 4:43
+Breakfast,Sunday,Pasta  Garlic Bread  Soup,08/28/26 13:53
+Breakfast,Monday,Pizza  Caesar Salad,12/07/26 6:12
+Breakfast,Tuesday,Pancakes  Bacon  Eggs,03/16/27 0:17
+Breakfast,Wednesday,Pizza  Caesar Salad,10/26/24 10:37
+Lunch,Thursday,Pizza  Caesar Salad,07/19/25 1:10
+Lunch,Friday,Pancakes  Bacon  Eggs,08/12/24 11:09
+Breakfast,Saturday,Oatmeal  Toast  Coffee,09/09/27 2:15
+Breakfast,Sunday,Pizza  Caesar Salad,11/30/26 8:55
+Lunch,Monday,Oatmeal  Toast  Coffee,10/09/27 3:02
+Breakfast,Tuesday,Oatmeal  Toast  Coffee,11/12/25 19:21
+Lunch,Wednesday,Oatmeal  Toast  Coffee,09/20/25 4:42
+Lunch,Thursday,Pasta  Garlic Bread  Soup,11/06/25 14:52
+Dinner,Friday,Pizza  Caesar Salad,03/16/26 12:25
+Lunch,Saturday,Oatmeal  Toast  Coffee,05/19/24 23:38
+Lunch,Sunday,Pancakes  Bacon  Eggs,03/04/25 15:45
+Breakfast,Monday,Pizza  Caesar Salad,08/25/25 23:07
+Breakfast,Tuesday,Oatmeal  Toast  Coffee,04/21/27 15:05
+Lunch,Wednesday,Pizza  Caesar Salad,06/06/25 14:23
+Lunch,Thursday,Pancakes  Bacon  Eggs,06/10/24 6:16
+Dinner,Friday,Pizza  Caesar Salad,01/19/25 12:22
+Breakfast,Saturday,Grilled Chicken  Rice  Salad,12/27/24 0:55
+Breakfast,Sunday,Pizza  Caesar Salad,05/22/26 11:05
+Dinner,Monday,Steak  Mashed Potatoes  Vegetables,08/19/27 18:28
+Breakfast,Tuesday,Pizza  Caesar Salad,12/02/26 3:01
+Breakfast,Wednesday,Pasta  Garlic Bread  Soup,02/17/26 9:54
+Dinner,Thursday,Steak  Mashed Potatoes  Vegetables,08/21/27 15:23
+Lunch,Friday,Pizza  Caesar Salad,03/27/25 20:47
+Breakfast,Saturday,Pizza  Caesar Salad,08/18/26 5:54
+Breakfast,Sunday,Grilled Chicken  Rice  Salad,05/10/25 13:23
+Lunch,Monday,Fish  Quinoa  Roasted Peppers,01/06/26 10:24
+Breakfast,Tuesday,Pasta  Garlic Bread  Soup,02/13/27 5:00
+Dinner,Wednesday,Fish  Quinoa  Roasted Peppers,08/13/24 18:50
+Breakfast,Thursday,Pancakes  Bacon  Eggs,04/22/24 1:56
+Breakfast,Friday,Grilled Chicken  Rice  Salad,12/07/25 1:27
+Lunch,Saturday,Pancakes  Bacon  Eggs,01/25/25 0:54
+Breakfast,Sunday,Pasta  Garlic Bread  Soup,06/23/27 4:56
+Dinner,Monday,Oatmeal  Toast  Coffee,05/11/25 11:38
+Breakfast,Tuesday,Pancakes  Bacon  Eggs,07/14/26 14:49
+Breakfast,Wednesday,Pancakes  Bacon  Eggs,07/20/27 8:15
+Lunch,Thursday,Steak  Mashed Potatoes  Vegetables,03/22/27 20:46
+Breakfast,Friday,Steak  Mashed Potatoes  Vegetables,03/31/26 10:58
+Lunch,Saturday,Pizza  Caesar Salad,01/06/26 0:27
+Lunch,Sunday,Fish  Quinoa  Roasted Peppers,07/08/26 15:19
+Lunch,Monday,Fish  Quinoa  Roasted Peppers,10/06/26 14:37
+Breakfast,Tuesday,Steak  Mashed Potatoes  Vegetables,07/12/26 10:01
+Breakfast,Wednesday,Pasta  Garlic Bread  Soup,08/13/26 20:17
+Breakfast,Thursday,Fish  Quinoa  Roasted Peppers,12/09/24 16:02
+Dinner,Friday,Steak  Mashed Potatoes  Vegetables,09/30/26 13:16
+Breakfast,Saturday,Pizza  Caesar Salad,06/04/27 7:35
+Dinner,Sunday,Pizza  Caesar Salad,09/17/24 10:46
+Dinner,Monday,Pancakes  Bacon  Eggs,12/27/26 9:51
+Lunch,Tuesday,Oatmeal  Toast  Coffee,01/07/25 21:26
+Breakfast,Wednesday,Fish  Quinoa  Roasted Peppers,08/19/26 19:09
+Breakfast,Thursday,Steak  Mashed Potatoes  Vegetables,11/29/24 2:49
+Breakfast,Friday,Pasta  Garlic Bread  Soup,11/04/27 9:42
+Dinner,Saturday,Pizza  Caesar Salad,09/24/26 12:29
+Lunch,Sunday,Fish  Quinoa  Roasted Peppers,11/30/24 5:19
+Breakfast,Monday,Pizza  Caesar Salad,10/28/27 14:12
+Breakfast,Tuesday,Oatmeal  Toast  Coffee,05/19/27 4:13
+Dinner,Wednesday,Pasta  Garlic Bread  Soup,07/17/26 17:56
+Lunch,Thursday,Oatmeal  Toast  Coffee,09/08/25 19:18
+Dinner,Friday,Pasta  Garlic Bread  Soup,03/24/25 23:33
+Lunch,Saturday,Oatmeal  Toast  Coffee,08/15/24 8:02
+Breakfast,Sunday,Oatmeal  Toast  Coffee,12/28/24 18:54
+Lunch,Monday,Steak  Mashed Potatoes  Vegetables,09/29/25 23:08
+Dinner,Tuesday,Pasta  Garlic Bread  Soup,12/13/25 13:12
+Breakfast,Wednesday,Grilled Chicken  Rice  Salad,06/01/27 12:41
+Breakfast,Thursday,Pancakes  Bacon  Eggs,10/29/24 14:33
+Lunch,Friday,Pasta  Garlic Bread  Soup,04/23/24 21:42
+Breakfast,Saturday,Pasta  Garlic Bread  Soup,03/31/27 5:09
+Dinner,Sunday,Pasta  Garlic Bread  Soup,08/03/26 12:06
+Breakfast,Monday,Steak  Mashed Potatoes  Vegetables,07/24/24 16:14
+Lunch,Tuesday,Steak  Mashed Potatoes  Vegetables,07/15/27 12:27
+Lunch,Wednesday,Pancakes  Bacon  Eggs,07/09/26 14:51
+Dinner,Thursday,Pancakes  Bacon  Eggs,12/07/25 16:33
+Breakfast,Friday,Pancakes  Bacon  Eggs,06/28/27 20:19
+Breakfast,Saturday,Grilled Chicken  Rice  Salad,06/15/24 11:02
+Breakfast,Sunday,Pancakes  Bacon  Eggs,07/26/24 22:19
+Breakfast,Monday,Pancakes  Bacon  Eggs,11/09/26 9:34
+Breakfast,Tuesday,Grilled Chicken  Rice  Salad,08/12/25 3:12
+Dinner,Wednesday,Oatmeal  Toast  Coffee,12/04/25 8:00
+Lunch,Thursday,Pizza  Caesar Salad,05/13/26 2:28
+Lunch,Friday,Steak  Mashed Potatoes  Vegetables,12/28/25 0:35
+Dinner,Saturday,Steak  Mashed Potatoes  Vegetables,11/11/25 4:43
+Lunch,Sunday,Pasta  Garlic Bread  Soup,02/06/27 10:17
+Breakfast,Monday,Steak  Mashed Potatoes  Vegetables,09/22/24 7:41
+Breakfast,Tuesday,Fish  Quinoa  Roasted Peppers,10/13/25 7:37
+Dinner,Wednesday,Pasta  Garlic Bread  Soup,11/24/27 1:55
+Lunch,Thursday,Fish  Quinoa  Roasted Peppers,07/19/27 21:51
+Dinner,Saturday,Oatmeal  Toast  Coffee,02/05/25 1:45
+Lunch,Sunday,Fish  Quinoa  Roasted Peppers,08/23/27 22:16
+Breakfast,Monday,Pizza  Caesar Salad,05/01/24 5:10
+Breakfast,Tuesday,Fish  Quinoa  Roasted Peppers,11/25/24 3:16
+Dinner,Wednesday,Grilled Chicken  Rice  Salad,06/23/26 8:43
+Dinner,Thursday,Steak  Mashed Potatoes  Vegetables,06/19/27 12:45
+Lunch,Friday,Pasta  Garlic Bread  Soup,10/04/25 4:36
+Dinner,Saturday,Steak  Mashed Potatoes  Vegetables,09/28/25 20:54
+Breakfast,Sunday,Oatmeal  Toast  Coffee,03/06/26 6:27
+Breakfast,Monday,Pizza  Caesar Salad,08/12/25 11:34
+Dinner,Tuesday,Steak  Mashed Potatoes  Vegetables,11/24/24 16:40
+Dinner,Wednesday,Pasta  Garlic Bread  Soup,04/10/25 23:07
+Breakfast,Thursday,Pancakes  Bacon  Eggs,02/24/25 7:13
+Dinner,Friday,Steak  Mashed Potatoes  Vegetables,09/29/26 15:52
+Breakfast,Sunday,Pizza  Caesar Salad,04/22/26 6:30
+Breakfast,Monday,Oatmeal  Toast  Coffee,02/15/25 4:50
+Breakfast,Tuesday,Pasta  Garlic Bread  Soup,10/01/25 2:08
+Lunch,Wednesday,Oatmeal  Toast  Coffee,09/11/24 10:52
+Lunch,Thursday,Pancakes  Bacon  Eggs,09/26/24 15:53
+Lunch,Friday,Pizza  Caesar Salad,10/28/27 19:27
+Breakfast,Saturday,Grilled Chicken  Rice  Salad,04/23/25 7:30
+Lunch,Sunday,Pasta  Garlic Bread  Soup,01/27/27 4:46
+Breakfast,Monday,Pizza  Caesar Salad,04/01/27 9:27
+Lunch,Tuesday,Pancakes  Bacon  Eggs,04/12/25 23:48
+Dinner,Wednesday,Pizza  Caesar Salad,12/01/25 11:26
+Breakfast,Thursday,Grilled Chicken  Rice  Salad,09/24/25 4:45
+Breakfast,Friday,Grilled Chicken  Rice  Salad,10/17/25 17:35
+Dinner,Saturday,Oatmeal  Toast  Coffee,11/04/25 23:44
+Breakfast,Sunday,Pasta  Garlic Bread  Soup,11/21/26 18:39
+Lunch,Monday,Fish  Quinoa  Roasted Peppers,12/16/27 9:29
+Lunch,Tuesday,Grilled Chicken  Rice  Salad,08/05/27 19:56
+Breakfast,Wednesday,Fish  Quinoa  Roasted Peppers,12/28/24 10:41
+Dinner,Thursday,Grilled Chicken  Rice  Salad,11/22/27 21:50
+Dinner,Friday,Pancakes  Bacon  Eggs,07/27/25 21:09
+Lunch,Saturday,Pasta  Garlic Bread  Soup,12/14/27 14:47
+Dinner,Sunday,Oatmeal  Toast  Coffee,10/04/24 23:57
+Dinner,Monday,Steak  Mashed Potatoes  Vegetables,04/18/24 13:34
+Lunch,Tuesday,Pasta  Garlic Bread  Soup,03/28/27 2:54
+Breakfast,Wednesday,Pasta  Garlic Bread  Soup,04/30/26 11:53
+Lunch,Thursday,Grilled Chicken  Rice  Salad,06/26/25 22:08
+Lunch,Friday,Pasta  Garlic Bread  Soup,08/15/25 16:18
+Lunch,Saturday,Grilled Chicken  Rice  Salad,05/22/24 14:26
+Dinner,Sunday,Pasta  Garlic Bread  Soup,03/14/25 17:47
+Breakfast,Monday,Steak  Mashed Potatoes  Vegetables,05/18/25 3:37
+Breakfast,Tuesday,Steak  Mashed Potatoes  Vegetables,09/24/27 16:03
+Dinner,Wednesday,Steak  Mashed Potatoes  Vegetables,12/02/24 12:59
+Dinner,Thursday,Oatmeal  Toast  Coffee,07/11/26 19:03
+Lunch,Friday,Pancakes  Bacon  Eggs,06/29/26 0:00
+Breakfast,Saturday,Pizza  Caesar Salad,05/30/24 10:44
+Breakfast,Sunday,Steak  Mashed Potatoes  Vegetables,03/24/26 23:17
+Dinner,Monday,Pizza  Caesar Salad,10/04/26 8:26
+Breakfast,Tuesday,Pizza  Caesar Salad,05/18/26 21:40
+Breakfast,Wednesday,Pancakes  Bacon  Eggs,02/03/27 7:57
+Dinner,Thursday,Grilled Chicken  Rice  Salad,02/01/25 5:52
+Lunch,Friday,Steak  Mashed Potatoes  Vegetables,04/16/25 15:46
+Breakfast,Sunday,Oatmeal  Toast  Coffee,08/04/27 14:21
+Dinner,Tuesday,Pasta  Garlic Bread  Soup,06/26/25 2:00
+Breakfast,Wednesday,Grilled Chicken  Rice  Salad,10/19/27 21:17
+Breakfast,Thursday,Fish  Quinoa  Roasted Peppers,11/28/27 11:55
+Dinner,Friday,Oatmeal  Toast  Coffee,01/23/25 10:13
+Dinner,Saturday,Grilled Chicken  Rice  Salad,04/03/25 18:13
+Lunch,Sunday,Pancakes  Bacon  Eggs,12/30/25 16:01
+Lunch,Monday,Grilled Chicken  Rice  Salad,11/23/26 5:32
+Lunch,Tuesday,Fish  Quinoa  Roasted Peppers,03/05/26 12:05
+Breakfast,Wednesday,Pasta  Garlic Bread  Soup,08/08/25 20:54
+Lunch,Thursday,Fish  Quinoa  Roasted Peppers,08/12/26 9:37
+Lunch,Friday,Steak  Mashed Potatoes  Vegetables,04/05/27 2:58
+Breakfast,Saturday,Pizza  Caesar Salad,09/27/24 6:52
+Lunch,Sunday,Pizza  Caesar Salad,09/12/27 2:54
+Lunch,Monday,Pancakes  Bacon  Eggs,08/12/25 22:42
+Dinner,Tuesday,Grilled Chicken  Rice  Salad,08/26/24 2:27
+Lunch,Wednesday,Pancakes  Bacon  Eggs,10/17/24 19:18
+Breakfast,Thursday,Oatmeal  Toast  Coffee,04/16/26 23:09
+Lunch,Friday,Fish  Quinoa  Roasted Peppers,09/03/24 4:41
+Breakfast,Saturday,Fish  Quinoa  Roasted Peppers,12/24/24 23:02
+Dinner,Sunday,Pancakes  Bacon  Eggs,11/17/27 6:28
+Lunch,Monday,Pasta  Garlic Bread  Soup,07/29/26 6:15
+Dinner,Tuesday,Pasta  Garlic Bread  Soup,02/07/25 5:11
+Lunch,Wednesday,Grilled Chicken  Rice  Salad,10/18/24 22:48
+Lunch,Thursday,Pizza  Caesar Salad,08/03/26 20:52
+Dinner,Friday,Pizza  Caesar Salad,03/26/26 19:48
+Lunch,Saturday,Oatmeal  Toast  Coffee,04/11/27 7:56
+Lunch,Sunday,Oatmeal  Toast  Coffee,05/20/26 23:23
+Lunch,Monday,Pancakes  Bacon  Eggs,11/01/26 19:32
+Lunch,Tuesday,Pancakes  Bacon  Eggs,05/15/27 21:58
+Lunch,Wednesday,Pizza  Caesar Salad,10/07/27 20:53
+Dinner,Thursday,Pancakes  Bacon  Eggs,06/25/25 12:26
+Dinner,Friday,Steak  Mashed Potatoes  Vegetables,09/06/26 21:45
+Lunch,Saturday,Pancakes  Bacon  Eggs,09/15/26 0:03
+Breakfast,Sunday,Steak  Mashed Potatoes  Vegetables,09/24/24 18:57
+Lunch,Monday,Grilled Chicken  Rice  Salad,06/21/26 6:22
+Lunch,Tuesday,Pizza  Caesar Salad,05/28/25 18:02
+Breakfast,Wednesday,Fish  Quinoa  Roasted Peppers,11/18/25 10:18
+Breakfast,Thursday,Grilled Chicken  Rice  Salad,05/06/24 4:11
+Breakfast,Friday,Pizza  Caesar Salad,10/08/24 2:01
+Lunch,Saturday,Steak  Mashed Potatoes  Vegetables,06/24/24 23:49
+Lunch,Sunday,Fish  Quinoa  Roasted Peppers,11/19/25 7:55
+Lunch,Monday,Oatmeal  Toast  Coffee,12/07/25 0:25
+Dinner,Tuesday,Fish  Quinoa  Roasted Peppers,08/01/24 22:46
+Breakfast,Wednesday,Pizza  Caesar Salad,11/18/24 8:37
+Breakfast,Thursday,Pancakes  Bacon  Eggs,12/03/27 17:13
+Lunch,Friday,Grilled Chicken  Rice  Salad,10/10/26 11:20
+Lunch,Saturday,Pancakes  Bacon  Eggs,08/28/26 14:39
+Breakfast,Sunday,Fish  Quinoa  Roasted Peppers,12/19/26 21:56
+Dinner,Monday,Pizza  Caesar Salad,12/15/24 2:18
+Lunch,Tuesday,Oatmeal  Toast  Coffee,08/18/26 15:24
+Lunch,Wednesday,Pasta  Garlic Bread  Soup,04/29/24 4:18
+Breakfast,Thursday,Pizza  Caesar Salad,12/24/25 6:41
+Breakfast,Friday,Steak  Mashed Potatoes  Vegetables,09/13/27 10:56
+Breakfast,Saturday,Pasta  Garlic Bread  Soup,12/23/25 2:25
+Breakfast,Sunday,Pizza  Caesar Salad,03/12/27 5:52
+Lunch,Monday,Oatmeal  Toast  Coffee,04/19/26 15:51
+Lunch,Tuesday,Fish  Quinoa  Roasted Peppers,10/24/24 12:05
+Breakfast,Wednesday,Pasta  Garlic Bread  Soup,12/24/26 16:15
+Lunch,Thursday,Grilled Chicken  Rice  Salad,10/10/26 15:20
+Lunch,Friday,Pancakes  Bacon  Eggs,05/03/25 13:35
+Dinner,Saturday,Pizza  Caesar Salad,11/22/26 19:06
+Dinner,Sunday,Steak  Mashed Potatoes  Vegetables,05/26/27 0:26
+Lunch,Monday,Steak  Mashed Potatoes  Vegetables,11/20/27 3:51
+Dinner,Tuesday,Fish  Quinoa  Roasted Peppers,06/08/26 1:10
+Lunch,Wednesday,Grilled Chicken  Rice  Salad,08/17/27 0:10
+Lunch,Thursday,Oatmeal  Toast  Coffee,03/15/25 6:19
+Lunch,Friday,Steak  Mashed Potatoes  Vegetables,04/14/24 8:00
+Breakfast,Saturday,Pizza  Caesar Salad,04/05/25 13:36
+Dinner,Sunday,Pasta  Garlic Bread  Soup,11/11/27 23:13
+Breakfast,Monday,Grilled Chicken  Rice  Salad,09/19/27 16:08
+Lunch,Tuesday,Fish  Quinoa  Roasted Peppers,05/27/24 14:16
+Breakfast,Wednesday,Pasta  Garlic Bread  Soup,02/16/27 21:17
+Lunch,Thursday,Pizza  Caesar Salad,06/24/24 21:08
+Breakfast,Friday,Pancakes  Bacon  Eggs,11/08/27 14:11
+Breakfast,Saturday,Fish  Quinoa  Roasted Peppers,08/29/25 11:20
+Dinner,Sunday,Grilled Chicken  Rice  Salad,02/25/25 15:23
+Breakfast,Monday,Fish  Quinoa  Roasted Peppers,01/04/27 9:22
+Lunch,Wednesday,Oatmeal  Toast  Coffee,12/19/27 4:09
+Lunch,Thursday,Grilled Chicken  Rice  Salad,02/06/27 0:24
+Lunch,Friday,Pizza  Caesar Salad,04/14/26 21:41
+Dinner,Saturday,Pancakes  Bacon  Eggs,03/12/27 10:03
+Breakfast,Sunday,Grilled Chicken  Rice  Salad,02/04/27 9:05
+Lunch,Monday,Oatmeal  Toast  Coffee,10/14/24 8:05
+Dinner,Tuesday,Oatmeal  Toast  Coffee,06/22/25 6:38
+Dinner,Wednesday,Fish  Quinoa  Roasted Peppers,06/22/27 9:51
+Breakfast,Thursday,Pizza  Caesar Salad,01/19/27 19:22
+Lunch,Saturday,Oatmeal  Toast  Coffee,11/14/24 23:47
+Breakfast,Sunday,Steak  Mashed Potatoes  Vegetables,05/23/26 9:23
+Dinner,Monday,Grilled Chicken  Rice  Salad,11/08/27 11:41
+Lunch,Tuesday,Pasta  Garlic Bread  Soup,08/22/26 22:39
+Lunch,Wednesday,Steak  Mashed Potatoes  Vegetables,12/11/26 10:01
+Dinner,Thursday,Pancakes  Bacon  Eggs,07/15/24 9:28
+Breakfast,Friday,Steak  Mashed Potatoes  Vegetables,09/02/27 23:42
+Breakfast,Saturday,Pasta  Garlic Bread  Soup,04/07/25 15:22
+Breakfast,Sunday,Oatmeal  Toast  Coffee,05/22/25 14:39
+Breakfast,Monday,Pancakes  Bacon  Eggs,05/25/25 23:38
+Breakfast,Tuesday,Pasta  Garlic Bread  Soup,10/30/25 4:47
+Dinner,Thursday,Pizza  Caesar Salad,08/09/25 19:58
+Breakfast,Friday,Fish  Quinoa  Roasted Peppers,09/30/24 14:11
+Lunch,Saturday,Pasta  Garlic Bread  Soup,05/02/26 15:32
+Dinner,Sunday,Oatmeal  Toast  Coffee,08/15/26 0:16
+Lunch,Monday,Steak  Mashed Potatoes  Vegetables,04/18/26 20:31
+Dinner,Tuesday,Grilled Chicken  Rice  Salad,10/06/24 15:02
+Lunch,Wednesday,Oatmeal  Toast  Coffee,10/29/26 18:40
+Lunch,Thursday,Pizza  Caesar Salad,08/12/24 2:13
+Breakfast,Friday,Pasta  Garlic Bread  Soup,04/15/26 1:56
+Dinner,Sunday,Pizza  Caesar Salad,11/28/27 0:10
+Lunch,Monday,Grilled Chicken  Rice  Salad,02/18/27 0:12
+Breakfast,Tuesday,Steak  Mashed Potatoes  Vegetables,10/25/27 18:58
+Breakfast,Wednesday,Pancakes  Bacon  Eggs,01/10/27 11:32
+Dinner,Thursday,Steak  Mashed Potatoes  Vegetables,04/18/26 18:44
+Lunch,Friday,Pancakes  Bacon  Eggs,05/07/24 14:37
+Breakfast,Saturday,Fish  Quinoa  Roasted Peppers,11/07/26 8:32
+Breakfast,Sunday,Pasta  Garlic Bread  Soup,10/21/26 17:01
+Breakfast,Monday,Fish  Quinoa  Roasted Peppers,09/08/27 15:18
+Breakfast,Tuesday,Grilled Chicken  Rice  Salad,04/28/27 20:04
+Lunch,Wednesday,Grilled Chicken  Rice  Salad,05/25/24 21:36
+Dinner,Thursday,Pancakes  Bacon  Eggs,08/27/26 9:02
+Dinner,Friday,Pancakes  Bacon  Eggs,07/03/24 19:07
+Lunch,Saturday,Fish  Quinoa  Roasted Peppers,07/23/26 22:21
+Dinner,Sunday,Oatmeal  Toast  Coffee,08/21/25 21:49
+Dinner,Monday,Steak  Mashed Potatoes  Vegetables,11/07/26 3:04
+Lunch,Tuesday,Pizza  Caesar Salad,01/25/25 9:49
+Lunch,Wednesday,Pasta  Garlic Bread  Soup,05/05/26 21:26
+Breakfast,Thursday,Oatmeal  Toast  Coffee,03/18/25 11:33
+Dinner,Friday,Grilled Chicken  Rice  Salad,04/28/27 12:33
+Dinner,Saturday,Pancakes  Bacon  Eggs,02/21/27 4:07
+Dinner,Sunday,Grilled Chicken  Rice  Salad,03/05/25 0:35
+Lunch,Monday,Pasta  Garlic Bread  Soup,05/21/25 5:50
+Dinner,Tuesday,Pasta  Garlic Bread  Soup,12/02/24 15:57
+Breakfast,Wednesday,Fish  Quinoa  Roasted Peppers,04/11/26 16:24
+Lunch,Thursday,Pancakes  Bacon  Eggs,05/30/27 10:08
+Dinner,Friday,Fish  Quinoa  Roasted Peppers,05/22/27 6:36
+Lunch,Saturday,Pizza  Caesar Salad,09/01/25 7:14
+Dinner,Sunday,Pasta  Garlic Bread  Soup,08/10/26 17:01
+Lunch,Monday,Fish  Quinoa  Roasted Peppers,12/18/26 3:57
+Breakfast,Tuesday,Fish  Quinoa  Roasted Peppers,12/14/25 0:02
+Breakfast,Wednesday,Oatmeal  Toast  Coffee,06/16/24 21:56
+Lunch,Thursday,Pasta  Garlic Bread  Soup,08/03/25 18:14
+Dinner,Friday,Pizza  Caesar Salad,10/25/24 16:11
+Lunch,Saturday,Pancakes  Bacon  Eggs,04/15/27 18:44
+Breakfast,Sunday,Pasta  Garlic Bread  Soup,03/12/25 16:07
+Lunch,Monday,Pizza  Caesar Salad,09/25/25 19:19
+Breakfast,Tuesday,Oatmeal  Toast  Coffee,11/16/26 2:58
+Lunch,Wednesday,Grilled Chicken  Rice  Salad,02/02/27 23:33
+Lunch,Thursday,Pasta  Garlic Bread  Soup,07/04/27 3:00
+Breakfast,Friday,Pancakes  Bacon  Eggs,12/11/25 8:52
+Dinner,Saturday,Oatmeal  Toast  Coffee,12/18/25 11:51
+Breakfast,Sunday,Fish  Quinoa  Roasted Peppers,09/20/24 7:55
+Breakfast,Monday,Fish  Quinoa  Roasted Peppers,03/29/27 8:31
+Lunch,Tuesday,Oatmeal  Toast  Coffee,08/22/24 6:46
+Breakfast,Wednesday,Pizza  Caesar Salad,06/29/27 23:54
+Lunch,Thursday,Fish  Quinoa  Roasted Peppers,01/15/27 18:01
+Breakfast,Friday,Pasta  Garlic Bread  Soup,05/13/26 2:00
+Dinner,Saturday,Steak  Mashed Potatoes  Vegetables,05/15/24 1:48
+Lunch,Sunday,Pancakes  Bacon  Eggs,02/06/25 19:20
+Dinner,Monday,Pizza  Caesar Salad,12/05/25 1:31
+Lunch,Tuesday,Pancakes  Bacon  Eggs,05/30/27 17:02
+Dinner,Wednesday,Pizza  Caesar Salad,08/14/24 1:40
+Breakfast,Thursday,Steak  Mashed Potatoes  Vegetables,05/17/27 0:41
+Breakfast,Friday,Oatmeal  Toast  Coffee,05/19/26 22:58
+Breakfast,Saturday,Pasta  Garlic Bread  Soup,07/12/26 9:43
+Breakfast,Sunday,Pizza  Caesar Salad,04/19/27 12:27
+Lunch,Monday,Grilled Chicken  Rice  Salad,10/27/24 2:56
+Lunch,Tuesday,Oatmeal  Toast  Coffee,03/23/25 12:59
+Breakfast,Wednesday,Oatmeal  Toast  Coffee,10/27/24 20:20
+Lunch,Thursday,Pancakes  Bacon  Eggs,06/21/27 1:15
+Breakfast,Friday,Fish  Quinoa  Roasted Peppers,06/05/25 10:41
+Dinner,Saturday,Pasta  Garlic Bread  Soup,11/30/27 3:09
+Dinner,Sunday,Pasta  Garlic Bread  Soup,04/08/25 9:54
+Lunch,Monday,Pizza  Caesar Salad,04/22/25 1:44
+Lunch,Tuesday,Pasta  Garlic Bread  Soup,09/13/25 18:33
+Breakfast,Wednesday,Pancakes  Bacon  Eggs,07/19/24 14:54
+Dinner,Thursday,Steak  Mashed Potatoes  Vegetables,09/03/27 21:55
+Dinner,Friday,Fish  Quinoa  Roasted Peppers,10/24/24 10:06
+Dinner,Saturday,Grilled Chicken  Rice  Salad,06/24/26 12:12
+Breakfast,Sunday,Fish  Quinoa  Roasted Peppers,03/13/26 7:10
+Dinner,Monday,Pizza  Caesar Salad,01/24/25 1:25
+Breakfast,Tuesday,Oatmeal  Toast  Coffee,10/23/27 11:53
+Dinner,Wednesday,Oatmeal  Toast  Coffee,09/01/24 9:33
+Breakfast,Thursday,Steak  Mashed Potatoes  Vegetables,07/17/24 9:50
+Dinner,Friday,Pancakes  Bacon  Eggs,09/19/24 10:56
+Breakfast,Saturday,Oatmeal  Toast  Coffee,04/06/25 23:26
+Dinner,Sunday,Steak  Mashed Potatoes  Vegetables,08/04/24 5:52
+Dinner,Monday,Pancakes  Bacon  Eggs,12/12/24 8:47
+Dinner,Tuesday,Steak  Mashed Potatoes  Vegetables,06/16/25 15:05
+Lunch,Wednesday,Oatmeal  Toast  Coffee,08/26/27 1:52
+Breakfast,Thursday,Steak  Mashed Potatoes  Vegetables,05/11/26 18:52
+Dinner,Friday,Grilled Chicken  Rice  Salad,10/17/27 13:21
+Dinner,Saturday,Fish  Quinoa  Roasted Peppers,12/05/26 20:25
+Breakfast,Sunday,Pizza  Caesar Salad,05/21/25 2:04
+Breakfast,Monday,Pasta  Garlic Bread  Soup,05/16/27 5:35
+Dinner,Tuesday,Grilled Chicken  Rice  Salad,12/26/27 6:44
+Breakfast,Wednesday,Pizza  Caesar Salad,09/06/26 3:30
+Breakfast,Thursday,Fish  Quinoa  Roasted Peppers,04/20/24 14:42
+Lunch,Friday,Pasta  Garlic Bread  Soup,02/27/27 5:35
+Dinner,Saturday,Grilled Chicken  Rice  Salad,04/06/26 21:55
+Lunch,Sunday,Pasta  Garlic Bread  Soup,10/02/26 5:03
+Lunch,Monday,Pancakes  Bacon  Eggs,07/12/24 11:10
+Breakfast,Tuesday,Pancakes  Bacon  Eggs,02/04/27 3:58
+Dinner,Wednesday,Pizza  Caesar Salad,10/11/24 18:26
+Lunch,Thursday,Pasta  Garlic Bread  Soup,05/04/25 2:37
+Dinner,Friday,Grilled Chicken  Rice  Salad,02/28/27 7:57
+Breakfast,Saturday,Grilled Chicken  Rice  Salad,07/19/27 4:07
+Breakfast,Sunday,Pancakes  Bacon  Eggs,01/17/25 21:08
+Lunch,Monday,Grilled Chicken  Rice  Salad,11/28/25 3:14
+Breakfast,Tuesday,Pasta  Garlic Bread  Soup,11/27/24 20:59
+Lunch,Wednesday,Pizza  Caesar Salad,01/07/27 20:35
+Lunch,Thursday,Fish  Quinoa  Roasted Peppers,08/31/24 2:43
+Breakfast,Friday,Grilled Chicken  Rice  Salad,03/01/26 0:45
+Breakfast,Saturday,Fish  Quinoa  Roasted Peppers,07/01/27 19:05
+Breakfast,Sunday,Grilled Chicken  Rice  Salad,06/11/27 7:30
+Lunch,Monday,Pizza  Caesar Salad,10/07/24 6:53
+Breakfast,Tuesday,Grilled Chicken  Rice  Salad,12/15/26 19:08
+Dinner,Wednesday,Steak  Mashed Potatoes  Vegetables,10/06/26 4:16
+Dinner,Thursday,Pancakes  Bacon  Eggs,10/26/24 0:48
+Lunch,Friday,Steak  Mashed Potatoes  Vegetables,09/08/24 4:52
+Breakfast,Saturday,Pancakes  Bacon  Eggs,07/05/27 16:53
+Lunch,Sunday,Oatmeal  Toast  Coffee,07/23/27 17:23
+Dinner,Monday,Pizza  Caesar Salad,05/13/27 12:44
+Lunch,Tuesday,Pasta  Garlic Bread  Soup,01/16/25 9:50
+Lunch,Wednesday,Pasta  Garlic Bread  Soup,01/28/25 10:18
+Dinner,Thursday,Grilled Chicken  Rice  Salad,09/10/26 23:26
+Breakfast,Friday,Pasta  Garlic Bread  Soup,06/09/27 0:15
+Lunch,Saturday,Grilled Chicken  Rice  Salad,02/05/25 18:33
+Dinner,Sunday,Oatmeal  Toast  Coffee,07/04/25 21:30
+Breakfast,Monday,Pasta  Garlic Bread  Soup,05/05/27 8:53
+Lunch,Tuesday,Pasta  Garlic Bread  Soup,11/15/27 2:00
+Dinner,Wednesday,Pizza  Caesar Salad,07/13/24 15:27
+Breakfast,Thursday,Oatmeal  Toast  Coffee,03/24/27 10:30
+Dinner,Friday,Steak  Mashed Potatoes  Vegetables,11/02/27 12:02
+Lunch,Saturday,Steak  Mashed Potatoes  Vegetables,07/05/27 7:00
+Dinner,Monday,Fish  Quinoa  Roasted Peppers,10/01/27 17:38
+Breakfast,Tuesday,Pizza  Caesar Salad,12/11/26 0:41
+Dinner,Wednesday,Steak  Mashed Potatoes  Vegetables,06/24/26 9:33
+Dinner,Thursday,Pizza  Caesar Salad,07/15/25 10:23
+Lunch,Friday,Pasta  Garlic Bread  Soup,08/07/27 23:10
+Breakfast,Saturday,Pasta  Garlic Bread  Soup,09/27/27 7:09
+Dinner,Sunday,Fish  Quinoa  Roasted Peppers,08/20/27 7:09
+Breakfast,Monday,Steak  Mashed Potatoes  Vegetables,08/28/24 4:25
+Breakfast,Tuesday,Pasta  Garlic Bread  Soup,10/25/24 7:31
+Lunch,Wednesday,Fish  Quinoa  Roasted Peppers,05/04/24 22:37
+Lunch,Thursday,Grilled Chicken  Rice  Salad,12/20/27 19:57
+Breakfast,Friday,Grilled Chicken  Rice  Salad,05/25/27 4:47
+Breakfast,Saturday,Fish  Quinoa  Roasted Peppers,10/28/24 3:44
+Dinner,Sunday,Steak  Mashed Potatoes  Vegetables,03/05/26 4:20
+Dinner,Monday,Pizza  Caesar Salad,11/23/26 12:05
+Dinner,Tuesday,Oatmeal  Toast  Coffee,12/22/27 22:24
+Breakfast,Wednesday,Grilled Chicken  Rice  Salad,12/09/27 13:51
+Breakfast,Thursday,Pizza  Caesar Salad,12/09/26 4:21
+Dinner,Friday,Pancakes  Bacon  Eggs,10/04/24 4:39
+Dinner,Saturday,Pizza  Caesar Salad,05/25/25 5:06
+Lunch,Sunday,Oatmeal  Toast  Coffee,03/21/27 4:15
+Breakfast,Monday,Pasta  Garlic Bread  Soup,06/29/24 5:21
+Lunch,Tuesday,Grilled Chicken  Rice  Salad,06/15/24 13:53
+Lunch,Wednesday,Oatmeal  Toast  Coffee,05/28/26 11:29
+Lunch,Thursday,Fish  Quinoa  Roasted Peppers,03/23/26 19:00
+Lunch,Saturday,Fish  Quinoa  Roasted Peppers,12/05/27 1:38
+Dinner,Sunday,Grilled Chicken  Rice  Salad,08/25/25 16:50
+Breakfast,Monday,Pizza  Caesar Salad,11/26/27 15:16
+Dinner,Tuesday,Pancakes  Bacon  Eggs,11/20/26 11:01
+Dinner,Wednesday,Steak  Mashed Potatoes  Vegetables,01/17/27 3:26
+Lunch,Thursday,Pasta  Garlic Bread  Soup,12/31/26 3:58
+Breakfast,Friday,Oatmeal  Toast  Coffee,06/17/26 0:40
+Lunch,Saturday,Fish  Quinoa  Roasted Peppers,10/13/25 8:54
+Lunch,Sunday,Oatmeal  Toast  Coffee,12/25/27 3:05
+Lunch,Monday,Steak  Mashed Potatoes  Vegetables,12/15/25 15:07
+Dinner,Tuesday,Pasta  Garlic Bread  Soup,04/26/24 8:56
+Breakfast,Wednesday,Oatmeal  Toast  Coffee,08/02/25 17:51
+Lunch,Thursday,Pasta  Garlic Bread  Soup,08/05/26 9:36
+Breakfast,Friday,Fish  Quinoa  Roasted Peppers,12/10/25 9:47
+Dinner,Saturday,Pasta  Garlic Bread  Soup,10/04/27 3:16
+Breakfast,Sunday,Oatmeal  Toast  Coffee,02/08/25 12:08
+Breakfast,Monday,Oatmeal  Toast  Coffee,06/15/25 14:06
+Breakfast,Tuesday,Fish  Quinoa  Roasted Peppers,06/17/25 13:50
+Lunch,Wednesday,Pizza  Caesar Salad,11/24/26 6:22
+Breakfast,Thursday,Grilled Chicken  Rice  Salad,04/28/24 22:53
+Breakfast,Friday,Pancakes  Bacon  Eggs,10/25/27 0:41
+Lunch,Saturday,Steak  Mashed Potatoes  Vegetables,07/23/24 16:00
+Breakfast,Sunday,Steak  Mashed Potatoes  Vegetables,10/27/26 5:51
+Breakfast,Wednesday,Fish  Quinoa  Roasted Peppers,05/07/25 7:47
+Lunch,Thursday,Oatmeal  Toast  Coffee,12/01/26 23:02
+Breakfast,Friday,Pasta  Garlic Bread  Soup,09/29/27 4:52
+Dinner,Saturday,Steak  Mashed Potatoes  Vegetables,10/23/24 13:21
+Breakfast,Sunday,Pasta  Garlic Bread  Soup,03/22/27 18:44
+Dinner,Monday,Pasta  Garlic Bread  Soup,10/28/27 16:14
+Dinner,Tuesday,Pasta  Garlic Bread  Soup,04/04/26 20:45
+Dinner,Wednesday,Pasta  Garlic Bread  Soup,09/30/24 2:04
+Lunch,Thursday,Oatmeal  Toast  Coffee,03/25/25 13:16
+Lunch,Friday,Fish  Quinoa  Roasted Peppers,08/04/24 8:00
+Dinner,Sunday,Pasta  Garlic Bread  Soup,05/07/26 22:52
+Lunch,Monday,Grilled Chicken  Rice  Salad,07/15/26 15:04
+Breakfast,Tuesday,Grilled Chicken  Rice  Salad,08/21/25 4:11
+Breakfast,Wednesday,Pizza  Caesar Salad,01/01/25 20:51
+Lunch,Thursday,Grilled Chicken  Rice  Salad,03/09/25 21:54
+Breakfast,Friday,Grilled Chicken  Rice  Salad,07/21/27 1:49
+Breakfast,Saturday,Pancakes  Bacon  Eggs,08/05/26 7:13
+Dinner,Sunday,Pancakes  Bacon  Eggs,05/06/24 23:42
+Dinner,Monday,Fish  Quinoa  Roasted Peppers,01/12/27 9:53
+Lunch,Tuesday,Oatmeal  Toast  Coffee,11/19/25 18:37
+Breakfast,Wednesday,Oatmeal  Toast  Coffee,12/17/27 17:35
+Breakfast,Thursday,Fish  Quinoa  Roasted Peppers,08/09/25 0:52
+Dinner,Friday,Pancakes  Bacon  Eggs,10/17/25 13:34
+Lunch,Saturday,Pizza  Caesar Salad,05/09/26 10:02
+Lunch,Sunday,Pasta  Garlic Bread  Soup,12/21/26 23:01
+Breakfast,Monday,Steak  Mashed Potatoes  Vegetables,08/30/27 4:32
+Lunch,Tuesday,Pancakes  Bacon  Eggs,12/30/27 3:00
+Breakfast,Wednesday,Pasta  Garlic Bread  Soup,06/21/24 3:43
+Dinner,Thursday,Oatmeal  Toast  Coffee,08/21/25 10:36
+Breakfast,Friday,Pasta  Garlic Bread  Soup,09/17/26 23:08
+Lunch,Saturday,Pizza  Caesar Salad,09/08/25 16:52
+Breakfast,Sunday,Pancakes  Bacon  Eggs,03/15/26 9:14
+Lunch,Monday,Fish  Quinoa  Roasted Peppers,05/15/24 16:43
+Dinner,Tuesday,Grilled Chicken  Rice  Salad,09/24/26 5:28
+Breakfast,Wednesday,Fish  Quinoa  Roasted Peppers,04/26/24 3:00
+Dinner,Thursday,Pizza  Caesar Salad,12/15/27 0:47
+Lunch,Friday,Grilled Chicken  Rice  Salad,05/30/26 2:04
+Breakfast,Saturday,Pizza  Caesar Salad,11/10/24 5:39
+Breakfast,Sunday,Oatmeal  Toast  Coffee,07/21/24 14:32
+Lunch,Monday,Oatmeal  Toast  Coffee,05/20/26 7:59
+Breakfast,Tuesday,Fish  Quinoa  Roasted Peppers,10/08/24 14:57
+Breakfast,Wednesday,Pizza  Caesar Salad,04/13/27 14:23
+Dinner,Thursday,Pasta  Garlic Bread  Soup,09/09/25 12:24
+Breakfast,Friday,Grilled Chicken  Rice  Salad,10/06/24 23:09
+Breakfast,Saturday,Fish  Quinoa  Roasted Peppers,01/24/27 1:28
+Lunch,Sunday,Oatmeal  Toast  Coffee,11/25/26 1:20
+Lunch,Monday,Pasta  Garlic Bread  Soup,10/24/25 14:51
+Dinner,Tuesday,Pasta  Garlic Bread  Soup,09/11/25 20:47
+Lunch,Wednesday,Steak  Mashed Potatoes  Vegetables,01/18/26 23:30
+Dinner,Thursday,Grilled Chicken  Rice  Salad,05/19/27 9:01
+Lunch,Friday,Pizza  Caesar Salad,12/09/26 8:18
+Lunch,Saturday,Grilled Chicken  Rice  Salad,04/10/27 11:59
+Dinner,Sunday,Fish  Quinoa  Roasted Peppers,11/18/24 7:16
+Dinner,Monday,Pasta  Garlic Bread  Soup,01/24/26 0:35
+Breakfast,Tuesday,Fish  Quinoa  Roasted Peppers,05/21/27 13:26
+Dinner,Wednesday,Fish  Quinoa  Roasted Peppers,05/22/25 8:23
+Breakfast,Thursday,Pizza  Caesar Salad,02/01/27 7:24
+Lunch,Friday,Steak  Mashed Potatoes  Vegetables,03/11/27 23:01
+Breakfast,Saturday,Fish  Quinoa  Roasted Peppers,11/28/24 8:59
+Dinner,Sunday,Fish  Quinoa  Roasted Peppers,08/01/26 8:09
+Lunch,Monday,Pizza  Caesar Salad,05/13/24 12:38
+Lunch,Tuesday,Oatmeal  Toast  Coffee,09/21/24 18:13
+Dinner,Wednesday,Pancakes  Bacon  Eggs,08/11/26 15:21
+Breakfast,Thursday,Steak  Mashed Potatoes  Vegetables,07/22/27 13:49
+Dinner,Friday,Oatmeal  Toast  Coffee,09/23/26 2:31
+Breakfast,Saturday,Pasta  Garlic Bread  Soup,03/28/27 13:03
+Breakfast,Sunday,Pasta  Garlic Bread  Soup,09/27/25 5:40
+Breakfast,Monday,Pancakes  Bacon  Eggs,09/01/26 19:26
+Breakfast,Tuesday,Steak  Mashed Potatoes  Vegetables,06/21/25 15:21
+Lunch,Wednesday,Fish  Quinoa  Roasted Peppers,07/09/25 15:20
+Breakfast,Thursday,Oatmeal  Toast  Coffee,01/06/25 5:14
+Breakfast,Friday,Pizza  Caesar Salad,01/16/27 22:36
+Breakfast,Saturday,Pizza  Caesar Salad,08/16/24 2:16
+Breakfast,Sunday,Fish  Quinoa  Roasted Peppers,06/07/25 17:30
+Dinner,Monday,Steak  Mashed Potatoes  Vegetables,04/21/25 10:46
+Dinner,Wednesday,Fish  Quinoa  Roasted Peppers,05/22/27 13:35
+Breakfast,Thursday,Oatmeal  Toast  Coffee,07/06/27 16:55
+Breakfast,Friday,Oatmeal  Toast  Coffee,04/20/26 10:56

@@ -21,8 +21,8 @@ CREATE TABLE resident (
 CREATE TABLE meal (
     meal_type VARCHAR(10),
     day_of_the_week VARCHAR(10),
+	menu VARCHAR(100),
 	date DATE,
-    menu VARCHAR(100),
     PRIMARY KEY (meal_type, day_of_the_week, date)
 );
 
@@ -61,10 +61,10 @@ CREATE TABLE maintenance_req (
 );
 
 CREATE TABLE is_chef (
-    staff_member_id INT,
-    meal_type VARCHAR(10),
-    day_of_the_week VARCHAR(10),
 	date DATE,
+    day_of_the_week VARCHAR(10),
+    meal_type VARCHAR(10),
+    staff_member_id INT,
     PRIMARY KEY (staff_member_id, meal_type, day_of_the_week, date),
     FOREIGN KEY (staff_member_id) REFERENCES staff_member(staff_member_id),
     FOREIGN KEY (meal_type, day_of_the_week, date) REFERENCES meal(meal_type, day_of_the_week, date)
