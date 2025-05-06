@@ -114,13 +114,16 @@ is_chef:
 
 
 queries:
-
+events that a residant visited
 ![image](https://github.com/user-attachments/assets/2f1cecd9-65d4-4165-9fd8-b54f43b03d01)
 
+maintenance_reqs for each room, with the rooms capcity
 ![image](https://github.com/user-attachments/assets/e6197ff7-67a8-4c01-a8c4-840c1b2ae7fd)
 
+the devision of going to events: how many go to 1 event, 2 events etc..
 ![image](https://github.com/user-attachments/assets/f60e4884-a325-4834-95d8-edbeb1a5bd25)
 
+for each staff member, show how many requests he has completed
 ![image](https://github.com/user-attachments/assets/87ccc2a3-b0e2-4e00-a19c-0756caa2c6d9)
 
 ![image](https://github.com/user-attachments/assets/2c24c86b-f5e0-4332-a85c-f9034b6ef3bb)
