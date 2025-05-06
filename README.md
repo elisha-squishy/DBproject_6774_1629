@@ -126,12 +126,16 @@ the devision of going to events: how many go to 1 event, 2 events etc..
 for each staff member, show how many requests he has completed
 ![image](https://github.com/user-attachments/assets/87ccc2a3-b0e2-4e00-a19c-0756caa2c6d9)
 
+amount of rooms that have made less than 2 maintenance reqs, and amount of rooms that made more than 2 maintenance reqs
 ![image](https://github.com/user-attachments/assets/2c24c86b-f5e0-4332-a85c-f9034b6ef3bb)
 
+how many chefs are in charge of meals over time
 ![image](https://github.com/user-attachments/assets/960c5183-ed41-4bc1-9c62-6e58971ed460)
 
+for each job title, shows the staff memebers that have completed the most requests
 ![image](https://github.com/user-attachments/assets/e9d11784-7e2b-44a0-8913-8467e15ad53d)
 
+shows for each room its capacity and how many actually lives there
 ![image](https://github.com/user-attachments/assets/3cccd008-8325-4548-a91a-b61b9f1938c9)
 
 
