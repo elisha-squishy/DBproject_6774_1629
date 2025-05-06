@@ -1,186 +1,156 @@
-שער
+# מערכת ניהול דיור מוגן
 
-שמות המגישים: אלישע רובין ודניאל סיבוני
+**שמות המגישים:** אלישע רובין ודניאל סיבוני  
+**שם המערכת:** מערכת ניהול דיור מוגן  
+**היחידה הנבחרת:** יחידת המגורים והאירועים
 
-שם המערכת: מערכת ניהול דיור מוגן
+---
 
-היחידה הנבחרת: יחידת המגורים והאירועים
+## תוכן עניינים
 
+- [1. מבוא](#1-מבוא)
+- [2. מבנה בסיס הנתונים](#2-מבנה-בסיס-הנתונים)
+  - [2.1 חלוקה ליישויות נפרדות (Normalization)](#21-חלוקה-ליישויות-נפרדות-normalization)
+  - [2.2 קשרי 1:רבים ו-n:n](#22-קשרי-1רבים-ו-nn)
+  - [2.3 טבלת meal עם מפתח מורכב](#23-טבלת-meal-עם-מפתח-מורכב)
+  - [2.4 שמירה על עקביות עם מפתחות זרים](#24-שמירה-על-עקביות-עם-מפתחות-זרים)
+  - [2.5 הפרדת המידע האנושי והלוגיסטי](#25-הפרדת-המידע-האנושי-והלוגיסטי)
+  - [2.6 בחירה במזהים מספריים](#26-בחירה-במזהים-מספריים)
+- [3. הוספת הנתונים](#3-הוספת-הנתונים)
+- [4. שלב ב'](#4-שלב-ב)
+  - [4.1 Queries](#41-queries)
+  - [4.2 Updates/Deletes](#42-updatesdeletes)
+  - [4.3 Rollback/Commit](#43-rollbackcommit)
+  - [4.4 Alter Tables](#44-alter-tables)
 
-תוכן עניינים:
-שלב א':
-  מבוא
+---
 
-  מבנה בסיס הנתונים
-  
-  הוספת הנתונים
-  
-  שלב ב':
-  queries
+## 1. מבוא
 
-  updates/deletes
+מערכת זו נועדה לנהל את הפעילות השוטפת של מוסד לדיור מוגן. המערכת שומרת נתונים על חדרים, דיירים, אנשי צוות, אירועים, תפריטים, ציוד ותחזוקה.  
+היא מאפשרת לעקוב אחר:
 
-  rollback/commit
+- ניהול דיירים ושיבוצם לחדרים  
+- תיעוד אירועים והשתתפות דיירים  
+- מעקב אחר ציוד ובקשות תחזוקה  
+- ניהול תפריטי ארוחות והצוות שאחראי לבישול  
+- זיהוי תפקידים של אנשי צוות במערכת  
 
-  alter tables
-  
-1. מבוא
-מערכת זו נועדה לנהל את הפעילות השוטפת של מוסד לדיור מוגן. המערכת שומרת נתונים על חדרים, דיירים, אנשי צוות, אירועים, תפריטים, ציוד ותחזוקה. היא מאפשרת לעקוב אחר פרטי הדיירים, שיבוצם בחדרים, השתתפותם באירועים, וכן אחר בקשות תחזוקה ופריטי מלאי.
+---
 
-הפונקציונליות המרכזית של המערכת כוללת:
+## 2. מבנה בסיס הנתונים
 
-ניהול דיירים ושיבוצם לחדרים.
+![DB Diagram 1](https://github.com/user-attachments/assets/b9e5fdc7-53ca-4a30-9ede-4cc840941214)  
+![DB Diagram 2](https://github.com/user-attachments/assets/6dd9aeaf-ad6b-4419-a97e-b085cca725f0)
 
-תיעוד אירועים והשתתפות דיירים בהם.
+### 2.1 חלוקה ליישויות נפרדות (Normalization)
 
-מעקב אחר ציוד ובקשות תחזוקה.
+בחרנו לעבוד לפי עקרונות הנורמליזציה (עד דרגה 3) כדי להבטיח:
 
-ניהול תפריטי ארוחות והצוות שאחראי לבישול.
+- הפחתת כפילויות
+- עדכון יעיל
+- מניעת שגיאות לוגיות
 
-זיהוי תפקידים של אנשי צוות במערכת.
+### 2.2 קשרי 1:רבים ו-n:n
 
-מערכת זו נבנתה תוך שימת דגש על שמירת קשרים לוגיים בין הישויות השונות, כדי להבטיח עקביות של הנתונים ויכולת לבצע שאילתות מורכבות בקלות.
+- `resident` ←→ `room` – קשר 1:רבים  
+- `resident` ←→ `event` – טבלת קשר `visiting_event` לקשר n:n  
+- `maintenance_req` – מפתח ראשי מורכב: `room_id`, `staff_member_id`, `request_id`  
+- `is_chef` – קשר n:n בין `staff_member` ל-`meal`
 
+### 2.3 טבלת meal עם מפתח מורכב
 
-2. מבנה בסיס הנתונים
-![image](https://github.com/user-attachments/assets/b9e5fdc7-53ca-4a30-9ede-4cc840941214)
+צירוף `meal_type + day_of_the_week` מהווה מזהה ייחודי.
 
-![image](https://github.com/user-attachments/assets/6dd9aeaf-ad6b-4419-a97e-b085cca725f0)
+### 2.4 שמירה על עקביות עם מפתחות זרים
 
-2.1 חלוקה ליישויות נפרדות (Normalization)
-בחרנו לבנות את המערכת לפי עקרונות נורמליזציה (עד לפחות נורמליזציה מדרגה שלישית), כלומר כל טבלה מייצגת ישות אחת ברורה (למשל: resident, room, event) ואין כפילויות של מידע בין הטבלאות. זה מאפשר:
+- לא ניתן להוסיף דייר לחדר לא קיים  
+- בקשת תחזוקה חייבת להתייחס לישות קיימת
 
-הפחתת כפילויות ואי עקביות.
+### 2.5 הפרדת המידע האנושי והלוגיסטי
 
-עדכון קל ויעיל של נתונים.
+מפריד בין:
 
-מניעת טעויות לוגיות במערכת.
+- ישויות אנושיות (דיירים, עובדים)  
+- ישויות לוגיסטיות (חדרים, ציוד)
 
-2.2 קשרי 1:רבים ו-n:n
-שמנו דגש על יצירת קשרים מדויקים בין הטבלאות:
+### 2.6 בחירה במזהים מספריים
 
-resident ←→ room:
-כל דייר מתגורר בחדר אחד (קשר 1:רבים), ולכן resident כולל מפתח זר ל-room.
+למשל `resident_id`, `room_id`:
 
-resident ←→ event:
-מכיוון שדיירים יכולים להשתתף במספר אירועים, וכל אירוע כולל מספר דיירים – יצרנו טבלת קשר visiting_event שתומכת בקשר רבים לרבים (n:n).
+- מפשט שאילתות  
+- קישורים פשוטים  
+- יעילות בביצועים
 
-maintenance_req:
-בקשת תחזוקה היא קשר בין חדר, עובד ופריט. יצרנו טבלה עם מפתח ראשי מורכב הכולל room_id, staff_member_id ו-request_id, על מנת למנוע כפילויות ולזהות חד-ערכית כל בקשה.
+---
 
-is_chef:
-כל שף אחראי על ארוחה ביום מסוים – נדרש קשר n:n בין staff_member ל-meal. גם כאן נעשה שימוש במפתח ראשי מורכב: staff_member_id, meal_type, day_of_the_week.
+## 3. הוספת הנתונים
 
-2.3 טבלת meal עם מפתח מורכב
-בחרנו שמזהה ייחודי לכל ארוחה יהיה צירוף של meal_type ו-day_of_the_week.
-כך ניתן לתאר תפריטים שבועיים חוזרים בצורה פשוטה ללא צורך במספר מזהה רץ.
-למשל: (Lunch, Monday) חוזר בכל שבוע.
+הוספנו נתונים ב-3 דרכים:
+1. בינה מלאכותית  
+2. סקריפט Python  
+3. אתר [Mockaroo](https://mockaroo.com)
 
-2.4 שמירה על עקביות עם מפתחות זרים
-בכל מקום שבו יש קשר בין טבלאות, שמרנו על מפתחות זרים (FOREIGN KEY) כדי להבטיח שלמות לוגית.
-לדוגמה:
-
-לא ניתן להוסיף דייר לחדר שאינו קיים.
-
-בקשת תחזוקה חייבת להתייחס לעובד ולפריט קיימים.
-
-2.5 הפרדת המידע האנושי והלוגיסטי
-הפרדנו את המידע על האנשים (דיירים, עובדים) ממידע לוגיסטי (חדרים, ציוד, תפריטים), מה שתורם לארגון ברור של המידע.
-
-2.6 בחירה במזהים מספריים
-כל ישות מזוהה בעזרת מזהה מספרי (ID) כמו resident_id, room_id וכו' — זה:
-
-מפשט ביצוע שאילתות.
-
-מאפשר קישורים קלים בין טבלאות.
-
-יעיל מבחינת ביצועים.
-
-3. הוספת הנתונים: הוספנו נתונים ב-3 דרכים: בעזרת בינה מלאכותית, באמצעות סקריפט של פייתון ובעזרת האתר mockaroo
-   ![image](https://github.com/user-attachments/assets/b099c012-b736-4788-84e6-43adf4b7452a)
-
-   ![image](https://github.com/user-attachments/assets/3ab5a3f4-7b2b-44ef-bf06-e44adcf852d1)
-
+![image](https://github.com/user-attachments/assets/b099c012-b736-4788-84e6-43adf4b7452a)  
+![image](https://github.com/user-attachments/assets/3ab5a3f4-7b2b-44ef-bf06-e44adcf852d1)  
 ![image](https://github.com/user-attachments/assets/0b7e1239-6fec-46f8-9af8-abe055ebafe8)
 
-להלן דוג' של גיבוי ושחזור נתונים:
-![image](https://github.com/user-attachments/assets/32a5105b-451f-46cd-8568-b104566ac823)
+**דוגמה לגיבוי ושחזור נתונים:**  
+![image](https://github.com/user-attachments/assets/32a5105b-451f-46cd-8568-b104566ac823)  
 ![image](https://github.com/user-attachments/assets/30ef4761-e6c1-48c0-801c-63462844a3f6)
 
+---
 
+## 4. שלב ב'
 
+### 4.1 Queries
 
+- **אירועים שבהם דייר השתתף**  
+  ![image](https://github.com/user-attachments/assets/2f1cecd9-65d4-4165-9fd8-b54f43b03d01)
 
+- **בקשות תחזוקה לפי חדר וקיבולת**  
+  ![image](https://github.com/user-attachments/assets/e6197ff7-67a8-4c01-a8c4-840c1b2ae7fd)
 
+- **התפלגות השתתפות באירועים**  
+  ![image](https://github.com/user-attachments/assets/f60e4884-a325-4834-95d8-edbeb1a5bd25)
 
-queries:
-events that a residant visited
-![image](https://github.com/user-attachments/assets/2f1cecd9-65d4-4165-9fd8-b54f43b03d01)
+- **כמה בקשות סיים כל איש צוות**  
+  ![image](https://github.com/user-attachments/assets/87ccc2a3-b0e2-4e00-a19c-0756caa2c6d9)
 
-maintenance_reqs for each room, with the rooms capcity
-![image](https://github.com/user-attachments/assets/e6197ff7-67a8-4c01-a8c4-840c1b2ae7fd)
+- **חדרים עם פחות/יותר מ-2 בקשות תחזוקה**  
+  ![image](https://github.com/user-attachments/assets/2c24c86b-f5e0-4332-a85c-f9034b6ef3bb)
 
-the devision of going to events: how many go to 1 event, 2 events etc..
-![image](https://github.com/user-attachments/assets/f60e4884-a325-4834-95d8-edbeb1a5bd25)
+- **מספר שפים פעילים לאורך זמן**  
+  ![image](https://github.com/user-attachments/assets/960c5183-ed41-4bc1-9c62-6e58971ed460)
 
-for each staff member, show how many requests he has completed
-![image](https://github.com/user-attachments/assets/87ccc2a3-b0e2-4e00-a19c-0756caa2c6d9)
+- **השוואת תפקידים מול ביצועים**  
+  ![image](https://github.com/user-attachments/assets/e9d11784-7e2b-44a0-8913-8467e15ad53d)
 
-amount of rooms that have made less than 2 maintenance reqs, and amount of rooms that made more than 2 maintenance reqs
-![image](https://github.com/user-attachments/assets/2c24c86b-f5e0-4332-a85c-f9034b6ef3bb)
+- **קיבולת מול תפוסה בחדרים**  
+  ![image](https://github.com/user-attachments/assets/3cccd008-8325-4548-a91a-b61b9f1938c9)
 
-how many chefs are in charge of meals over time
-![image](https://github.com/user-attachments/assets/960c5183-ed41-4bc1-9c62-6e58971ed460)
+### 4.2 Updates/Deletes
 
-for each job title, shows the staff memebers that have completed the most requests
-![image](https://github.com/user-attachments/assets/e9d11784-7e2b-44a0-8913-8467e15ad53d)
-
-shows for each room its capacity and how many actually lives there
-![image](https://github.com/user-attachments/assets/3cccd008-8325-4548-a91a-b61b9f1938c9)
-
-
-updates/deletes:
-
-![image](https://github.com/user-attachments/assets/6fb9a8a7-711e-4ff7-a153-19e2e4213b86)
-
-![image](https://github.com/user-attachments/assets/de5fe9d8-a3ef-4bb4-b0b1-7beff2ff7cdf)
-
-![image](https://github.com/user-attachments/assets/74358ec0-2c09-4503-8f8c-43de362089de)
-
-![image](https://github.com/user-attachments/assets/6ec0a6e3-f280-4046-953b-0b196217be26)
-
-![image](https://github.com/user-attachments/assets/501cc685-139e-4c8c-ae83-0927765fb4f8)
-
-![image](https://github.com/user-attachments/assets/78dbb661-c8ee-4792-ab37-8e53eb2b704c)
-
-![image](https://github.com/user-attachments/assets/0ee00672-8a99-4bd6-824e-9f6ede041d67)
-
-![image](https://github.com/user-attachments/assets/c707d835-7368-42a7-b796-f9f2d990b8d4)
-
-![image](https://github.com/user-attachments/assets/8a5fe543-f0f8-4ed0-b6f0-7aab2c303ed1)
-
-
-
-![image](https://github.com/user-attachments/assets/77b7c447-64b6-4713-a017-a9b7e99f97c1)
-
-![image](https://github.com/user-attachments/assets/2ecc9819-dbaf-4efc-9381-1ccaa0ecfcbe)
-
-![image](https://github.com/user-attachments/assets/53169bd6-9408-468b-b43f-89be5e712b9a)
-
-![image](https://github.com/user-attachments/assets/f1349043-9726-4605-b98b-03aeaf54c566)
-
-![image](https://github.com/user-attachments/assets/bfdc6a84-b721-43cd-a5bd-282f70748004)
-
-![image](https://github.com/user-attachments/assets/9bd89cd1-04c5-4f9a-8652-61a56b635ac8)
-
-![image](https://github.com/user-attachments/assets/280f449a-531a-412d-a4bb-2f283d84bac5)
-
-![image](https://github.com/user-attachments/assets/cfe2454e-858d-4916-a34c-6c86efe66c64)
-
+![image](https://github.com/user-attachments/assets/6fb9a8a7-711e-4ff7-a153-19e2e4213b86)  
+![image](https://github.com/user-attachments/assets/de5fe9d8-a3ef-4bb4-b0b1-7beff2ff7cdf)  
+![image](https://github.com/user-attachments/assets/74358ec0-2c09-4503-8f8c-43de362089de)  
+![image](https://github.com/user-attachments/assets/6ec0a6e3-f280-4046-953b-0b196217be26)  
+![image](https://github.com/user-attachments/assets/501cc685-139e-4c8c-ae83-0927765fb4f8)  
+![image](https://github.com/user-attachments/assets/78dbb661-c8ee-4792-ab37-8e53eb2b704c)  
+![image](https://github.com/user-attachments/assets/0ee00672-8a99-4bd6-824e-9f6ede041d67)  
+![image](https://github.com/user-attachments/assets/c707d835-7368-42a7-b796-f9f2d990b8d4)  
+![image](https://github.com/user-attachments/assets/8a5fe543-f0f8-4ed0-b6f0-7aab2c303ed1)  
+![image](https://github.com/user-attachments/assets/77b7c447-64b6-4713-a017-a9b7e99f97c1)  
+![image](https://github.com/user-attachments/assets/2ecc9819-dbaf-4efc-9381-1ccaa0ecfcbe)  
+![image](https://github.com/user-attachments/assets/53169bd6-9408-468b-b43f-89be5e712b9a)  
+![image](https://github.com/user-attachments/assets/f1349043-9726-4605-b98b-03aeaf54c566)  
+![image](https://github.com/user-attachments/assets/bfdc6a84-b721-43cd-a5bd-282f70748004)  
+![image](https://github.com/user-attachments/assets/9bd89cd1-04c5-4f9a-8652-61a56b635ac8)  
+![image](https://github.com/user-attachments/assets/280f449a-531a-412d-a4bb-2f283d84bac5)  
+![image](https://github.com/user-attachments/assets/cfe2454e-858d-4916-a34c-6c86efe66c64)  
 ![image](https://github.com/user-attachments/assets/2d858dcf-cdef-4239-861c-ea4adfdda494)
 
-
-rollback/commit:
+### 4.3 Rollback/Commit
 
 ![image](https://github.com/user-attachments/assets/d658916b-1a70-4cea-8078-7832fd439179)
 
@@ -200,7 +170,7 @@ rollback/commit:
 ![image](https://github.com/user-attachments/assets/8e5254a7-86bb-4683-9d91-a05118e85831)
 
 
-alter tables:
+### 4.4 alter tables:
 
 ![image](https://github.com/user-attachments/assets/231579c8-bdc8-42b8-bb6d-381a050cdad6)
 
