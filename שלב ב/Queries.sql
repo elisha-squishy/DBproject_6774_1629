@@ -1,4 +1,4 @@
--- events that a residant visited
+-- events that a residant visited 
 SELECT 
     r.resident_name,
     e.event_name,
