@@ -1,14 +1,16 @@
--- events that a residant visited 
+-- top 5 events (by the amount of the residents)
 SELECT 
-    r.resident_name,
     e.event_name,
-    e.event_date,
-    EXTRACT(YEAR FROM e.event_date) AS event_year,
-    EXTRACT(MONTH FROM e.event_date) AS event_month
-FROM resident r
-JOIN visiting_event ve ON r.resident_id = ve.resident_id
-JOIN event e ON ve.event_id = e.event_id
-ORDER BY event_year, event_month;
+    COUNT(ve.resident_id) AS num_visitors
+FROM 
+    event e
+JOIN 
+    visiting_event ve ON e.event_id = ve.event_id
+GROUP BY 
+    e.event_id, e.event_name
+ORDER BY 
+    num_visitors DESC
+LIMIT 5;
 
 -- maintenance_reqs for each room, with the rooms capcity
 SELECT 
@@ -33,15 +35,20 @@ FROM resident r
 LEFT JOIN event_counts ec ON r.resident_id = ec.resident_id
 GROUP BY events_visited
 
--- for each staff member, show how many requests he has completed
+-- top 3 most used items
 SELECT 
-    s.staff_member_name,
-    COUNT(mr.request_id) AS completed_requests
-FROM staff_member s
-LEFT JOIN maintenance_req mr 
-    ON s.staff_member_id = mr.staff_member_id AND mr.req_status = 'taken care of'
-GROUP BY s.staff_member_name
-ORDER BY completed_requests DESC;
+	inv.item_name,
+    inv.item_id,
+    COUNT(mr.request_id) AS num_uses
+FROM 
+    maintenance_req mr
+JOIN 
+    inventory inv ON mr.item_id = inv.item_id
+GROUP BY 
+    inv.item_id
+ORDER BY 
+    num_uses DESC
+LIMIT 3;
 
 -- how many chefs are in charge of meals over time
 SELECT
