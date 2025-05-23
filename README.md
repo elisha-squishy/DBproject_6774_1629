@@ -22,7 +22,7 @@
   - [4.2 Updates/Deletes](#42-updatesdeletes)
   - [4.3 Rollback/Commit](#43-rollbackcommit)
   - [4.4 Alter Tables](#44-alter-tables)
-
+- [5. שלב ג'- merge עם מבנה נתונים אחר](#5-שלב-ג)
 ---
 
 ## 1. מבוא
@@ -185,5 +185,51 @@
 ![image](https://github.com/user-attachments/assets/306578ff-7fe8-4d1d-9b04-aa294176ee97)
 
 ![image](https://github.com/user-attachments/assets/9cf15d1d-56c4-4ba6-a1bf-27a7825d4271)
+
+## 5. שלב ג
+ביצענו merge עם בסיס נתונים אחר שאחראי על הדיירים. זה הERD של בסיס הנתונים:
+![other DB ERD](https://github.com/user-attachments/assets/7fa468b5-5d96-467e-8dd7-4eb54bef3dec)
+וזה ה DSD:
+![other DB DSD](https://github.com/user-attachments/assets/91917173-b48e-4270-b905-3d9ae675d12c)
+
+והנה אותם תרשימים אחרי ה merge:
+![updated ERD](https://github.com/user-attachments/assets/d7d46920-f0f7-4da7-b80e-cb892966f7e5)
+![updated DSD](https://github.com/user-attachments/assets/302ee72e-4fd3-4532-a9d1-d5e9b85eda03)
+
+החלטנו לבצע את האינטגרציה כך שכאשר היתה טבלה משותפת (לדוג' לשנינו היה טבלה של  resident אז השתמשנו בטבלה שלהם בסוף). הדבר לא יצר בעיות התאמה בגלל ששנינו הגדרנו את המפתחות של רוב הדברים פשוט במספרים בין 1 ל-1000.
+עדיין נתקלנו בבעיות מפני שטבלאת resident שלבם כללה פחות אנשים מטבלאת resident שלנו מה שגרם לבעיות בטבלאות אחרות שלנו שנשענו על resident, אז ביצענו merge Into בין הטבלאות:
+MERGE INTO resident AS t1
+USING resident_temp AS t2  -- our table
+ON t1.residentid = t2.resident_id
+WHEN NOT MATCHED THEN
+    INSERT (residentid, firstname, lastname, dateofbirth, admissiondate, roomid)
+    VALUES (
+        t2.resident_id,
+        SPLIT_PART(t2.resident_name, ' ', 1),
+        SPLIT_PART(t2.resident_name, ' ', 2),
+        t2.resident_dob,
+        '01/01/2021',
+        t2.room_id
+    );
+
+ דהיינו הוספנו לטבלה שלהם את כל האיברים בטבלה שלנו שלא קיימים בטבלה שלהם.
+ חוץ מזה, האינטגרציה רצה על מי מנוחות.
+ ### יצירת המבטים
+ החלטנו ליצור שני מבטים. המבט הראשון הוא עבור עובדי התחזוקה ונותן להם את המידע המעניין אותם, קרי: משימות שהם צריכים לעשות, החדרים שצריכים טיפול וכו'. הנה איך הוא נראה:
+ ## <להשלים>
+ 
+הרצנו שני שאילתות עליו. הראשונה נועדה לברר אילו מוצרים זקוקים אליהם בשביל משימות שעומדות להתקיים שיש מחסור מהם:
+## <להשלים>
+השאילתא השנייה מחפשת את כל המשימות שעובד מסויים צריך לבצע, יחד עם מספר החדר בו המשימה מתבצעת.
+
+## <להשלים>
+המבט השני הוא מידע בשביל המשפחה, דהיינו: הסטוריית ביקורים, ההיסטוריה הרפואית של הדייר ומידע על הרופאים שלו וכו'.
+הרצנו עליו שני שאילתות. הראשונה מחפשת מידע על כל הרופאים שטיפלו בחולה מסויים:
+## <להשלים>
+השנייה מיצרת את הסטוריית הטיפולים של חולה מסויים:
+## <להשלים>
+
+
+
 
 
