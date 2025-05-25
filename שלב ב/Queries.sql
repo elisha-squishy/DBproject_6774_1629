@@ -97,16 +97,12 @@ HAVING COUNT(mr.request_id) = (
 )
 ORDER BY sm.job_title;
 
--- shows for each room its capacity and how many actually lives there
+-- average percentage of actual occupancy vs capacity
 SELECT 
-    rm.room_id,
-    rm.capacity,
-    COUNT(r.resident_id) AS current_occupancy
+    ROUND(100.0 * SUM(CASE WHEN r.resident_id IS NOT NULL THEN 1 ELSE 0 END)
+	/ SUM(rm.capacity), 2) AS avg_occupancy_percentage
 FROM room rm
-LEFT JOIN resident r ON rm.room_id = r.room_id
-GROUP BY rm.room_id, rm.capacity
-HAVING COUNT(r.resident_id) < rm.capacity
-ORDER BY rm.room_id;
+LEFT JOIN resident r ON rm.room_id = r.room_id;
 
 
 
