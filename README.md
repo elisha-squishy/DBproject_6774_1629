@@ -230,7 +230,9 @@ WHEN NOT MATCHED THEN
 
 הרצנו עליו שני שאילתות. הראשונה מחפשת מידע על כל הרופאים שטיפלו בחולה מסויים:
 ![image](https://github.com/user-attachments/assets/78436173-862d-4e55-8549-e87df9710051)
+
 השנייה מיצרת את הסטוריית הטיפולים של חולה מסויים:
+
 ![image](https://github.com/user-attachments/assets/0358bcd8-a9aa-490a-b054-a8978c837eca)
 
 
