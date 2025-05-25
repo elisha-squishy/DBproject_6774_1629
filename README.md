@@ -108,29 +108,37 @@
 - **5 האירועים הכי פופולריים**
   
 - ![image](https://github.com/user-attachments/assets/b260cea6-7fee-4682-8e14-fd5ee47bc3d7)
+- 
 
 
 - **בקשות תחזוקה לפי חדר וקיבולת החדר**
   ![image](https://github.com/user-attachments/assets/e6197ff7-67a8-4c01-a8c4-840c1b2ae7fd)
+  
 
 - **התפלגות השתתפות באירועים**  
   ![image](https://github.com/user-attachments/assets/f60e4884-a325-4834-95d8-edbeb1a5bd25)
+  
 
 - **3 הפריטים שהשתמשו בהם הכי הרבה בבבקשות תחזוקה**  
   ![image](https://github.com/user-attachments/assets/912d2c1a-e455-4185-8a06-d423266fdfc4)
+  
 
 
 - **חדרים עם פחות/יותר מ-2 בקשות תחזוקה**  
   ![image](https://github.com/user-attachments/assets/2c24c86b-f5e0-4332-a85c-f9034b6ef3bb)
+  
 
 - **מספר השפים שמכינים ארוחות לאורך הזמן**  
   ![image](https://github.com/user-attachments/assets/960c5183-ed41-4bc1-9c62-6e58971ed460)
+  
 
 - **מציאת העובדים שסיימו הכי הרבה משימות מכל תפקיד**  
   ![image](https://github.com/user-attachments/assets/e9d11784-7e2b-44a0-8913-8467e15ad53d)
+  
 
 - **אחוזי התפוסה בפועל של החדרים לעומת הקיבולת המקסימלית בבניין**  
   ![image](https://github.com/user-attachments/assets/e99bf87e-34ba-499b-a023-efc4fa442e6e)
+  
 
 
 ### 4.2 Updates/Deletes
