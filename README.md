@@ -216,10 +216,10 @@
 ![updated ERD](https://github.com/user-attachments/assets/d7d46920-f0f7-4da7-b80e-cb892966f7e5)
 ![updated DSD](https://github.com/user-attachments/assets/302ee72e-4fd3-4532-a9d1-d5e9b85eda03)
 
-החלטנו לבצע את האינטגרציה כך שכאשר היתה טבלה משותפת (לדוג' לשנינו היה טבלה של  resident אז השתמשנו בטבלה שלהם בסוף). הדבר לא יצר בעיות התאמה בגלל ששנינו הגדרנו את המפתחות של רוב הדברים פשוט במספרים בין 1 ל-1000.
+החלטנו לבצע את האינטגרציה כך שכאשר היתה טבלה משותפת (לדוג' לשנינו היה טבלה של  resident אז השתמשנו בטבלה שלהם בסוף).
+הדבר לא יצר בעיות התאמה בגלל ששנינו הגדרנו את המפתחות של רוב הדברים פשוט במספרים בין 1 ל-1000.
 עדיין נתקלנו בבעיות מפני שטבלאת resident שלבם כללה פחות אנשים מטבלאת resident שלנו מה שגרם לבעיות בטבלאות אחרות שלנו שנשענו על resident, אז ביצענו merge Into בין הטבלאות:
 <pre>
-```
 MERGE INTO resident AS t1
 USING resident_temp AS t2  -- our table
 ON t1.residentid = t2.resident_id
@@ -237,7 +237,17 @@ WHEN NOT MATCHED THEN
  דהיינו הוספנו לטבלה שלהם את כל האיברים בטבלה שלנו שלא קיימים בטבלה שלהם.
  חוץ מזה, האינטגרציה רצה על מי מנוחות.
  ### יצירת המבטים
- החלטנו ליצור שני מבטים. המבט הראשון הוא עבור עובדי התחזוקה ונותן להם את המידע המעניין אותם, קרי: משימות שהם צריכים לעשות, החדרים שצריכים טיפול וכו'. הנה איך הוא נראה:
+ החלטנו ליצור שני מבטים. המבט הראשון הוא עבור עובדי התחזוקה ונותן להם את המידע המעניין אותם, קרי: משימות שהם צריכים לעשות, החדרים שצריכים טיפול וכו'. הנה איך היצירה שלו נראית ואיך הוא נראה:
+ <pre>
+create view caregiver_maintenance as 
+select c.caregiverid, (c.firstname || ' ' || c.lastname) caregiver_name, i.item_name, i.quantity, r.roomnumber, mr.req_description, mr.req_status
+from maintenance_req mr
+join caregiver c on mr.staff_member_id = c.caregiverid
+join inventory i on mr.item_id = i.item_id
+join department d on c.departmentid = d.departmentid
+join room r on mr.room_id = r.roomid
+where d.name not ilike '%Care%' and d.name not ilike '%nursing%'
+ </pre>
  
 ![image](https://github.com/user-attachments/assets/5b1ef492-1970-4d08-b31b-250c8bf1e101)
  
@@ -250,6 +260,15 @@ WHEN NOT MATCHED THEN
 ![image](https://github.com/user-attachments/assets/d8330e17-cf4c-4163-a933-26b60fbd7825)
 
 המבט השני הוא מידע בשביל המשפחה, דהיינו: הסטוריית ביקורים, ההיסטוריה הרפואית של הדייר ומידע על הרופאים שלו וכו'.
+<pre>
+create view family_view as 
+select fv.visitdate, fv.visitorname, r.firstname || ' ' || r.lastname resident_name,
+c.firstname || ' ' || c.lastname caregiver_name, c.phone caregiver_phone, mt.treatmentdate, mt.treatmenttype
+from familyvisit fv
+join medicaltreatment mt on mt.residentid = fv.residentid
+join caregiver c on c.caregiverid = mt.caregiverid
+join resident r on r.residentid = mt.residentid
+</pre>
 
 ![image](https://github.com/user-attachments/assets/334323e7-49e5-412f-aa1a-c79da62bc121)
 
