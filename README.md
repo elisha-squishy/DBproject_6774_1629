@@ -23,6 +23,8 @@
   - [2.3 Rollback/Commit](#23-rollbackcommit)
   - [2.4 Alter Tables](#24-alter-tables)
 - [3. שלב ג'- merge עם מבנה נתונים אחר](#3-שלב-ג)
+
+- [4. שלב ד' - pg/plsql](#4-שלב-ד)
 ---
 
 ## מבוא
@@ -283,4 +285,4 @@ join resident r on r.residentid = mt.residentid
 
 
 
-
+## 4. שלב ד
