@@ -9,7 +9,7 @@
 ## תוכן עניינים
 
 - [מבוא](#-מבוא)
-- [1. מבנה בסיס הנתונים](#1-מבנה-בסיס-הנתונים)
+- [1. שלב א' - מבנה בסיס הנתונים](#1-מבנה-בסיס-הנתונים)
   - [1.1 חלוקה ליישויות נפרדות (Normalization)](#11-חלוקה-ליישויות-נפרדות-normalization)
   - [1.2 קשרי 1:רבים ו-n:n](#12-קשרי-1רבים-ו-nn)
   - [1.3 טבלת meal עם מפתח מורכב](#13-טבלת-meal-עם-מפתח-מורכב)
@@ -286,3 +286,252 @@ join resident r on r.residentid = mt.residentid
 
 
 ## 4. שלב ד
+יצרנו 3 פונקציונאליות חדשות באמצעות pg/plsql- פונקציה לעידכון בטבלאת האירועים על ימי הולדת של דיירים, פונקציה להמלצה על אירועים לדייר כלשהו על פי כמה משתתפים אחרים הולכים לאותו אירוע, ומערכת להורדת כמות המוצרים במערכת בצורה בטוחה.
+
+בנוסף לכך, יצרנו טבלאות חדשות ל updates_log, orders כדי לתאר את העידכונים וכדי לערוך הזמנות מוצרים בהתאמה
+
+### 4.1 עידכון ימי הולדת
+יצרנו פונקציה שעוברת על כל הדיירים, ואם היומולדת שלהם מחר אז יוצרים איבנט חדש בטבלה event. 
+
+יצרנו עבור זה גם פונקציות עזר כגון get_resident_age ו add_event שדואג להכנסת אירוע בלי צורך להגדיר מפתח יחודי
+
+```sql
+-- update birthdays, make the location of the event at the resident's room and record in log
+CREATE OR REPLACE FUNCTION create_upcoming_birthday_events()
+RETURNS VOID AS $$
+DECLARE
+  r RECORD;
+  v_event_date DATE := CURRENT_DATE + INTERVAL '1 day';
+  v_age INT;
+  v_room INT;
+  v_event_name VARCHAR(100);
+BEGIN
+  FOR r IN
+    SELECT residentid, firstname, lastname, dateofbirth, roomnumber
+    FROM resident re
+    JOIN room ro ON re.roomid = ro.roomid 
+    WHERE EXTRACT(MONTH FROM re.dateofbirth) = EXTRACT(MONTH FROM v_event_date)
+      AND EXTRACT(DAY FROM re.dateofbirth) = EXTRACT(DAY FROM v_event_date)
+  LOOP
+    -- Use existing function to get current age
+    v_age := get_resident_age(r.residentid) + 1;
+    v_room := r.roomnumber;
+
+    -- Construct event title
+    v_event_name := r.firstname || ' ' || r.lastname || '''s ' || v_age || ' birthday!';
+
+    -- Insert birthday event
+    CALL add_event(v_event_name, v_event_date, CAST(v_room AS VARCHAR));
+
+    -- Log the event creation
+    INSERT INTO updates_log(description)
+    VALUES ('Birthday event added: "' || v_event_name || '" for ' || v_event_date);
+  END LOOP;
+END;
+$$ LANGUAGE plpgsql;
+
+-- select create_upcoming_birthday_events();
+```
+ולהלן התוצאה:
+
+
+![image](https://github.com/user-attachments/assets/cda65f7b-83f7-4d43-85cb-a30d063ecfd9)
+
+
+![image](https://github.com/user-attachments/assets/1fbbc458-75d0-4ae1-b04e-a0e1cedc2be7)
+
+
+
+### 4.2 המלצת אירועים
+יצרנו מערכת המלצת אירועים שממליצה עבור דייר מסוים אירועים שאנשים בטווח גילאים שלו ומאותו מין כמוהו הולכים אליהם גם
+להלן הקוד:
+```sql
+-- Main function - recommend events based on similar age groups
+CREATE OR REPLACE FUNCTION recommend_events(target_resident_id INT)
+RETURNS TABLE(
+    event_date DATE,
+    event_location VARCHAR,
+    similar_age_attendees BIGINT
+)
+LANGUAGE plpgsql
+AS $$
+DECLARE
+    target_age INT;
+BEGIN
+    -- Log the request
+    CALL log_recommendation_request(target_resident_id);
+    
+    -- Get target resident's age
+    SELECT get_resident_age(target_resident_id) INTO target_age;
+    
+    -- Return future events attended by residents within 5 years of target's age
+    RETURN QUERY
+    SELECT 
+        e.event_date,
+        e.event_location,
+        COUNT(ve.resident_id) as similar_age_attendees
+    FROM event e
+    JOIN visiting_event ve ON e.event_id = ve.event_id
+    -- WHERE e.event_date >= CURRENT_DATE
+      WHERE e.event_id NOT IN (
+          SELECT event_id 
+          FROM visiting_event 
+          WHERE resident_id = target_resident_id
+      )
+      AND get_resident_age(ve.resident_id) BETWEEN (target_age - 5) AND (target_age + 5)
+    GROUP BY e.event_id, e.event_date, e.event_location
+    ORDER BY COUNT(ve.resident_id) DESC
+    LIMIT 10;
+END;
+$$;
+
+-- SELECT * FROM recommend_events(123);
+```
+ולהלן התוצאה:
+
+
+![image](https://github.com/user-attachments/assets/090cd5ef-ffd0-40f1-8e9e-f49ad9b6dc7f)
+
+
+
+### 4.3 עידכון מלאי
+יצרנו פרוצדורה שמקטינה את הכמות של מוצר כלשהו במלאי, ומוודאת שלא מקטינים אותה ביותר מידי. בנוסף לכך, יצרנו טריגר שמכניס בצורה אוטומטית לטבלה orders הזמנה של מוצר אם הכמות שלו במלאי קטנה מחמש
+
+להלן הקוד:
+```sql
+CREATE OR REPLACE PROCEDURE decrease_item_quantity(
+    target_item_id INT,
+    decrease_amount INT DEFAULT 1
+)
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    -- Update the quantity
+	
+    UPDATE inventory 
+    SET quantity = quantity - decrease_amount
+    WHERE item_id = target_item_id AND quantity > decrease_amount;
+	
+    -- Check if update affected any rows
+    IF NOT FOUND THEN
+        RAISE EXCEPTION 'Item with ID % not found', target_item_id;
+    END IF;
+    
+    INSERT INTO updates_log(description)
+	VALUES('Decreased quantity of item ' || target_item_id || ' by ' || decrease_amount);
+END;
+$$;
+```
+להלן הקוד עבור הטריגר (יצרנו פונקציית עזר שפרקטית מכניסה את ההזמנה לטבלה)
+```sql
+CREATE OR REPLACE TRIGGER order_low_stock
+    AFTER UPDATE OF quantity ON inventory
+    FOR EACH ROW
+    WHEN (NEW.quantity < 5)
+    EXECUTE FUNCTION auto_order_low_stock();
+
+
+CREATE OR REPLACE FUNCTION auto_order_low_stock()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    -- Check if quantity dropped below 5
+    IF NEW.quantity < 5 THEN
+        -- Check if we haven't already placed a pending order for this item
+        IF NOT EXISTS (
+            SELECT 1 FROM orders 
+            WHERE item_id = NEW.item_id 
+            AND status = 'PENDING'
+        ) THEN
+            -- Insert new order
+            INSERT INTO orders (item_id, item_name, order_quantity)
+            VALUES (NEW.item_id, NEW.item_name, 10);
+            
+            RAISE NOTICE 'Auto-ordered 10 units of % (ID: %) - stock level: %', 
+                         NEW.item_name, NEW.item_id, NEW.quantity;
+        END IF;
+    END IF;
+    
+    RETURN NEW;
+END;
+$$;
+```
+
+ולהלן התוצאה:
+
+
+![image](https://github.com/user-attachments/assets/d426bf15-3bb8-45e1-a43f-cca006c36360)
+
+
+![image](https://github.com/user-attachments/assets/4333b0a1-6365-494f-8d1d-010bc59185b5)
+
+
+
+### 4.4 פונקציות נוספות
+יצרנו טריגר שמוודא שלא מכניסים לתוך meintenance req בקשה שהיא לא recived.
+```sql
+CREATE OR REPLACE FUNCTION public.check_maintenance_status()
+RETURNS trigger
+BEGIN
+	IF UPPER(NEW.req_status) <> 'RECEIVED' THEN
+    RAISE EXCEPTION 'Maintenance request status must be "Received".';
+END IF;
+RETURN NEW;
+END;
+```
+### 4.5 פונקציות עזר
+יצרנו פונקציה שמטרתה היא שנוכל להכניס אירוע ושהיא תחולל לנו מפתח ייחודי לאירוע:
+```sql
+--generates a unique id for an event i want to insert
+CREATE OR REPLACE PROCEDURE add_event(
+  p_name VARCHAR(100),
+  p_date DATE,
+  p_location VARCHAR(100)
+)
+LANGUAGE plpgsql
+AS $$
+DECLARE
+  v_event_id INT;
+BEGIN
+  -- Generate unique event_id using timestamp and random number
+  v_event_id := TRUNC(RANDOM() * 100000)::INT;
+
+  -- Insert into event table
+  INSERT INTO event(event_id, event_name, event_date, event_location)
+  VALUES (v_event_id, p_name, p_date, p_location);
+
+  -- Optional: output confirmation
+  RAISE NOTICE 'Event % added with ID: %', p_name, v_event_id;
+END;
+$$;
+```
+
+בנוסף לכך יצרנו פונקיית עזר שמחשבת לנו את גילו של דייר כלשהו
+
+```sql
+-- helper function to calculate a resident age
+CREATE OR REPLACE FUNCTION get_resident_age(p_resident_id INT)
+RETURNS INT AS $$
+DECLARE
+  v_dob DATE;
+  v_age INT;
+BEGIN
+  -- Get the resident's date of birth
+  SELECT dateofbirth INTO v_dob
+  FROM resident
+  WHERE resident_id = p_resident_id;
+
+  -- Calculate the age
+  v_age := DATE_PART('year', AGE(CURRENT_DATE, v_dob));
+
+  RETURN v_age;
+
+EXCEPTION
+  WHEN NO_DATA_FOUND THEN
+    RAISE EXCEPTION 'Resident with ID % not found.', p_resident_id;
+END;
+$$ LANGUAGE plpgsql;
+```
+
+
