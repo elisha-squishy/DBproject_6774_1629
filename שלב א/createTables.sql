@@ -11,11 +11,12 @@ CREATE TABLE inventory (
 );
 
 CREATE TABLE resident (
-    resident_id INT PRIMARY KEY,
-	room_id INT,
-    resident_name VARCHAR(30),
-    resident_dob DATE,
-	FOREIGN KEY (room_id) REFERENCES room(room_id)
+    residentid INT PRIMARY KEY,
+	roomid INT,
+    firstname VARCHAR(30),
+lastname VARCHAR(30),
+    dateofbirth DATE,
+FOREIGN KEY (roomid) REFERENCES room(room_id)
 );
 
 CREATE TABLE meal (

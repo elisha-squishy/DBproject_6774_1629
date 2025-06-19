@@ -35,10 +35,8 @@ from family_view
 where resident_name = 'Natasha Decker'
 group by caregiver_name, caregiver_phone, treatmenttype
 
--- query 2 ()
-select roomid, treatmentdate, treatmenttype
+-- query 2 (medical history)
+select treatmentdate, treatmenttype
 from family_view
 where resident_name = 'Melissa Joseph'
 order by treatmentdate
-
--- caregiver-general (is_chef & medical treatment & caregiver)
