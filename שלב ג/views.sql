@@ -1,6 +1,6 @@
 -- caregiver_maintenance (maintenance_req & inventory & caregiver & room)
 create view caregiver_maintenance as 
-select c.caregiverid, (c.firstname || ' ' || c.lastname) caregiver_name, i.item_name, i.quantity, r.roomnumber, mr.req_description, mr.req_status
+select c.caregiverid, (c.firstname || ' ' || c.lastname) caregiver_name, i.item_name, i.quantity, r.roomnumber, mr.request_id, mr.req_description, mr.req_status
 from maintenance_req mr
 join caregiver c on mr.staff_member_id = c.caregiverid
 join inventory i on mr.item_id = i.item_id

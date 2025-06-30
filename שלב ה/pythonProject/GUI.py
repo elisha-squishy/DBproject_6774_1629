@@ -16,10 +16,14 @@ class DatabaseConnection:
         self.Session = sessionmaker(bind=self.engine)
 
     def execute_query(self, query, params=None):
-        """Execute a query and return results"""
+        """Execute a query and return results (if any)"""
         try:
             with self.Session() as session:
                 result = session.execute(text(query), params or {})
+                # Commit only if it's not a SELECT query
+                if query.strip().lower().startswith("insert") or query.strip().lower().startswith("delete"):
+                    session.commit()
+                    return None
                 return result.fetchall()
         except Exception as e:
             messagebox.showerror("Database Error", str(e))
@@ -69,6 +73,7 @@ class ModernStyle:
         style.configure('Modern.TEntry', font=('Segoe UI', 10))
         style.configure('Modern.Treeview', font=('Segoe UI', 9))
         style.configure('Modern.Treeview.Heading', font=('Segoe UI', 10, 'bold'))
+
 
 
 class MainApplication:
@@ -172,7 +177,7 @@ class MainApplication:
         signin_frame = ttk.LabelFrame(left_panel, text="Sign In", style='Modern.TFrame')
         signin_frame.pack(fill='x', padx=10, pady=10)
 
-        ttk.Label(signin_frame, text="Resident ID or Name:", style='Modern.TLabel').pack(anchor='w', padx=5, pady=2)
+        ttk.Label(signin_frame, text="Resident ID:", style='Modern.TLabel').pack(anchor='w', padx=5, pady=2)
         self.resident_entry = ttk.Entry(signin_frame, style='Modern.TEntry', width=30)
         self.resident_entry.pack(fill='x', padx=5, pady=5)
 
@@ -225,9 +230,18 @@ class MainApplication:
         recommended_frame = ttk.LabelFrame(right_panel, text="Recommended Events", style='Modern.TFrame')
         recommended_frame.pack(fill='x', padx=10, pady=10)
 
-        self.recommended_listbox = tk.Listbox(recommended_frame, font=('Segoe UI', 10), height=6,
-                                              bg=ModernStyle.CARD_BG, fg=ModernStyle.TEXT_COLOR)
-        self.recommended_listbox.pack(fill='x', padx=5, pady=5)
+        self.recommended_table = ttk.Treeview(recommended_frame, columns=('Date', 'Location', 'Residents'),
+                                              show='headings', height=6)
+        # Define column headings
+        self.recommended_table.heading('Date', text='Date')
+        self.recommended_table.heading('Location', text='Location')
+        self.recommended_table.heading('Residents', text='Residents in Your Age Group Going')
+
+        # Set column widths and alignment (optional)
+        self.recommended_table.column('Date', width=100, anchor='center')
+        self.recommended_table.column('Location', width=150, anchor='center')
+        self.recommended_table.column('Residents', width=200, anchor='center')
+        self.recommended_table.pack(fill='both', expand=True)
 
         # Joined events
         joined_frame = ttk.LabelFrame(right_panel, text="Your Joined Events", style='Modern.TFrame')
@@ -254,9 +268,9 @@ class MainApplication:
         if identifier.isdigit():
             query = "SELECT residentid, firstname, lastname FROM resident WHERE residentid = :id"
             params = {'id': int(identifier)}
-        else:
-            query = "SELECT residentid, firstname, lastname FROM resident WHERE firstname ILIKE :name OR lastname ILIKE :name OR (firstname || ' ' || lastname) ILIKE :name"
-            params = {'name': f'%{identifier}%'}
+        # else:
+        #     query = "SELECT residentid, firstname, lastname FROM resident WHERE firstname ILIKE :name OR lastname ILIKE :name OR (firstname || ' ' || lastname) ILIKE :name"
+        #     params = {'name': f'%{identifier}%'}
 
         results = self.db.execute_query(query, params)
 
@@ -265,7 +279,7 @@ class MainApplication:
             self.current_resident_id = resident[0]
             self.current_resident_label.config(text=f"Signed in as: {resident[1]} {resident[2]}")
             self.load_resident_events()
-            self.load_recommended_events()
+            self.load_recommend_events()
         else:
             messagebox.showerror("Error", "Resident not found")
 
@@ -306,6 +320,7 @@ class MainApplication:
 
     def display_events(self, events):
         """Display events in the listbox"""
+        self.visible_events = events  # NEW LINE
         self.events_listbox.delete(0, tk.END)
         for event in events:
             display_text = f"{event[1]} - {event[2]} at {event[3]}"
@@ -379,23 +394,23 @@ class MainApplication:
             display_text = f"{event[0]} - {event[1]} at {event[2]}"
             self.joined_listbox.insert(tk.END, display_text)
 
-    def load_recommended_events(self):
+    def load_recommend_events(self):
         """Load recommended events for the current resident"""
         if not self.current_resident_id:
             return
 
         # Try to call the stored function
         try:
-            query = "SELECT * FROM recommended_events(:rid)"
+            query = "SELECT * FROM recommend_events(:rid)"
             results = self.db.execute_query(query, {'rid': self.current_resident_id})
 
-            self.recommended_listbox.delete(0, tk.END)
+            for row in self.recommended_table.get_children():
+                self.recommended_table.delete(row)
             for event in results:
-                self.recommended_listbox.insert(tk.END, event[0])  # Assuming event name is returned
+                self.recommended_table.insert('', 'end', values=(event[0], event[1], event[2]))
         except:
             # If function doesn't exist, show a placeholder
-            self.recommended_listbox.delete(0, tk.END)
-            self.recommended_listbox.insert(tk.END, "Recommended events function not available")
+            self.recommended_table.delete(0, tk.END)
 
     def show_janitor_view(self):
         """Display janitor view page"""
@@ -422,7 +437,7 @@ class MainApplication:
         signin_frame = ttk.LabelFrame(top_section, text="Sign In", style='Modern.TFrame')
         signin_frame.pack(side='left', fill='x', expand=True, padx=(0, 10))
 
-        ttk.Label(signin_frame, text="Caregiver ID or Name:", style='Modern.TLabel').pack(anchor='w', padx=5, pady=2)
+        ttk.Label(signin_frame, text="Caregiver ID:", style='Modern.TLabel').pack(anchor='w', padx=5, pady=2)
         self.janitor_entry = ttk.Entry(signin_frame, style='Modern.TEntry', width=30)
         self.janitor_entry.pack(fill='x', padx=5, pady=5)
 
@@ -525,10 +540,10 @@ class MainApplication:
             return
 
         query = """
-        SELECT req_id, req_description, req_status
+        SELECT request_id, req_description, req_status
         FROM caregiver_maintenance
         WHERE caregiverid = :cid
-        ORDER BY req_id
+        ORDER BY request_id
         """
 
         results = self.db.execute_query(query, {'cid': self.current_janitor_id})
@@ -539,7 +554,7 @@ class MainApplication:
 
         # Add new items
         for row in results:
-            self.requests_tree.insert('', 'end', values=row)
+            self.requests_tree.insert('', 'end', values=(row[0], row[1], row[2]))
 
     def load_janitor_stats(self):
         """Load statistics for the current janitor"""
@@ -615,24 +630,19 @@ class MainApplication:
             return
 
         item = self.requests_tree.item(selection[0])
-        req_id = item['values'][0]
+        request_id = item['values'][0]
 
         # Try to call the stored procedure
         try:
-            success = self.db.execute_procedure('update_maintenance_status', {'req_id': req_id})
+            new_status = simpledialog.askstring("Request Status", "Enter the updated status")
+            success = self.db.execute_procedure('update_maintenance_status',
+                                                {'request_id': request_id, 'new_status': new_status})
             if success:
                 messagebox.showinfo("Success", "Request status updated successfully!")
                 self.load_janitor_requests()
                 self.load_janitor_stats()
-        except:
-            # Manual status update
-            new_status = simpledialog.askstring("Update Status", "Enter new status:")
-            if new_status:
-                update_query = "UPDATE maintenance_req SET req_status = :status WHERE req_id = :id"
-                self.db.execute_query(update_query, {'status': new_status, 'id': req_id})
-                messagebox.showinfo("Success", "Request status updated successfully!")
-                self.load_janitor_requests()
-                self.load_janitor_stats()
+        except Exception as e:
+            messagebox.showwarning("Warning", str(e))
 
     def load_inventory(self):
         """Load inventory items"""
@@ -650,7 +660,7 @@ class MainApplication:
 
         # Add new items
         for row in items:
-            self.inventory_tree.insert('', 'end', values=row)
+            self.inventory_tree.insert('', 'end', values=(row[0], row[1], row[2]))
 
     def filter_inventory(self, event=None):
         """Filter inventory based on search term"""
@@ -896,15 +906,17 @@ class MainApplication:
                                         font=('Segoe UI', 9), justify='left', wraplength=200)
             treatments_label.pack(anchor='w', pady=(10, 0))
 
+
+
     def show_manager_dashboard(self):
         """Display manager dashboard with statistics and charts"""
         # Simple authentication
-        username = simpledialog.askstring("Manager Login", "Username:")
-        password = simpledialog.askstring("Manager Login", "Password:", show='*')
-
+        username, password = simple_login_dialog(self.root)
+        print(username, password)
         if username != "dsibony" or password != "123":
             messagebox.showerror("Access Denied", "Invalid credentials")
             return
+        print("hi")
 
         self.clear_frame()
         self.current_frame = ttk.Frame(self.root, style='Modern.TFrame')
@@ -960,7 +972,7 @@ class MainApplication:
         bottom_row.pack(fill='x', padx=20, pady=10)
 
         # Problematic rooms bar
-        rooms_frame = ttk.LabelFrame(bottom_row, text="Room Maintenance Status", style='Modern.TFrame')
+        rooms_frame = ttk.LabelFrame(bottom_row, text="Rooms With Maintenance Requests", style='Modern.TFrame')
         rooms_frame.pack(side='left', fill='both', expand=True, padx=(0, 10))
 
         self.create_problematic_rooms_display(rooms_frame)
@@ -973,24 +985,36 @@ class MainApplication:
 
         canvas.pack(side="left", fill="both", expand=True)
         scrollbar.pack(side="right", fill="y")
+        canvas.bind_all("<MouseWheel>", lambda e: canvas.yview_scroll(-1 * int(e.delta / 120), "units"))
 
     def create_event_popularity_chart(self, parent):
         """Create pie chart for event popularity"""
         query = """
         WITH event_counts AS (
-            SELECT 
-                resident_id,
-                COUNT(event_id) AS events_visited
-            FROM visiting_event
-            GROUP BY resident_id
-        )
-        SELECT 
-            COALESCE(events_visited, 0) as events_visited, 
-            COUNT(*) AS resident_count
-        FROM resident r
-        LEFT JOIN event_counts ec ON r.residentid = ec.resident_id
-        GROUP BY COALESCE(events_visited, 0)
-        ORDER BY events_visited
+    SELECT 
+        resident_id,
+        COUNT(event_id) AS events_visited
+    FROM visiting_event
+    GROUP BY resident_id
+)
+SELECT 
+    CASE 
+        WHEN COALESCE(events_visited, 0) = 0 THEN '0 events'
+        WHEN COALESCE(events_visited, 0) = 1 THEN '1 event'
+        WHEN COALESCE(events_visited, 0) = 2 THEN '2 events'
+        ELSE '3+ events'
+    END AS event_category,
+    COUNT(*) AS resident_count
+FROM resident r
+LEFT JOIN event_counts ec ON r.residentid = ec.resident_id
+GROUP BY 
+    CASE 
+        WHEN COALESCE(events_visited, 0) = 0 THEN '0 events'
+        WHEN COALESCE(events_visited, 0) = 1 THEN '1 event'
+        WHEN COALESCE(events_visited, 0) = 2 THEN '2 events'
+        ELSE '3+ events'
+    END
+order by resident_count
         """
 
         results = self.db.execute_query(query)
@@ -1031,9 +1055,9 @@ class MainApplication:
         query = """
         SELECT 
             ROUND(100.0 * SUM(CASE WHEN r.residentid IS NOT NULL THEN 1 ELSE 0 END)
-            / COUNT(rm.room_id), 2) AS avg_occupancy_percentage
+            / COUNT(rm.roomid), 2) AS avg_occupancy_percentage
         FROM room rm
-        LEFT JOIN resident r ON rm.room_id = r.roomid
+        LEFT JOIN resident r ON rm.roomid = r.roomid
         """
 
         results = self.db.execute_query(query)
@@ -1132,7 +1156,7 @@ class MainApplication:
             END AS category,
             COUNT(*) AS room_count
         FROM req_counts 
-        RIGHT OUTER JOIN room ON req_counts.room_id = room.room_id
+        RIGHT OUTER JOIN room ON req_counts.room_id = room.roomid
         GROUP BY category
         """
 
@@ -1179,7 +1203,7 @@ class MainApplication:
                 c.caregiverid,
                 c.firstname || ' ' || c.lastname as staff_name,
                 d.name as department,
-                COUNT(mr.req_id) AS handled_requests
+                COUNT(mr.request_id) AS handled_requests
             FROM caregiver c
             LEFT JOIN maintenance_req mr ON c.caregiverid = mr.staff_member_id
             LEFT JOIN department d ON c.departmentid = d.departmentid
@@ -1196,6 +1220,7 @@ class MainApplication:
         JOIN max_by_dept md ON sr.department = md.department 
         AND sr.handled_requests = md.max_requests
         ORDER BY sr.handled_requests DESC, sr.department
+        LIMIT 10
         """
 
         results = self.db.execute_query(query)
@@ -1297,6 +1322,59 @@ def main():
 
         root.mainloop()
 
+def simple_login_dialog(parent):
+    """Simple login dialog that returns (username, password) or None if cancelled"""
+    dialog = tk.Toplevel(parent)
+    dialog.transient(parent)
+    dialog.grab_set()
+    dialog.title("Login")
+    dialog.geometry("250x120")
+    dialog.resizable(False, False)
+
+    result = {'username': None, 'password': None, 'ok': False}
+
+    # Username
+    tk.Label(dialog, text="Username:").grid(row=0, column=0, sticky="e", padx=5, pady=5)
+    username_var = tk.StringVar()
+    username_entry = tk.Entry(dialog, textvariable=username_var, width=20)
+    username_entry.grid(row=0, column=1, padx=5, pady=5)
+
+    # Password
+    tk.Label(dialog, text="Password:").grid(row=1, column=0, sticky="e", padx=5, pady=5)
+    password_var = tk.StringVar()
+    password_entry = tk.Entry(dialog, textvariable=password_var, width=20, show="*")
+    password_entry.grid(row=1, column=1, padx=5, pady=5)
+
+    def ok_clicked():
+        result['username'] = username_var.get()
+        result['password'] = password_var.get()
+        result['ok'] = True
+        dialog.destroy()
+
+    def cancel_clicked():
+        dialog.destroy()
+
+    button_frame = tk.Frame(dialog)
+    button_frame.grid(row=2, column=0, columnspan=2, pady=10)
+    tk.Button(button_frame, text="OK", command=ok_clicked).pack(side=tk.LEFT, padx=5)
+    tk.Button(button_frame, text="Cancel", command=cancel_clicked).pack(side=tk.LEFT, padx=5)
+
+    # Bind Enter key
+    dialog.bind('<Return>', lambda e: ok_clicked())
+    username_entry.focus_set()
+
+    dialog.update_idletasks()
+    screen_width = dialog.winfo_screenwidth()
+    screen_height = dialog.winfo_screenheight()
+    window_width = dialog.winfo_width()
+    window_height = dialog.winfo_height()
+    x = (screen_width // 2) - (window_width // 2)
+    y = (screen_height // 2) - (window_height // 2) + 50
+    dialog.geometry(f"{window_width}x{window_height}+{x}+{y}")
+
+    dialog.wait_window()
+
+    return (result['username'], result['password']) if result['ok'] else None
 
 if __name__ == "__main__":
     main()
