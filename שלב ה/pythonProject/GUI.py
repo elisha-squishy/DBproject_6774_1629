@@ -308,7 +308,7 @@ class MainApplication:
 
         # Add new items
         for row in results:
-            self.top_events_tree.insert('', 'end', values=row)
+            self.top_events_tree.insert('', 'end', values=(row[0], row[1]))
 
     def load_all_events(self):
         """Load all events for the listbox"""
@@ -461,28 +461,68 @@ class MainApplication:
         self.status_canvas = tk.Canvas(stats_frame, height=30, bg=ModernStyle.CARD_BG)
         self.status_canvas.pack(fill='x', padx=10, pady=10)
 
-        # Bottom section - Requests and Inventory
+        # Bottom section - Three columns: Pending Requests, Assigned Requests, and Inventory
         bottom_section = ttk.Frame(main_container, style='Modern.TFrame')
         bottom_section.pack(fill='both', expand=True)
 
-        # Requests section
-        requests_frame = ttk.LabelFrame(bottom_section, text="Maintenance Requests", style='Modern.TFrame')
-        requests_frame.pack(side='left', fill='both', expand=True, padx=(0, 10))
+        # Pending Requests section (left column)
+        pending_requests_frame = ttk.LabelFrame(bottom_section, text="Pending Requests", style='Modern.TFrame')
+        pending_requests_frame.pack(side='left', fill='both', expand=True, padx=(0, 5))
 
-        self.requests_tree = ttk.Treeview(requests_frame, columns=('ID', 'Description', 'Status'), show='headings')
-        self.requests_tree.heading('ID', text='Request ID')
-        self.requests_tree.heading('Description', text='Description')
-        self.requests_tree.heading('Status', text='Status')
-        self.requests_tree.pack(fill='both', expand=True, padx=5, pady=5)
+        # Pending requests treeview
+        self.pending_requests_tree = ttk.Treeview(pending_requests_frame, columns=('ID', 'Description', 'Status'),
+                                                  show='headings')
+        self.pending_requests_tree.heading('ID', text='Request ID')
+        self.pending_requests_tree.heading('Description', text='Description')
+        self.pending_requests_tree.heading('Status', text='Status')
 
-        # Status update button
-        update_status_btn = tk.Button(requests_frame, text="Update Status", command=self.update_request_status,
+        # Set column widths for pending requests
+        self.pending_requests_tree.column('ID', width=60, minwidth=50)
+        self.pending_requests_tree.column('Description', width=120, minwidth=100)
+        self.pending_requests_tree.column('Status', width=80, minwidth=70)
+
+        self.pending_requests_tree.pack(fill='both', expand=True, padx=5, pady=5)
+
+        # Assign request button
+        assign_btn = tk.Button(pending_requests_frame, text="Assign to Me", command=self.toggle_assign_request,
+                               bg=ModernStyle.SUCCESS_COLOR, fg='white', font=('Segoe UI', 10, 'bold'))
+        assign_btn.pack(pady=5)
+
+        # Assigned Requests section (middle column)
+        assigned_requests_frame = ttk.LabelFrame(bottom_section, text="My Assigned Requests", style='Modern.TFrame')
+        assigned_requests_frame.pack(side='left', fill='both', expand=True, padx=(5, 5))
+
+        # Assigned requests treeview
+        self.assigned_requests_tree = ttk.Treeview(assigned_requests_frame, columns=('ID', 'Description', 'Status'),
+                                                   show='headings')
+        self.assigned_requests_tree.heading('ID', text='Request ID')
+        self.assigned_requests_tree.heading('Description', text='Description')
+        self.assigned_requests_tree.heading('Status', text='Status')
+
+        # Set column widths for assigned requests
+        self.assigned_requests_tree.column('ID', width=60, minwidth=50)
+        self.assigned_requests_tree.column('Description', width=120, minwidth=100)
+        self.assigned_requests_tree.column('Status', width=80, minwidth=70)
+
+        self.assigned_requests_tree.pack(fill='both', expand=True, padx=5, pady=5)
+
+        # Button frame for assigned requests
+        assigned_btn_frame = ttk.Frame(assigned_requests_frame, style='Modern.TFrame')
+        assigned_btn_frame.pack(fill='x', pady=5)
+
+        # Update status button
+        update_status_btn = tk.Button(assigned_btn_frame, text="Update Status", command=self.update_request_status,
                                       bg=ModernStyle.WARNING_COLOR, fg='white', font=('Segoe UI', 10, 'bold'))
-        update_status_btn.pack(pady=5)
+        update_status_btn.pack(side='left', padx=(0, 5))
 
-        # Inventory section
+        # Unassign request button
+        unassign_btn = tk.Button(assigned_btn_frame, text="Unassign", command=self.unassign_request,
+                                 bg=ModernStyle.ERROR_COLOR, fg='white', font=('Segoe UI', 10, 'bold'))
+        unassign_btn.pack(side='left')
+
+        # Inventory section (right column)
         inventory_frame = ttk.LabelFrame(bottom_section, text="Inventory Management", style='Modern.TFrame')
-        inventory_frame.pack(side='right', fill='both', expand=True, padx=(10, 0))
+        inventory_frame.pack(side='right', fill='both', expand=True, padx=(5, 0))
 
         # Search bar for inventory
         inv_search_frame = ttk.Frame(inventory_frame, style='Modern.TFrame')
@@ -498,6 +538,12 @@ class MainApplication:
         self.inventory_tree.heading('ID', text='Item ID')
         self.inventory_tree.heading('Name', text='Item Name')
         self.inventory_tree.heading('Quantity', text='Quantity')
+
+        # Set column widths for inventory
+        self.inventory_tree.column('ID', width=50, minwidth=40)
+        self.inventory_tree.column('Name', width=100, minwidth=80)
+        self.inventory_tree.column('Quantity', width=70, minwidth=60)
+
         self.inventory_tree.pack(fill='both', expand=True, padx=5, pady=5)
 
         # Decrease quantity button
@@ -505,8 +551,15 @@ class MainApplication:
                                  bg=ModernStyle.ERROR_COLOR, fg='white', font=('Segoe UI', 10, 'bold'))
         decrease_btn.pack(pady=5)
 
+        # Initialize necessary variables
         self.current_janitor_id = None
+        self.pending_requests_data = []  # Store pending requests data
+        self.assigned_requests_data = []  # Store assigned requests data
+
+        # Load initial data
         self.load_inventory()
+        self.load_pending_requests()
+        self.load_assigned_requests()
 
     def janitor_signin(self):
         """Handle janitor sign in"""
@@ -533,6 +586,128 @@ class MainApplication:
             self.load_janitor_stats()
         else:
             messagebox.showerror("Error", "Caregiver not found")
+
+    def load_pending_requests(self):
+        """Load all unassigned requests from the database"""
+        query = """
+        SELECT request_id, req_description, req_status
+        FROM caregiver_maintenance
+        WHERE caregiverid = 0
+        ORDER BY request_id
+        """
+
+        # Remove the parameter since we're not filtering by current janitor
+        results = self.db.execute_query(query)
+
+        # Store results for later use in toggle_assign_request
+        self.pending_requests_data = results
+
+        # Clear existing items
+        for item in self.pending_requests_tree.get_children():
+            self.pending_requests_tree.delete(item)
+
+        # Add new items
+        for row in results:
+            self.pending_requests_tree.insert('', 'end', values=(row[0], row[1], row[2]))
+
+    def toggle_assign_request(self):
+        """Assign the selected request to the current staff member"""
+        if not self.current_janitor_id:
+            messagebox.showwarning("Warning", "Please sign in first")
+            return
+
+        # Get selected item from treeview (not listbox)
+        selection = self.pending_requests_tree.selection()
+        if not selection:
+            messagebox.showwarning("Warning", "Please select a request")
+            return
+
+        # Get the selected item
+        selected_item = selection[0]
+
+        # Get the request_id from the selected row
+        request_values = self.pending_requests_tree.item(selected_item, 'values')
+        request_id = request_values[0]
+
+        try:
+            # Update the database to assign the request
+            update_query = """
+            UPDATE caregiver_maintenance 
+            SET caregiverid = %s 
+            WHERE request_id = %s AND caregiverid = 0
+            """
+
+            rows_affected = self.db.execute_query(update_query, (self.current_janitor_id, request_id))
+
+            if rows_affected > 0:
+                messagebox.showinfo("Success", f"Request {request_id} assigned successfully!")
+                # Refresh the pending requests list
+                self.load_pending_requests()
+            else:
+                messagebox.showwarning("Warning", "Request may have already been assigned by another staff member")
+                # Refresh the list to show current state
+                self.load_pending_requests()
+
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to assign request: {str(e)}")
+
+    def unassign_request(self):
+        """Unassign a request (set caregiverid back to 0)"""
+        if not self.current_janitor_id:
+            messagebox.showwarning("Warning", "Please sign in first")
+            return
+
+        # This would work on a different treeview showing assigned requests
+        selection = self.assigned_requests_tree.selection()
+        if not selection:
+            messagebox.showwarning("Warning", "Please select a request to unassign")
+            return
+
+        selected_item = selection[0]
+        request_values = self.assigned_requests_tree.item(selected_item, 'values')
+        request_id = request_values[0]
+
+        try:
+            update_query = """
+            UPDATE caregiver_maintenance 
+            SET caregiverid = 0 
+            WHERE request_id = %s AND caregiverid = %s
+            """
+
+            rows_affected = self.db.execute_query(update_query, (request_id, self.current_janitor_id))
+
+            if rows_affected > 0:
+                messagebox.showinfo("Success", f"Request {request_id} unassigned successfully!")
+                # Refresh both lists
+                self.load_pending_requests()
+                self.load_assigned_requests()
+            else:
+                messagebox.showwarning("Warning", "Could not unassign request")
+
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to unassign request: {str(e)}")
+
+    def load_assigned_requests(self):
+        """Load requests assigned to the current staff member"""
+        if not self.current_janitor_id:
+            return
+
+        query = """
+        SELECT request_id, req_description, req_status
+        FROM caregiver_maintenance
+        WHERE caregiverid = %s
+        ORDER BY request_id
+        """
+
+        results = self.db.execute_query(query, (self.current_janitor_id,))
+
+        # Clear existing items (assuming you have an assigned_requests_tree)
+        for item in self.assigned_requests_tree.get_children():
+            self.assigned_requests_tree.delete(item)
+
+        # Add new items
+        for row in results:
+            self.assigned_requests_tree.insert('', 'end', values=(row[0], row[1], row[2]))
 
     def load_janitor_requests(self):
         """Load maintenance requests for the current janitor"""
@@ -783,7 +958,7 @@ class MainApplication:
         query = """
         SELECT DISTINCT resident_name
         FROM family_view
-        WHERE visitorname ILIKE :visitor
+        WHERE visitorname LIKE :visitor
         """
 
         results = self.db.execute_query(query, {'visitor': f'%{visitor_name}%'})
