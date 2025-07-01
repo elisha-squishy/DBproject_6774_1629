@@ -1,12 +1,10 @@
+import random
 import tkinter as tk
 from tkinter import ttk, messagebox, simpledialog
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-import matplotlib.patches as patches
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
-import pandas as pd
-from datetime import datetime
 import numpy as np
 
 
@@ -21,7 +19,8 @@ class DatabaseConnection:
             with self.Session() as session:
                 result = session.execute(text(query), params or {})
                 # Commit only if it's not a SELECT query
-                if query.strip().lower().startswith("insert") or query.strip().lower().startswith("delete"):
+                if query.strip().lower().startswith("insert") or query.strip().lower().startswith(
+                        "delete") or query.strip().lower().startswith("update"):
                     session.commit()
                     return None
                 return result.fetchall()
@@ -73,7 +72,6 @@ class ModernStyle:
         style.configure('Modern.TEntry', font=('Segoe UI', 10))
         style.configure('Modern.Treeview', font=('Segoe UI', 9))
         style.configure('Modern.Treeview.Heading', font=('Segoe UI', 10, 'bold'))
-
 
 
 class MainApplication:
@@ -171,7 +169,7 @@ class MainApplication:
 
         # Left panel - Sign in and events
         left_panel = ttk.Frame(main_container, style='Card.TFrame')
-        left_panel.pack(side='left', fill='both', expand=True, padx=(0, 10))
+        left_panel.pack(side='left', fill='both', expand=True, padx=(0, 5))
 
         # Sign in section
         signin_frame = ttk.LabelFrame(left_panel, text="Sign In", style='Modern.TFrame')
@@ -213,9 +211,52 @@ class MainApplication:
                              bg=ModernStyle.SUCCESS_COLOR, fg='white', font=('Segoe UI', 10, 'bold'))
         join_btn.pack(pady=5)
 
+        # Middle panel - Maintenance Request
+        middle_panel = ttk.Frame(main_container, style='Card.TFrame')
+        middle_panel.pack(side='left', fill='both', expand=True, padx=(5, 5))
+
+        # Maintenance request section
+        maintenance_frame = ttk.LabelFrame(middle_panel, text="Submit Maintenance Request", style='Modern.TFrame')
+        maintenance_frame.pack(fill='x', padx=10, pady=10)
+
+        ttk.Label(maintenance_frame, text="Describe the issue:", style='Modern.TLabel').pack(anchor='w', padx=5,
+                                                                                             pady=(5, 2))
+
+        # Text area for maintenance request description
+        self.maintenance_text = tk.Text(maintenance_frame, height=4, width=40, font=('Segoe UI', 10),
+                                        bg=ModernStyle.CARD_BG, fg=ModernStyle.TEXT_COLOR, wrap='word')
+        self.maintenance_text.pack(fill='x', padx=5, pady=5)
+
+        # Submit button
+        submit_maintenance_btn = tk.Button(maintenance_frame, text="Submit Request",
+                                           command=self.submit_maintenance_request,
+                                           bg=ModernStyle.WARNING_COLOR, fg='white',
+                                           font=('Segoe UI', 10, 'bold'))
+        submit_maintenance_btn.pack(pady=5)
+
+        # My maintenance requests section
+        my_requests_frame = ttk.LabelFrame(middle_panel, text="My Maintenance Requests", style='Modern.TFrame')
+        my_requests_frame.pack(fill='both', expand=True, padx=10, pady=10)
+
+        # Treeview for showing user's maintenance requests
+        self.my_requests_tree = ttk.Treeview(my_requests_frame, columns=('ID', 'Description', 'Status', 'Date'),
+                                             show='headings', height=6)
+        self.my_requests_tree.heading('ID', text='Request #')
+        self.my_requests_tree.heading('Description', text='Description')
+        self.my_requests_tree.heading('Status', text='Status')
+        self.my_requests_tree.heading('Date', text='Date Submitted')
+
+        # Set column widths for maintenance requests
+        self.my_requests_tree.column('ID', width=60, minwidth=50)
+        self.my_requests_tree.column('Description', width=150, minwidth=120)
+        self.my_requests_tree.column('Status', width=80, minwidth=70)
+        self.my_requests_tree.column('Date', width=100, minwidth=90)
+
+        self.my_requests_tree.pack(fill='both', expand=True, padx=5, pady=5)
+
         # Right panel - Statistics and recommendations
         right_panel = ttk.Frame(main_container, style='Card.TFrame')
-        right_panel.pack(side='right', fill='both', expand=True, padx=(10, 0))
+        right_panel.pack(side='right', fill='both', expand=True, padx=(5, 0))
 
         # Top 5 events
         top_events_frame = ttk.LabelFrame(right_panel, text="Top 5 Most Popular Events", style='Modern.TFrame')
@@ -224,6 +265,11 @@ class MainApplication:
         self.top_events_tree = ttk.Treeview(top_events_frame, columns=('Event', 'Visitors'), show='headings', height=6)
         self.top_events_tree.heading('Event', text='Event Name')
         self.top_events_tree.heading('Visitors', text='Visitors')
+
+        # Set column widths for top events
+        self.top_events_tree.column('Event', width=120, minwidth=100)
+        self.top_events_tree.column('Visitors', width=60, minwidth=50)
+
         self.top_events_tree.pack(fill='x', padx=5, pady=5)
 
         # Recommended events
@@ -238,9 +284,9 @@ class MainApplication:
         self.recommended_table.heading('Residents', text='Residents in Your Age Group Going')
 
         # Set column widths and alignment (optional)
-        self.recommended_table.column('Date', width=100, anchor='center')
-        self.recommended_table.column('Location', width=150, anchor='center')
-        self.recommended_table.column('Residents', width=200, anchor='center')
+        self.recommended_table.column('Date', width=80, anchor='center', minwidth=70)
+        self.recommended_table.column('Location', width=100, anchor='center', minwidth=80)
+        self.recommended_table.column('Residents', width=120, anchor='center', minwidth=100)
         self.recommended_table.pack(fill='both', expand=True)
 
         # Joined events
@@ -251,11 +297,100 @@ class MainApplication:
                                          bg=ModernStyle.CARD_BG, fg=ModernStyle.TEXT_COLOR)
         self.joined_listbox.pack(fill='both', expand=True, padx=5, pady=5)
 
+        # Initialize variables
+        self.current_resident_id = None
+
         # Load initial data
         self.load_top_events()
         self.load_all_events()
+        self.load_my_maintenance_requests()
 
-        self.current_resident_id = None
+    def submit_maintenance_request(self):
+        """Submit a new maintenance request - using dictionary parameters"""
+        if not self.current_resident_id:
+            messagebox.showwarning("Warning", "Please sign in first")
+            return
+
+        # Get the description from text widget
+        description = self.maintenance_text.get("1.0", "end-1c").strip()
+
+        if not description:
+            messagebox.showwarning("Warning", "Please enter a description for the maintenance request")
+            return
+
+        try:
+            # First, get the room_id for the current resident
+            room_query = "SELECT roomid FROM resident WHERE residentid = :resident_id"
+            room_result = self.db.execute_query(room_query, {'resident_id': self.current_resident_id})
+
+            if not room_result:
+                messagebox.showerror("Error", "Could not find your room information")
+                return
+
+            room_id = room_result[0][0]
+
+            # Generate a random request ID
+            request_id = random.randint(100000, 999999)
+
+            # Insert the maintenance request
+            insert_query = """
+            INSERT INTO maintenance_req (request_id, room_id, staff_member_id, item_id, req_description, req_status) 
+            VALUES (:request_id, :room_id, 0, 0, :description, 'recieved')
+            """
+
+            params = {
+                'request_id': request_id,
+                'room_id': room_id,
+                'description': description
+            }
+
+            self.db.execute_query(insert_query, params)
+
+            messagebox.showinfo("Success", f"Maintenance request #{request_id} submitted successfully!")
+
+            # Clear the text area
+            self.maintenance_text.delete("1.0", "end")
+
+            # Refresh the maintenance requests list
+            self.load_my_maintenance_requests()
+
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to submit maintenance request: {str(e)}")
+
+    def load_my_maintenance_requests(self):
+        """Load maintenance requests for the current resident - using dictionary parameters"""
+        if not self.current_resident_id:
+            return
+
+        try:
+            # Query to get maintenance requests for the current resident's room
+            query = """
+            SELECT mr.request_id, mr.req_description, mr.req_status
+            FROM maintenance_req mr
+            JOIN resident r ON mr.room_id = r.roomid
+            WHERE r.residentid = :resident_id
+            """
+
+            results = self.db.execute_query(query, {'resident_id': self.current_resident_id})
+
+            # Clear existing items
+            for item in self.my_requests_tree.get_children():
+                self.my_requests_tree.delete(item)
+
+            # Add new items
+            for row in results:
+                request_id, description, status = row
+                # Truncate description if too long
+                display_description = description[:50] + "..." if len(description) > 50 else description
+
+                self.my_requests_tree.insert('', 'end', values=(
+                    request_id,
+                    display_description,
+                    status.title()
+                ))
+
+        except Exception as e:
+            print(f"Error loading maintenance requests: {str(e)}")
 
     def resident_signin(self):
         """Handle resident sign in"""
@@ -461,30 +596,30 @@ class MainApplication:
         self.status_canvas = tk.Canvas(stats_frame, height=30, bg=ModernStyle.CARD_BG)
         self.status_canvas.pack(fill='x', padx=10, pady=10)
 
-        # Bottom section - Three columns: Pending Requests, Assigned Requests, and Inventory
+        # Bottom section - Three columns: processed Requests, Assigned Requests, and Inventory
         bottom_section = ttk.Frame(main_container, style='Modern.TFrame')
         bottom_section.pack(fill='both', expand=True)
 
-        # Pending Requests section (left column)
-        pending_requests_frame = ttk.LabelFrame(bottom_section, text="Pending Requests", style='Modern.TFrame')
-        pending_requests_frame.pack(side='left', fill='both', expand=True, padx=(0, 5))
+        # processed Requests section (left column)
+        processed_requests_frame = ttk.LabelFrame(bottom_section, text="processed Requests", style='Modern.TFrame')
+        processed_requests_frame.pack(side='left', fill='both', expand=True, padx=(0, 5))
 
-        # Pending requests treeview
-        self.pending_requests_tree = ttk.Treeview(pending_requests_frame, columns=('ID', 'Description', 'Status'),
-                                                  show='headings')
-        self.pending_requests_tree.heading('ID', text='Request ID')
-        self.pending_requests_tree.heading('Description', text='Description')
-        self.pending_requests_tree.heading('Status', text='Status')
+        # processed requests treeview
+        self.processed_requests_tree = ttk.Treeview(processed_requests_frame, columns=('ID', 'Description', 'Status'),
+                                                    show='headings')
+        self.processed_requests_tree.heading('ID', text='Request ID')
+        self.processed_requests_tree.heading('Description', text='Description')
+        self.processed_requests_tree.heading('Status', text='Status')
 
-        # Set column widths for pending requests
-        self.pending_requests_tree.column('ID', width=60, minwidth=50)
-        self.pending_requests_tree.column('Description', width=120, minwidth=100)
-        self.pending_requests_tree.column('Status', width=80, minwidth=70)
+        # Set column widths for processed requests
+        self.processed_requests_tree.column('ID', width=60, minwidth=50)
+        self.processed_requests_tree.column('Description', width=120, minwidth=100)
+        self.processed_requests_tree.column('Status', width=80, minwidth=70)
 
-        self.pending_requests_tree.pack(fill='both', expand=True, padx=5, pady=5)
+        self.processed_requests_tree.pack(fill='both', expand=True, padx=5, pady=5)
 
         # Assign request button
-        assign_btn = tk.Button(pending_requests_frame, text="Assign to Me", command=self.toggle_assign_request,
+        assign_btn = tk.Button(processed_requests_frame, text="Assign to Me", command=self.toggle_assign_request,
                                bg=ModernStyle.SUCCESS_COLOR, fg='white', font=('Segoe UI', 10, 'bold'))
         assign_btn.pack(pady=5)
 
@@ -553,12 +688,12 @@ class MainApplication:
 
         # Initialize necessary variables
         self.current_janitor_id = None
-        self.pending_requests_data = []  # Store pending requests data
+        self.processed_requests_data = []  # Store processed requests data
         self.assigned_requests_data = []  # Store assigned requests data
 
         # Load initial data
         self.load_inventory()
-        self.load_pending_requests()
+        self.load_processed_requests()
         self.load_assigned_requests()
 
     def janitor_signin(self):
@@ -587,7 +722,7 @@ class MainApplication:
         else:
             messagebox.showerror("Error", "Caregiver not found")
 
-    def load_pending_requests(self):
+    def load_processed_requests(self):
         """Load all unassigned requests from the database"""
         query = """
         SELECT request_id, req_description, req_status
@@ -600,15 +735,15 @@ class MainApplication:
         results = self.db.execute_query(query)
 
         # Store results for later use in toggle_assign_request
-        self.pending_requests_data = results
+        self.processed_requests_data = results
 
         # Clear existing items
-        for item in self.pending_requests_tree.get_children():
-            self.pending_requests_tree.delete(item)
+        for item in self.processed_requests_tree.get_children():
+            self.processed_requests_tree.delete(item)
 
         # Add new items
         for row in results:
-            self.pending_requests_tree.insert('', 'end', values=(row[0], row[1], row[2]))
+            self.processed_requests_tree.insert('', 'end', values=(row[0], row[1], row[2]))
 
     def toggle_assign_request(self):
         """Assign the selected request to the current staff member"""
@@ -617,7 +752,7 @@ class MainApplication:
             return
 
         # Get selected item from treeview (not listbox)
-        selection = self.pending_requests_tree.selection()
+        selection = self.processed_requests_tree.selection()
         if not selection:
             messagebox.showwarning("Warning", "Please select a request")
             return
@@ -626,27 +761,37 @@ class MainApplication:
         selected_item = selection[0]
 
         # Get the request_id from the selected row
-        request_values = self.pending_requests_tree.item(selected_item, 'values')
+        request_values = self.processed_requests_tree.item(selected_item, 'values')
         request_id = request_values[0]
 
         try:
             # Update the database to assign the request
             update_query = """
-            UPDATE caregiver_maintenance 
-            SET caregiverid = %s 
-            WHERE request_id = %s AND caregiverid = 0
+            UPDATE maintenance_req 
+            SET staff_member_id = :caregiverid
+            WHERE request_id = :request_id
             """
 
-            rows_affected = self.db.execute_query(update_query, (self.current_janitor_id, request_id))
+            rows_affected = self.db.execute_query(update_query, {
+                'caregiverid': self.current_janitor_id,
+                'request_id': request_id
+            })
 
-            if rows_affected > 0:
+            if not rows_affected:
                 messagebox.showinfo("Success", f"Request {request_id} assigned successfully!")
-                # Refresh the pending requests list
-                self.load_pending_requests()
+                update_query = """
+                            UPDATE maintenance_req 
+                            SET req_status = 'processed'
+                            WHERE request_id = :request_id
+                            """
+                self.db.execute_query(update_query, {'request_id': request_id})
+                # Refresh the processed requests list
+                self.load_processed_requests()
+                self.load_assigned_requests()
             else:
                 messagebox.showwarning("Warning", "Request may have already been assigned by another staff member")
                 # Refresh the list to show current state
-                self.load_pending_requests()
+                self.load_processed_requests()
 
         except Exception as e:
             messagebox.showerror("Error", f"Failed to assign request: {str(e)}")
@@ -669,17 +814,23 @@ class MainApplication:
 
         try:
             update_query = """
-            UPDATE caregiver_maintenance 
-            SET caregiverid = 0 
-            WHERE request_id = %s AND caregiverid = %s
+            UPDATE  maintenance_req
+            SET staff_member_id = 0 
+            WHERE request_id = :request_id
             """
 
-            rows_affected = self.db.execute_query(update_query, (request_id, self.current_janitor_id))
+            rows_affected = self.db.execute_query(update_query, {'request_id': request_id})
 
-            if rows_affected > 0:
+            if not rows_affected:
                 messagebox.showinfo("Success", f"Request {request_id} unassigned successfully!")
+                update_query = """
+                                            UPDATE maintenance_req 
+                                            SET req_status = 'received'
+                                            WHERE request_id = :request_id
+                                            """
+                self.db.execute_query(update_query, {'request_id': request_id})
                 # Refresh both lists
-                self.load_pending_requests()
+                self.load_processed_requests()
                 self.load_assigned_requests()
             else:
                 messagebox.showwarning("Warning", "Could not unassign request")
@@ -695,11 +846,11 @@ class MainApplication:
         query = """
         SELECT request_id, req_description, req_status
         FROM caregiver_maintenance
-        WHERE caregiverid = %s
+        WHERE caregiverid = :caregiverid
         ORDER BY request_id
         """
 
-        results = self.db.execute_query(query, (self.current_janitor_id,))
+        results = self.db.execute_query(query, {'caregiverid': self.current_janitor_id})
 
         # Clear existing items (assuming you have an assigned_requests_tree)
         for item in self.assigned_requests_tree.get_children():
@@ -724,12 +875,12 @@ class MainApplication:
         results = self.db.execute_query(query, {'cid': self.current_janitor_id})
 
         # Clear existing items
-        for item in self.requests_tree.get_children():
-            self.requests_tree.delete(item)
+        for item in self.assigned_requests_tree.get_children():
+            self.assigned_requests_tree.delete(item)
 
         # Add new items
         for row in results:
-            self.requests_tree.insert('', 'end', values=(row[0], row[1], row[2]))
+            self.assigned_requests_tree.insert('', 'end', values=(row[0], row[1], row[2]))
 
     def load_janitor_stats(self):
         """Load statistics for the current janitor"""
@@ -799,12 +950,12 @@ class MainApplication:
             messagebox.showwarning("Warning", "Please sign in first")
             return
 
-        selection = self.requests_tree.selection()
+        selection = self.assigned_requests_tree.selection()
         if not selection:
             messagebox.showwarning("Warning", "Please select a request")
             return
 
-        item = self.requests_tree.item(selection[0])
+        item = self.assigned_requests_tree.item(selection[0])
         request_id = item['values'][0]
 
         # Try to call the stored procedure
@@ -1081,17 +1232,13 @@ class MainApplication:
                                         font=('Segoe UI', 9), justify='left', wraplength=200)
             treatments_label.pack(anchor='w', pady=(10, 0))
 
-
-
     def show_manager_dashboard(self):
         """Display manager dashboard with statistics and charts"""
         # Simple authentication
         username, password = simple_login_dialog(self.root)
-        print(username, password)
         if username != "dsibony" or password != "123":
             messagebox.showerror("Access Denied", "Invalid credentials")
             return
-        print("hi")
 
         self.clear_frame()
         self.current_frame = ttk.Frame(self.root, style='Modern.TFrame')
@@ -1497,6 +1644,7 @@ def main():
 
         root.mainloop()
 
+
 def simple_login_dialog(parent):
     """Simple login dialog that returns (username, password) or None if cancelled"""
     dialog = tk.Toplevel(parent)
@@ -1550,6 +1698,7 @@ def simple_login_dialog(parent):
     dialog.wait_window()
 
     return (result['username'], result['password']) if result['ok'] else None
+
 
 if __name__ == "__main__":
     main()
