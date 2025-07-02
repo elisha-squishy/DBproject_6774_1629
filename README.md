@@ -260,7 +260,8 @@ where d.name not ilike '%Care%' and d.name not ilike '%nursing%'
 
 השאילתא השנייה מחפשת את כל המשימות שעובד מסויים צריך לבצע, יחד עם מספר החדר בו המשימה מתבצעת.
 
-![image](https://github.com/user-attachments/assets/d8330e17-cf4c-4163-a933-26b60fbd7825)
+![image](https://github.com/user-attachments/assets/22d71c33-c191-4297-99fe-e748e95ecca5)
+
 
 המבט השני הוא מידע בשביל המשפחה, דהיינו: הסטוריית ביקורים, ההיסטוריה הרפואית של הדייר ומידע על הרופאים שלו וכו'.
 <pre>
