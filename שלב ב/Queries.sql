@@ -22,7 +22,7 @@ LEFT JOIN maintenance_req mr ON rm.room_id = mr.room_id
 GROUP BY rm.room_id, rm.capacity
 ORDER BY total_requests DESC;
 
---* the devision of going to events: how many go to 1 event, 2 events etc..
+-- the devision of going to events: how many go to 1 event, 2 events etc..
 WITH event_counts AS (
     SELECT 
         resident_id,
@@ -50,7 +50,7 @@ ORDER BY
     num_uses DESC
 LIMIT 3;
 
---* how many chefs are in charge of meals over time
+-- how many chefs are in charge of meals over time
 SELECT
     m.date,
     COUNT(DISTINCT ic.staff_member_id) AS chefs_count
@@ -59,7 +59,7 @@ JOIN is_chef ic ON m.date = ic.date AND m.meal_type = ic.meal_type
 GROUP BY m.date
 ORDER BY m.date;
 
---* amount of rooms that have made less than 2 maintenance reqs,
+-- amount of rooms that have made less than 2 maintenance reqs,
 -- and amount of rooms that made more than 2 maintenance reqs
 WITH req_counts AS (
     SELECT 
@@ -78,7 +78,7 @@ SELECT
 FROM req_counts right OUTER JOIN room ON req_counts.room_id = room.room_id
 GROUP BY category;
 
---* for each job title, shows the staff memebers that have completed the most requests
+-- for each job title, shows the staff memebers that have completed the most requests
 SELECT 
     sm.job_title,
     sm.staff_member_name,
@@ -98,7 +98,7 @@ HAVING COUNT(mr.request_id) = (
 )
 ORDER BY sm.job_title;
 
---* average percentage of actual occupancy vs capacity
+-- average percentage of actual occupancy vs capacity
 SELECT 
     ROUND(100.0 * SUM(CASE WHEN r.resident_id IS NOT NULL THEN 1 ELSE 0 END)
 	/ SUM(rm.capacity), 2) AS avg_occupancy_percentage

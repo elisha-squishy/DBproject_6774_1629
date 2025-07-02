@@ -15,7 +15,7 @@ from caregiver_maintenance
 where quantity <= 15 and req_status != 'taken care of'
 
 -- query 2	(find the requests that belong to a specific caregiver)
-select req_description, req_status
+select req_description, req_status, roomnumber
 from caregiver_maintenance
 where caregiver_name = 'David Norman'
 
